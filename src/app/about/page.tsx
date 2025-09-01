@@ -173,7 +173,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-16">
             {/* Mission */}
             <AnimatedSection>
-              <div className="bg-maker-blue-950 border border-maker-blue-700 rounded-2xl p-10 h-full shadow-lg hover:shadow-xl transition-all duration-300 group hover:scale-105">
+              <div className="bg-maker-blue-950 border border-maker-blue-700 rounded-2xl p-10 h-full shadow-lg hover:shadow-xl transition-all duration-300 group hover:scale-[1.02]">
                 <div className="flex items-center space-x-4 mb-8">
                   <div className="p-4 bg-maker-yellow/10 border border-maker-yellow/30 rounded-xl group-hover:bg-maker-yellow/20 transition-colors">
                     <Target className="h-8 w-8 text-maker-yellow" />
@@ -190,7 +190,7 @@ export default function AboutPage() {
 
             {/* Vision */}
             <AnimatedSection delay={0.2}>
-              <div className="bg-maker-blue-950 border border-maker-blue-700 rounded-2xl p-10 h-full shadow-lg hover:shadow-xl transition-all duration-300 group hover:scale-105">
+              <div className="bg-maker-blue-950 border border-maker-blue-700 rounded-2xl p-10 h-full shadow-lg hover:shadow-xl transition-all duration-300 group hover:scale-[1.02]">
                 <div className="flex items-center space-x-4 mb-8">
                   <div className="p-4 bg-maker-yellow/10 border border-maker-yellow/30 rounded-xl group-hover:bg-maker-yellow/20 transition-colors">
                     <Lightbulb className="h-8 w-8 text-maker-yellow" />
@@ -221,7 +221,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {achievements.map((achievement, index) => (
               <AnimatedSection key={achievement.label} delay={0.5 + index * 0.1}>
-                <div className="text-center bg-maker-blue-950 border border-maker-blue-700 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 h-full">
+                <div className="text-center bg-maker-blue-950 border border-maker-blue-700 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] h-full">
                   <div className="p-4 bg-maker-yellow/10 border border-maker-yellow/30 rounded-xl w-fit mx-auto mb-6">
                     <achievement.icon className="h-8 w-8 text-maker-yellow" />
                   </div>
@@ -258,7 +258,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {values.map((value, index) => (
               <AnimatedSection key={value.title} delay={index * 0.1}>
-                <div className="bg-maker-blue-950 border border-maker-blue-700 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group hover:scale-105 h-full">
+                <div className="bg-maker-blue-950 border border-maker-blue-700 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group hover:scale-[1.02] h-full">
                   <div className="p-4 bg-maker-yellow/10 border border-maker-yellow/30 rounded-xl w-fit mb-6 group-hover:bg-maker-yellow/20 transition-colors">
                     <value.icon className="h-8 w-8 text-maker-yellow" />
                   </div>
@@ -294,7 +294,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {team.map((member, index) => (
               <AnimatedSection key={member.name} delay={index * 0.1}>
-                <div className="bg-maker-blue-950 border border-maker-blue-700 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group hover:scale-105 h-full">
+                <div className="bg-maker-blue-950 border border-maker-blue-700 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group hover:scale-[1.02] h-full">
                   <div className="flex items-start space-x-4 mb-6">
                     <div className="p-4 bg-maker-yellow/10 border border-maker-yellow/30 rounded-xl flex-shrink-0">
                       <Users className="h-8 w-8 text-maker-yellow" />
@@ -402,7 +402,7 @@ export default function AboutPage() {
                   <AnimatedSection key={step.phase} delay={index * 0.15}>
                     <div className={`flex items-center gap-12 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
                       {/* Content Card */}
-                      <div className="flex-1 bg-maker-blue-950 border border-maker-blue-700 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group hover:scale-105">
+                      <div className="flex-1 bg-maker-blue-950 border border-maker-blue-700 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group hover:scale-[1.02]">
                         <div className="flex items-start gap-6">
                           <div className="p-4 bg-maker-yellow/10 border border-maker-yellow/30 rounded-xl flex-shrink-0 group-hover:bg-maker-yellow/20 transition-colors">
                             <step.icon className="h-8 w-8 text-maker-yellow" />
