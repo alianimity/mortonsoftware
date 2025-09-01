@@ -12,7 +12,11 @@ import {
   Lightbulb,
   CheckCircle,
   ArrowRight,
-  Sparkles
+  Sparkles,
+  Code,
+  Palette,
+  Cloud,
+  BarChart3
 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -80,24 +84,28 @@ export default function AboutPage() {
 
   const team = [
     {
+      icon: BarChart3,
       name: "Digital Strategy Team",
       role: "Strategic Visionaries",
       description: "Expert consultants who transform business challenges into digital opportunities",
       expertise: ["Business Analysis", "Market Research", "Technology Assessment", "Digital Roadmaps"]
     },
     {
+      icon: Code,
       name: "Development Team",
       role: "Code Craftsmen",
       description: "Full-stack developers who build scalable, secure, and performant solutions",
       expertise: ["React/Next.js", "Node.js", "Python", "Cloud Architecture"]
     },
     {
+      icon: Palette,
       name: "Design Team",
       role: "Experience Architects",
       description: "UX/UI designers who create intuitive and beautiful digital experiences",
       expertise: ["User Research", "Interface Design", "Brand Identity", "Design Systems"]
     },
     {
+      icon: Cloud,
       name: "DevOps Team",
       role: "Infrastructure Experts",
       description: "Cloud specialists who ensure reliable, scalable, and secure deployments",
@@ -210,11 +218,11 @@ export default function AboutPage() {
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {values.map((value, index) => (
               <AnimatedSection key={value.title} delay={index * 0.1}>
-                <div className="service-card group hover:scale-105 transition-all duration-300">
-                  <div className="p-3 bg-maker-yellow/10 border border-maker-yellow/30 rounded-xl w-fit mb-6 group-hover:bg-maker-yellow/20 transition-colors">
+                <div className="service-card group">
+                  <div className="p-3 bg-maker-yellow/10 border border-maker-yellow/30 rounded-xl w-fit mb-6">
                     <value.icon className="h-6 w-6 text-maker-yellow" />
                   </div>
                   <h3 className="text-xl font-bold text-white mb-4 group-hover:text-maker-yellow transition-colors">
@@ -244,14 +252,14 @@ export default function AboutPage() {
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {achievements.map((achievement, index) => (
               <AnimatedSection key={achievement.label} delay={index * 0.1}>
-                <div className="text-center bg-maker-blue-950 border border-maker-blue-700 rounded-2xl p-8 hover:scale-105 transition-all duration-300">
-                  <div className="p-4 bg-maker-yellow/10 border border-maker-yellow/30 rounded-xl w-fit mx-auto mb-6">
-                    <achievement.icon className="h-8 w-8 text-maker-yellow" />
+                <div className="text-center service-card">
+                  <div className="p-3 bg-maker-yellow/10 border border-maker-yellow/30 rounded-xl w-fit mx-auto mb-6">
+                    <achievement.icon className="h-6 w-6 text-maker-yellow" />
                   </div>
-                  <div className="text-3xl lg:text-4xl font-bold text-maker-yellow mb-2">
+                  <div className="text-3xl font-bold text-maker-yellow mb-2">
                     {achievement.number}
                   </div>
                   <div className="text-lg font-semibold text-white mb-2">
@@ -281,16 +289,16 @@ export default function AboutPage() {
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {team.map((member, index) => (
               <AnimatedSection key={member.name} delay={index * 0.1}>
-                <div className="service-card">
+                <div className="service-card group">
                   <div className="flex items-start space-x-4 mb-6">
                     <div className="p-3 bg-maker-yellow/10 border border-maker-yellow/30 rounded-xl flex-shrink-0">
-                      <Users className="h-6 w-6 text-maker-yellow" />
+                      <member.icon className="h-6 w-6 text-maker-yellow" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-white mb-1">{member.name}</h3>
+                      <h3 className="text-xl font-bold text-white mb-1 group-hover:text-maker-yellow transition-colors">{member.name}</h3>
                       <p className="text-maker-yellow font-medium">{member.role}</p>
                     </div>
                   </div>
@@ -334,7 +342,7 @@ export default function AboutPage() {
           </AnimatedSection>
 
           <div className="max-w-4xl mx-auto">
-            <div className="space-y-8">
+            <div className="space-y-6">
               {[
                 {
                   phase: "01",
@@ -363,15 +371,17 @@ export default function AboutPage() {
                 }
               ].map((step, index) => (
                 <AnimatedSection key={step.phase} delay={index * 0.1}>
-                  <div className="flex items-center space-x-6 bg-maker-blue-950 border border-maker-blue-700 rounded-2xl p-6">
-                    <div className="text-6xl font-bold text-maker-yellow/20 flex-shrink-0">
+                  <div className="flex items-center space-x-6 service-card group">
+                    <div className="text-4xl lg:text-5xl font-bold text-maker-yellow/30 flex-shrink-0">
                       {step.phase}
                     </div>
-                    <div>
-                      <h3 className="text-2xl font-bold text-white mb-2">{step.title}</h3>
+                    <div className="flex-grow">
+                      <h3 className="text-xl lg:text-2xl font-bold text-white mb-2 group-hover:text-maker-yellow transition-colors">{step.title}</h3>
                       <p className="text-maker-blue-200 leading-relaxed">{step.description}</p>
                     </div>
-                    <CheckCircle className="h-8 w-8 text-maker-yellow flex-shrink-0" />
+                    <div className="p-2 bg-maker-yellow/10 border border-maker-yellow/30 rounded-lg flex-shrink-0">
+                      <CheckCircle className="h-5 w-5 text-maker-yellow" />
+                    </div>
                   </div>
                 </AnimatedSection>
               ))}
@@ -384,12 +394,17 @@ export default function AboutPage() {
       <section className="py-16 bg-maker-blue-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <div className="bg-maker-blue-900 border border-maker-blue-700 rounded-2xl p-8 lg:p-12 text-center">
-              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-                Ready to Transform Your <span className="font-brand text-maker-yellow">Business</span>?
-              </h2>
+            <div className="service-card text-center max-w-4xl mx-auto">
+              <div className="flex items-center justify-center space-x-3 mb-6">
+                <div className="p-3 bg-maker-yellow/10 border border-maker-yellow/30 rounded-xl">
+                  <Sparkles className="h-6 w-6 text-maker-yellow" />
+                </div>
+                <h2 className="text-3xl lg:text-4xl font-bold text-white">
+                  Ready to Transform Your <span className="font-brand text-maker-yellow">Business</span>?
+                </h2>
+              </div>
               
-              <p className="text-lg text-maker-blue-200 mb-8 max-w-2xl mx-auto">
+              <p className="text-lg text-maker-blue-200 mb-8 max-w-2xl mx-auto leading-relaxed">
                 Join hundreds of satisfied clients worldwide who have trusted us with their digital transformation. 
                 Let&apos;s make something extraordinary together.
               </p>
