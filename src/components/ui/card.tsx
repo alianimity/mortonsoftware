@@ -91,7 +91,7 @@ const ServiceCard = React.forwardRef<
     features?: string[];
     ctaText?: string;
     onCtaClick?: () => void;
-    featured?: boolean;
+    badgeType?: string;
   }
 >(({ 
   className, 
@@ -102,17 +102,18 @@ const ServiceCard = React.forwardRef<
   features, 
   ctaText = "Learn More",
   onCtaClick,
-  featured = false,
+  badgeType,
   ...props 
 }, ref) => (
-  <Card ref={ref} variant="service" className={cn("group relative", className)} {...props}>
-    {featured && (
-      <div className="absolute -top-3 -right-3 z-10">
-        <span className="px-3 py-1 bg-maker-yellow text-maker-blue-950 rounded-full text-sm font-semibold">
-          Featured
+  <div className="relative">
+    {badgeType && (
+      <div className="absolute -top-3 -right-3 z-20">
+        <span className="px-3 py-1 bg-maker-yellow text-maker-blue-950 rounded-full text-sm font-semibold shadow-lg">
+          {badgeType}
         </span>
       </div>
     )}
+    <Card ref={ref} variant="service" className={cn("group relative", className)} {...props}>
     <CardHeader>
       <div className="flex items-center space-x-3 mb-3">
         {icon && (
@@ -152,20 +153,24 @@ const ServiceCard = React.forwardRef<
       )}
     </CardContent>
     
-    <CardFooter className="flex justify-between items-center">
+    <CardFooter className="flex justify-between items-center gap-4">
       {price && (
-        <div className="text-lg font-semibold text-maker-yellow">
-          {price}
+        <div className="text-left">
+          <div className="text-xs text-maker-blue-300 mb-1">Starting at</div>
+          <div className="text-base font-semibold text-maker-yellow">
+            {price.replace('Starting at ', '').replace('/month', '')}
+          </div>
         </div>
       )}
       <button
         onClick={onCtaClick}
-        className="btn-primary text-sm px-4 py-2 ml-auto"
+        className="btn-primary text-sm px-3 py-2 flex-shrink-0"
       >
-        {ctaText}
+        Learn More
       </button>
     </CardFooter>
-  </Card>
+    </Card>
+  </div>
 ));
 ServiceCard.displayName = "ServiceCard";
 

@@ -12,19 +12,19 @@ import {
 export const services = [
   {
     id: "digital-strategy",
-    title: "Digital Strategy & Consulting",
+    title: "Strategy & Transformation",
     tagline: "Chart Your Digital Future",
-    description: "Strategic clarity before tactical execution. We help you navigate digital transformation with comprehensive roadmaps and expert guidance.",
+    description: "Strategic clarity before tactical execution. Transform your business with expert guidance and data-driven insights.",
     icon: Lightbulb,
     price: "Starting at $200",
     priceRange: "$200 - $15,000+",
-    featured: true,
+    badgeType: "Most Popular",
     features: [
-      "Strategy Report (PDF)",
-      "Strategy Consultation (30 min)", 
-      "\"Spark Session\" Consultation",
-      "\"Ignite Session\" Consultation",
-      "Custom Consultation Package"
+      "Business Analysis Report",
+      "Strategic Advisory Call",
+      "Digital Roadmap Workshop",
+      "Technology Assessment",
+      "Enterprise Advisory Retainer"
     ],
     services: [
       { name: "Strategy Report (PDF)", price: "$100", description: "Comprehensive analysis and recommendations" },
@@ -36,19 +36,19 @@ export const services = [
   },
   {
     id: "software-development",
-    title: "Software Development",
+    title: "Software & Application Development",
     tagline: "Crafted Code, Lasting Value",
-    description: "Artisan-level code quality with modern architecture. From MVPs to enterprise systems, we build software that scales with your business.",
+    description: "Build robust, scalable applications with modern technologies. Custom solutions that grow with your business.",
     icon: Code,
     price: "Starting at $2,800",
     priceRange: "$2,800 - $25,000",
-    featured: true,
+    badgeType: "Featured",
     features: [
-      "Feature Development",
-      "API Integration",
-      "MVP Development",
-      "Web Application",
-      "Mobile Apps"
+      "Feature Development Sprint",
+      "API Development",
+      "Custom Web Application",
+      "Mobile Application",
+      "Enterprise Application"
     ],
     services: [
       { name: "Feature Development", price: "$1,500", description: "2-week development sprints" },
@@ -60,19 +60,19 @@ export const services = [
   },
   {
     id: "product-design",
-    title: "Product Design & Branding",
+    title: "Design & Experience",
     tagline: "Designed for Success",
-    description: "User-centered design that drives business results. We create digital experiences that users love and businesses profit from.",
+    description: "User-centered design that drives business results. Create compelling visual identities and intuitive experiences.",
     icon: Palette,
     price: "Starting at $500",
     priceRange: "$500 - $12,000",
-    featured: true,
+    badgeType: "Trending",
     features: [
       "Logo Design",
-      "Marketing Materials",
+      "Brand Identity Package",
       "UX/UI Design",
-      "Brand Identity",
-      "Design System"
+      "Website Redesign",
+      "Complete Brand Transformation"
     ],
     services: [
       { name: "Logo Design", price: "$300", description: "Professional brand identity" },
@@ -86,16 +86,16 @@ export const services = [
     id: "cloud-solutions",
     title: "Cloud, DevOps & Infrastructure",
     tagline: "Built to Scale",
-    description: "Scalable, secure, and cost-effective infrastructure. We help you leverage cloud technologies for maximum efficiency and growth.",
+    description: "Modernize infrastructure with secure, scalable cloud solutions. 24/7 monitoring and automated deployments.",
     icon: Cloud,
-    price: "Starting at $1,200/month",
-    priceRange: "$1,200/month - $8,000",
+    price: "Starting at $1,200",
+    priceRange: "$1,200 - $8,000",
     features: [
-      "Managed Services",
-      "Cloud Assessment",
-      "Cloud Migration",
-      "Infrastructure Setup",
-      "DevOps Implementation"
+      "Cloud Infrastructure Assessment",
+      "Cloud Migration Services",
+      "DevOps Pipeline Setup",
+      "Managed Cloud Services",
+      "Disaster Recovery Setup"
     ],
     services: [
       { name: "Managed Services", price: "$800/month", description: "Ongoing cloud management" },
@@ -109,16 +109,16 @@ export const services = [
     id: "web-development",
     title: "Web & Digital Solutions",
     tagline: "Websites That Convert",
-    description: "Professional websites that drive results. From landing pages to complex web applications, we build sites that engage users and grow businesses.",
+    description: "Professional websites and digital solutions that drive results. From landing pages to complex e-commerce platforms.",
     icon: ShoppingCart,
     price: "Starting at $1,200",
     priceRange: "$1,200 - $6,500",
-    featured: true,
+    badgeType: "Best Value",
     features: [
-      "Landing Page",
-      "CMS Website",
-      "Website Redesign",
-      "E-commerce Store"
+      "Conversion Landing Page",
+      "Business Website",
+      "E-commerce Platform",
+      "Digital Marketplace"
     ],
     services: [
       { name: "Landing Page", price: "$800", description: "High-converting single pages" },
@@ -131,16 +131,16 @@ export const services = [
     id: "security-compliance",
     title: "Security & Compliance",
     tagline: "Secure & Compliant",
-    description: "Comprehensive security solutions to protect your business. From audits to implementation, we ensure your systems are secure and compliant.",
+    description: "Comprehensive security and compliance solutions. Protect your business with expert cybersecurity guidance.",
     icon: BarChart3,
-    price: "Starting at $1,500/month",
-    priceRange: "$1,500/month - $12,000",
-    featured: true,
+    price: "Starting at $1,500",
+    priceRange: "$1,500 - $12,000",
+    badgeType: "Premium",
     features: [
-      "Incident Response",
-      "Security Audit", 
+      "Security Monitoring Service",
+      "Cybersecurity Audit",
       "Penetration Testing",
-      "Security Implementation",
+      "Security Controls Implementation",
       "Compliance Consulting"
     ],
     services: [
@@ -158,36 +158,31 @@ export const processSteps = [
     id: "discover",
     title: "Discover",
     description: "Deep dive into business goals, user needs, and technical requirements",
-    icon: Target,
-    duration: "1-2 weeks"
+    icon: Target
   },
   {
     id: "design",
     title: "Design", 
     description: "Strategic planning, architecture design, and user experience mapping",
-    icon: Palette,
-    duration: "2-3 weeks"
+    icon: Palette
   },
   {
     id: "develop",
     title: "Develop",
     description: "Agile development with continuous feedback and iteration",
-    icon: Code,
-    duration: "4-12 weeks"
+    icon: Code
   },
   {
     id: "deploy",
     title: "Deploy",
     description: "Secure, scalable deployment with comprehensive testing",
-    icon: Cloud,
-    duration: "1 week"
+    icon: Cloud
   },
   {
     id: "deliver",
     title: "Deliver",
     description: "Knowledge transfer, training, and ongoing optimization",
-    icon: CheckCircle,
-    duration: "Ongoing"
+    icon: CheckCircle
   }
 ];
 

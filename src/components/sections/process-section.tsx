@@ -44,22 +44,17 @@ export function ProcessSection() {
                   
                   {/* Card */}
                   <div className="bg-maker-blue-900 border border-maker-blue-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group lg:mt-16">
-                    {/* Step Number */}
-                    <div className="flex items-center justify-between mb-4">
+                    {/* Step Header */}
+                    <div className="flex items-center space-x-3 mb-8">
                       <div className="w-12 h-12 bg-maker-yellow/20 rounded-lg flex items-center justify-center group-hover:bg-maker-yellow/30 transition-colors">
                         <IconComponent className="h-6 w-6 text-maker-yellow" />
                       </div>
-                      <div className="text-sm font-medium text-maker-yellow bg-maker-yellow/10 px-2 py-1 rounded">
-                        {step.duration}
-                      </div>
+                      <h3 className="text-xl font-bold text-white group-hover:text-maker-yellow transition-colors">
+                        {index + 1}. {step.title}
+                      </h3>
                     </div>
-
-                    {/* Content */}
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-maker-yellow transition-colors">
-                      {index + 1}. {step.title}
-                    </h3>
                     
-                    <p className="text-maker-blue-200 text-sm leading-relaxed">
+                    <p className="text-maker-blue-200 text-sm leading-relaxed mt-4">
                       {step.description}
                     </p>
 

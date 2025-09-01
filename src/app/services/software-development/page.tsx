@@ -30,7 +30,7 @@ export default function SoftwareDevelopmentPage() {
     {
       name: "Feature Development Sprint",
       price: "$2,800",
-      duration: "2 weeks",
+
       description: "Focused 2-week development sprint for specific functionality or features",
       techStack: ["React", "Node.js", "TypeScript"],
       features: [
@@ -44,7 +44,7 @@ export default function SoftwareDevelopmentPage() {
     {
       name: "API Development",
       price: "$4,500", 
-      duration: "3-4 weeks",
+
       description: "RESTful API development with comprehensive documentation and testing",
       techStack: ["Node.js", "Express", "PostgreSQL", "JWT"],
       features: [
@@ -59,7 +59,7 @@ export default function SoftwareDevelopmentPage() {
     {
       name: "Custom Web Application",
       price: "$9,500",
-      duration: "6-8 weeks", 
+ 
       description: "Full-stack web application with custom functionality and database",
       techStack: ["React/Next.js", "Node.js", "PostgreSQL", "AWS"],
       features: [
@@ -76,7 +76,7 @@ export default function SoftwareDevelopmentPage() {
     {
       name: "Mobile Application",
       price: "$14,000",
-      duration: "8-12 weeks",
+
       description: "Cross-platform mobile app with native performance and modern UX",
       techStack: ["React Native", "Expo", "Firebase", "Push Notifications"],
       features: [
@@ -93,7 +93,7 @@ export default function SoftwareDevelopmentPage() {
     {
       name: "Enterprise Application",
       price: "$25,000",
-      duration: "12-16 weeks",
+
       description: "Large-scale enterprise solution with advanced features and integrations",
       techStack: ["React", "Node.js", "PostgreSQL", "Redis", "AWS"],
       features: [
@@ -346,7 +346,6 @@ export default function SoftwareDevelopmentPage() {
                         </h3>
                         <div className="text-right">
                           <div className="text-3xl font-bold text-maker-yellow">{service.price}</div>
-                          <div className="text-sm text-maker-blue-300">{service.duration}</div>
                         </div>
                       </div>
 
@@ -463,7 +462,6 @@ export default function SoftwareDevelopmentPage() {
                 <div className="bg-maker-blue-950 border border-maker-blue-700 rounded-xl p-6 text-center hover:scale-[1.02] transition-all duration-300">
                   <div className="text-3xl font-bold text-maker-yellow mb-4">{phase.phase}</div>
                   <h3 className="text-lg font-bold text-white mb-2">{phase.phase}</h3>
-                  <div className="text-maker-yellow text-sm mb-4">{phase.duration}</div>
                   <p className="text-maker-blue-200 text-sm leading-relaxed mb-4">
                     {phase.description}
                   </p>

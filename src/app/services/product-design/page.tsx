@@ -28,7 +28,7 @@ export default function ProductDesignPage() {
     {
       name: "Logo Design",
       price: "$500",
-      duration: "3-5 days",
+
       description: "Professional logo design that captures your brand essence and stands the test of time",
       features: [
         "3 unique logo concepts",
@@ -42,7 +42,7 @@ export default function ProductDesignPage() {
     {
       name: "Brand Identity Package",
       price: "$1,800",
-      duration: "1-2 weeks",
+
       description: "Complete visual identity system including logo, colors, typography, and brand guidelines",
       features: [
         "Logo design + variations",
@@ -57,7 +57,7 @@ export default function ProductDesignPage() {
     {
       name: "UX/UI Design",
       price: "$2,800",
-      duration: "2-3 weeks",
+
       description: "User research, wireframes, and beautiful interface design that converts",
       features: [
         "User research & personas",
@@ -72,7 +72,7 @@ export default function ProductDesignPage() {
     {
       name: "Website Redesign",
       price: "$4,500",
-      duration: "3-4 weeks",
+
       description: "Complete visual overhaul with improved user experience and conversion optimization",
       features: [
         "UX audit & analysis",
@@ -87,7 +87,7 @@ export default function ProductDesignPage() {
     {
       name: "Design System Creation",
       price: "$6,500",
-      duration: "4-6 weeks",
+
       description: "Comprehensive design system with reusable components and documentation",
       features: [
         "Component library",
@@ -102,7 +102,7 @@ export default function ProductDesignPage() {
     {
       name: "Complete Brand Transformation",
       price: "$12,000",
-      duration: "6-8 weeks",
+
       description: "Full rebrand including strategy, identity design, and all marketing materials",
       features: [
         "Brand strategy development",
@@ -309,7 +309,6 @@ export default function ProductDesignPage() {
                     </h3>
                     <div className="text-right">
                       <div className="text-2xl font-bold text-maker-yellow">{service.price}</div>
-                      <div className="text-xs text-maker-blue-300">{service.duration}</div>
                     </div>
                   </div>
 

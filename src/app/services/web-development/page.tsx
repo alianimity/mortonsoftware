@@ -28,7 +28,6 @@ export default function WebDevelopmentPage() {
     {
       name: "Conversion Landing Page",
       price: "$1,200",
-      duration: "5-7 days",
       description: "High-converting single-page website designed to drive specific actions",
       features: [
         "Mobile-responsive design",
@@ -44,7 +43,7 @@ export default function WebDevelopmentPage() {
     {
       name: "Business Website",
       price: "$2,800",
-      duration: "2-3 weeks",
+
       description: "Professional multi-page website that showcases your business professionally",
       features: [
         "5-10 custom pages",
@@ -61,7 +60,7 @@ export default function WebDevelopmentPage() {
     {
       name: "E-commerce Platform",
       price: "$4,200",
-      duration: "4-5 weeks",
+
       description: "Complete online store with product management and payment processing",
       features: [
         "Product catalog",
@@ -78,7 +77,7 @@ export default function WebDevelopmentPage() {
     {
       name: "Digital Marketplace",
       price: "$6,500",
-      duration: "6-8 weeks",
+
       description: "Multi-vendor platform with advanced features and analytics",
       features: [
         "Multi-vendor support",
@@ -162,17 +161,17 @@ export default function WebDevelopmentPage() {
     {
       step: "Planning",
       description: "Requirements gathering, wireframing, and technical planning",
-      duration: "1-2 days"
+
     },
     {
       step: "Design",
       description: "UI/UX design, mockups, and client feedback integration",
-      duration: "3-5 days"
+
     },
     {
       step: "Development",
       description: "Frontend and backend development with regular updates",
-      duration: "1-4 weeks"
+
     },
     {
       step: "Testing",
@@ -182,7 +181,7 @@ export default function WebDevelopmentPage() {
     {
       step: "Launch",
       description: "Deployment, training, and post-launch support",
-      duration: "1-2 days"
+
     }
   ];
 
@@ -321,7 +320,6 @@ export default function WebDevelopmentPage() {
                     </h3>
                     <div className="text-right">
                       <div className="text-2xl font-bold text-maker-yellow">{service.price}</div>
-                      <div className="text-xs text-maker-blue-300">{service.duration}</div>
                     </div>
                   </div>
 
@@ -470,8 +468,7 @@ export default function WebDevelopmentPage() {
                   <div className="text-center bg-maker-blue-900 border border-maker-blue-700 rounded-xl p-6 hover:scale-[1.02] transition-all duration-300">
                     <div className="text-2xl font-bold text-maker-yellow mb-2">{index + 1}</div>
                     <h3 className="text-white font-bold mb-2">{phase.step}</h3>
-                    <p className="text-maker-blue-200 text-sm leading-relaxed mb-2">{phase.description}</p>
-                    <div className="text-maker-yellow text-xs">{phase.duration}</div>
+                    <p className="text-maker-blue-200 text-sm leading-relaxed">{phase.description}</p>
                   </div>
                 </AnimatedSection>
               ))}

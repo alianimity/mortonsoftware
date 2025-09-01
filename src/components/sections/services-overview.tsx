@@ -44,7 +44,7 @@ export function ServicesOverview() {
                 price={service.price}
                 features={service.features.slice(0, 3)}
                 ctaText="Learn More"
-                featured={service.featured}
+                badgeType={service.badgeType}
                 onCtaClick={() => {
                   // Navigate to service detail page
                   window.location.href = `/services/${service.id}`;

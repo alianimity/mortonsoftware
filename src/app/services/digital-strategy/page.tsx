@@ -27,7 +27,6 @@ export default function DigitalStrategyPage() {
     {
       name: "Strategy Report",
       price: "$200",
-      duration: "1-2 days",
       description: "Comprehensive digital strategy analysis with actionable recommendations",
       features: [
         "Current state assessment",
@@ -41,7 +40,7 @@ export default function DigitalStrategyPage() {
     {
       name: "Strategy Consultation",
       price: "$500",
-      duration: "2 hours",
+
       description: "Deep-dive strategic session with our experts to chart your digital future",
       features: [
         "One-on-one expert consultation",
@@ -55,7 +54,7 @@ export default function DigitalStrategyPage() {
     {
       name: "Spark Session",
       price: "$2,500",
-      duration: "1 week",
+
       description: "Intensive workshop to ignite your digital transformation journey",
       features: [
         "3-day intensive workshop",
@@ -69,7 +68,7 @@ export default function DigitalStrategyPage() {
     {
       name: "Ignite Session",
       price: "$5,500",
-      duration: "2 weeks", 
+ 
       description: "Comprehensive transformation planning with detailed execution roadmap",
       features: [
         "Complete business analysis",
@@ -83,7 +82,7 @@ export default function DigitalStrategyPage() {
     {
       name: "Custom Strategy Package",
       price: "$15,000+",
-      duration: "4+ weeks",
+
       description: "Tailored strategic partnership for complex digital transformations",
       features: [
         "Dedicated strategy team",
@@ -272,7 +271,6 @@ export default function DigitalStrategyPage() {
                     </h3>
                     <div className="text-right">
                       <div className="text-2xl font-bold text-maker-yellow">{service.price}</div>
-                      <div className="text-xs text-maker-blue-300">{service.duration}</div>
                     </div>
                   </div>
 
