@@ -91,6 +91,7 @@ const ServiceCard = React.forwardRef<
     features?: string[];
     ctaText?: string;
     onCtaClick?: () => void;
+    featured?: boolean;
   }
 >(({ 
   className, 
@@ -101,9 +102,17 @@ const ServiceCard = React.forwardRef<
   features, 
   ctaText = "Learn More",
   onCtaClick,
+  featured = false,
   ...props 
 }, ref) => (
-  <Card ref={ref} variant="service" className={cn("group", className)} {...props}>
+  <Card ref={ref} variant="service" className={cn("group relative", className)} {...props}>
+    {featured && (
+      <div className="absolute -top-3 -right-3 z-10">
+        <span className="px-3 py-1 bg-maker-yellow text-maker-blue-950 rounded-full text-sm font-semibold">
+          Featured
+        </span>
+      </div>
+    )}
     <CardHeader>
       <div className="flex items-center space-x-3 mb-3">
         {icon && (

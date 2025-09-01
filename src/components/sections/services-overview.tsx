@@ -17,20 +17,16 @@ export function ServicesOverview() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <AnimatedSection variant="fade-up">
             <div className="inline-flex items-center space-x-2 bg-maker-yellow/10 text-maker-yellow px-4 py-2 rounded-full text-sm font-medium mb-6">
-              <span>Our Featured Services</span>
+              <span>Our Services</span>
             </div>
             
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
               Comprehensive Digital Solutions
             </h2>
             
-            <p className="text-lg text-maker-blue-200 leading-relaxed mb-4">
+            <p className="text-lg text-maker-blue-200 leading-relaxed">
               From strategic consulting to full-scale development, we provide end-to-end 
               solutions that transform your business and accelerate growth.
-            </p>
-            
-            <p className="text-maker-yellow font-medium">
-              6 featured services shown • <Link href="/services" className="hover:text-maker-yellow-light transition-colors underline">View all 12 services →</Link>
             </p>
           </AnimatedSection>
         </div>
@@ -48,6 +44,7 @@ export function ServicesOverview() {
                 price={service.price}
                 features={service.features.slice(0, 3)}
                 ctaText="Learn More"
+                featured={service.featured}
                 onCtaClick={() => {
                   // Navigate to service detail page
                   window.location.href = `/services/${service.id}`;
