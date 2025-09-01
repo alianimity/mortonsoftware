@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { AnimatedSection } from '@/components/ui/animated-section';
-import { Tool, ArrowRight, CheckCircle } from 'lucide-react';
+import { Settings, ArrowRight, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -50,7 +50,7 @@ export default function MaintenanceSupportPage() {
           <AnimatedSection>
             <div className="text-center max-w-4xl mx-auto">
               <div className="inline-flex items-center space-x-2 bg-maker-yellow/10 border border-maker-yellow/30 rounded-full px-4 py-2 mb-8">
-                <Tool className="h-4 w-4 text-maker-yellow" />
+                <Settings className="h-4 w-4 text-maker-yellow" />
                 <span className="text-maker-yellow font-medium">Maintenance & Support</span>
               </div>
 

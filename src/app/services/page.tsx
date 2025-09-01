@@ -11,7 +11,7 @@ import {
   Sparkles,
   PenTool,
   ShoppingCart,
-  Tool,
+  Settings,
   Database,
   ArrowRight,
   CheckCircle,
@@ -26,12 +26,9 @@ import {
   Heart,
   Code2,
   Layers,
-  Workflow,
   ChevronRight,
-  Play,
   MessageCircle,
   FileText,
-  Settings,
   Briefcase
 } from 'lucide-react';
 import Link from 'next/link';
@@ -222,7 +219,7 @@ export default function ServicesPage() {
       id: "maintenance-support",
       name: "Maintenance & Support",
       tagline: "Always there when you need us",
-      icon: Tool,
+      icon: Settings,
       description: "Ongoing maintenance, support, and optimization to keep your systems running smoothly and securely.",
       priceRange: "$100 - $1,200",
       featured: false,
@@ -532,7 +529,7 @@ export default function ServicesPage() {
                 Why Choose <span className="font-brand text-maker-yellow">Maker Software</span>?
               </h2>
               <p className="text-lg text-maker-blue-200 max-w-3xl mx-auto">
-                We don't just build software - we craft digital experiences that transform businesses and drive real results
+                We don&apos;t just build software - we craft digital experiences that transform businesses and drive real results
               </p>
             </div>
           </AnimatedSection>
@@ -798,7 +795,7 @@ export default function ServicesPage() {
                 className="inline-flex items-center space-x-3 bg-gradient-to-r from-maker-yellow to-maker-yellow/80 text-maker-blue-950 font-bold px-8 py-4 rounded-2xl hover:shadow-xl hover:scale-105 transition-all duration-300 group"
               >
                 <MessageCircle className="h-5 w-5 group-hover:rotate-12 transition-transform" />
-                <span>Don't see your industry? Let's discuss your unique needs</span>
+                <span>Don&apos;t see your industry? Let&apos;s discuss your unique needs</span>
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
