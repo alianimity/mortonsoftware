@@ -4,7 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 
 import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+
 import { ServiceCard } from "@/components/ui/card";
 import { AnimatedSection, StaggeredList } from "@/components/ui/animated-section";
 import { services } from "@/lib/data";
@@ -66,18 +66,14 @@ export function ServicesOverview() {
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button asChild size="lg">
-                <Link href="/contact" className="flex items-center space-x-2">
-                  <span>Start Your Project</span>
-                  <ArrowRight className="h-5 w-5" />
-                </Link>
-              </Button>
+              <Link href="/contact" className="btn-primary flex items-center justify-center space-x-2 px-8 py-4 text-lg">
+                <span>Start Your Project</span>
+                <ArrowRight className="h-5 w-5" />
+              </Link>
               
-              <Button asChild variant="secondary" size="lg">
-                <Link href="/services">
-                  View All Services
-                </Link>
-              </Button>
+              <Link href="/services" className="btn-secondary flex items-center justify-center px-8 py-4 text-lg">
+                View All Services
+              </Link>
             </div>
             
             {/* Quick Contact */}

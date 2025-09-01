@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown, Phone } from "lucide-react";
-import { Button } from "@/components/ui/button";
+
 import { cn } from "@/lib/utils";
 
 const navigationItems = [
@@ -22,6 +22,7 @@ const navigationItems = [
       { name: "Data & Analytics", href: "/services/data-analytics" },
     ]
   },
+  { name: "Pricing", href: "/pricing" },
   { name: "About", href: "/about" },
   { name: "Process", href: "/process" },
   { name: "Contact", href: "/contact" },
@@ -136,9 +137,9 @@ export function Navigation() {
               <Phone className="h-4 w-4" />
               <span>(678) 918-5109</span>
             </a>
-            <Button asChild size="sm">
-              <Link href="/contact">Get Started</Link>
-            </Button>
+            <Link href="/contact" className="btn-primary px-6 py-2 text-sm">
+              Get Started
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -200,9 +201,9 @@ export function Navigation() {
                       <span>(678) 918-5109</span>
                     </a>
                   </div>
-                  <Button asChild className="w-full">
-                    <Link href="/contact">Get Started</Link>
-                  </Button>
+                  <Link href="/contact" className="btn-primary w-full px-6 py-3 text-center">
+                    Get Started
+                  </Link>
                 </div>
               </div>
             </motion.div>

@@ -22,103 +22,108 @@
 
 ### Target Market Segmentation
 
-#### Primary: Growing Businesses ($5M-$50M Revenue)
-- **Persona**: "Scale-Up Steve" - CEOs and CTOs of growing companies
+#### Primary: Individuals & Freelancers
+- **Persona**: "Creative Casey" - Designers, developers, content creators, consultants
+- **Needs**: Personal websites, portfolios, small business tools, automation
+- **Approach**: Quick turnaround, affordable solutions, modern tech stack
+
+#### Secondary: Founders & Startups (Global)
+- **Persona**: "Founder Fiona" - Technical and non-technical startup founders worldwide
+- **Needs**: MVP development, technical validation, rapid market entry, Web3/Web2 solutions
+- **Approach**: Agile development with mentorship and strategic guidance
+
+#### Tertiary: SMBs & Growing Businesses (Global)
+- **Persona**: "Scale-Up Steve" - CEOs and CTOs of growing companies worldwide
 - **Needs**: Scalable technology infrastructure, process automation, competitive differentiation
 - **Approach**: Strategic partnership with phased implementation roadmaps
 
-#### Secondary: Startups ($500K-$5M Revenue)  
-- **Persona**: "Founder Fiona" - Technical and non-technical startup founders
-- **Needs**: MVP development, technical validation, rapid market entry
-- **Approach**: Agile development with mentorship and strategic guidance
-
-#### Tertiary: Enterprise Clients ($50M+ Revenue)
+#### Quaternary: Enterprise Clients (Global)
 - **Persona**: "Enterprise Emma" - VPs of Technology and Digital Transformation
 - **Needs**: Legacy modernization, enterprise integration, compliance requirements
 - **Approach**: Structured methodologies with enterprise-grade security and governance
 
 ### Revenue Model
-1. **Project-Based Development** (60% of revenue): $25K-$500K engagements
-2. **Strategic Consulting** (25% of revenue): $5K-$50K consulting engagements  
-3. **Ongoing Support & Maintenance** (15% of revenue): $2K-$10K monthly retainers
+1. **Project-Based Development** (60% of revenue): $20-$500K engagements
+2. **Strategic Consulting** (25% of revenue): $20-$50K consulting engagements  
+3. **Ongoing Support & Maintenance** (15% of revenue): $50-$10K monthly retainers
 
 ### Competitive Positioning
-- **vs. Agencies**: More strategic, less transactional
+- **vs. Agencies**: More strategic, less transactional, global reach
 - **vs. Consultancies**: More hands-on implementation, less theoretical
 - **vs. Freelancers**: More structured processes, enterprise-ready solutions
-- **vs. Big Tech**: More personal attention, faster decision-making
+- **vs. Big Tech**: More personal attention, faster decision-making, accessible pricing
+- **Global Focus**: Serving clients worldwide across all time zones with diverse cultural understanding
 
 ## Service Portfolio
 
-### 1. Digital Strategy & Transformation Consulting ($5,000 - $50,000)
+### 1. Digital Strategy & Transformation Consulting ($100 - $50,000)
 **Tagline**: "Chart Your Digital Future"
 
 **Services**:
-- Digital Transformation Roadmap: $5,000 (comprehensive strategy document)
-- Technology Assessment & Planning: $8,000 (current state analysis + recommendations)
-- Executive Technology Advisory: $15,000 (3-month strategic partnership)
-- Enterprise Digital Strategy: $25,000 (complete transformation blueprint)
-- Innovation Workshop Series: $50,000 (quarterly innovation sessions)
+- Strategy Report (PDF): $100 (comprehensive analysis and recommendations)
+- Strategy Consultation (30 min): $200 (one-on-one strategic session)
+- "Spark Session" Consultation: $1,200 (deep-dive strategy workshop)
+- "Ignite Session" Consultation: $2,500 (comprehensive transformation planning)
+- Custom Consultation Package: $5,000+ (tailored strategic partnership)
 
 **Value Proposition**: Strategic clarity before tactical execution
 
-### 2. Custom Software Development ($15,000 - $250,000)
+### 2. Custom Software Development ($1,500 - $15,000)
 **Tagline**: "Crafted Code, Lasting Value"
 
 **Services**:
-- MVP Development: $15,000 (market-ready minimum viable product)
-- Web Application Development: $35,000 (full-featured web applications)
-- Enterprise Software Solutions: $75,000 (complex business systems)
-- API Development & Integration: $25,000 (seamless system connectivity)
-- Legacy System Modernization: $150,000+ (modernizing outdated systems)
+- Feature Development: $1,500 (2-week development sprints)
+- API Integration: $2,500 (secure third-party integrations)
+- MVP Development: $8,000 (market-ready minimum viable product)
+- Web Application: $12,000 (full-stack custom applications)
+- Mobile Apps: $15,000 (native & cross-platform development)
 
 **Value Proposition**: Artisan-level code quality with modern architecture
 
-### 3. Digital Product Design & UX ($8,000 - $40,000)
+### 3. Digital Product Design & UX ($300 - $3,000)
 **Tagline**: "Designed for Success"
 
 **Services**:
-- UX/UI Design Sprint: $8,000 (rapid prototyping and validation)
-- Complete Product Design: $20,000 (end-to-end design system)
-- Design System Creation: $15,000 (scalable design framework)
-- User Experience Optimization: $12,000 (existing product improvements)
-- Brand Digital Identity: $25,000 (comprehensive digital brand system)
+- Logo Design: $300 (professional brand identity)
+- Marketing Materials: $400 (complete brand collateral)
+- UX/UI Design: $600 (interface design and user experience)
+- Brand Identity: $1,200 (comprehensive brand system)
+- Design System: $3,000 (scalable design foundation)
 
 **Value Proposition**: User-centered design that drives business results
 
-### 4. Cloud & Infrastructure Solutions ($10,000 - $100,000)
+### 4. Cloud & Infrastructure Solutions ($800/month - $6,000)
 **Tagline**: "Built to Scale"
 
 **Services**:
-- Cloud Migration Strategy: $10,000 (migration planning and execution)
-- DevOps Implementation: $25,000 (CI/CD and automation setup)
-- Infrastructure as Code: $20,000 (scalable infrastructure management)
-- Performance Optimization: $15,000 (speed and efficiency improvements)
-- Enterprise Cloud Architecture: $75,000+ (comprehensive cloud solutions)
+- Managed Services: $800/month (ongoing cloud management)
+- Cloud Assessment: $1,500 (readiness evaluation and planning)
+- Cloud Migration: $3,500 (seamless infrastructure migration)
+- Infrastructure Setup: $5,000 (complete cloud implementation)
+- DevOps Implementation: $6,000 (CI/CD automation and deployment)
 
 **Value Proposition**: Scalable, secure, and cost-effective infrastructure
 
-### 5. E-commerce & Digital Commerce ($20,000 - $150,000)
-**Tagline**: "Commerce Without Limits"
+### 5. Web Development ($800 - $2,500)
+**Tagline**: "Websites That Convert"
 
 **Services**:
-- E-commerce Platform Development: $20,000 (custom online stores)
-- Marketplace Integration: $15,000 (multi-channel selling solutions)
-- Payment Systems Integration: $10,000 (secure payment processing)
-- Inventory Management Systems: $30,000 (automated inventory solutions)
-- Enterprise Commerce Solutions: $100,000+ (large-scale commerce platforms)
+- Landing Page: $800 (high-converting single pages)
+- CMS Website: $1,200 (content management system)
+- Website Redesign: $1,800 (complete website overhaul)
+- E-commerce Store: $2,500 (complete online store solution)
 
 **Value Proposition**: Commerce solutions that grow with your business
 
-### 6. Data & Analytics Solutions ($12,000 - $80,000)
-**Tagline**: "Data-Driven Decisions"
+### 6. Security & Compliance ($1,200/month - $4,000)
+**Tagline**: "Secure & Compliant"
 
 **Services**:
-- Business Intelligence Dashboards: $12,000 (real-time business insights)
-- Data Pipeline Development: $25,000 (automated data processing)
-- Analytics Implementation: $18,000 (comprehensive analytics setup)
-- Machine Learning Solutions: $40,000 (predictive analytics and AI)
-- Enterprise Data Strategy: $60,000+ (comprehensive data architecture)
+- Incident Response: $1,200/month (security monitoring and response)
+- Security Audit: $1,500 (comprehensive security assessment)
+- Penetration Testing: $2,000 (ethical hacking and vulnerability testing)
+- Security Implementation: $3,000 (complete security controls setup)
+- Compliance Consulting: $4,000 (regulatory compliance guidance)
 
 **Value Proposition**: Transform data into competitive advantage
 
@@ -177,9 +182,9 @@ Our proven 5-phase methodology ensures successful outcomes:
 - **Retainers**: Monthly billing with 30-day notice
 
 ### Investment Ranges
-- **Small Projects**: $5,000 - $25,000 (2-6 weeks)
-- **Medium Projects**: $25,000 - $100,000 (2-4 months)
-- **Large Projects**: $100,000 - $500,000 (4-12 months)
-- **Enterprise**: $500,000+ (6+ months)
+- **Micro Projects**: $20 - $500 (1-3 days)
+- **Small Projects**: $500 - $2,500 (1-2 weeks)
+- **Medium Projects**: $2,500 - $15,000 (2-8 weeks)
+- **Large Projects**: $15,000+ (2+ months)
 
 This business profile positions Maker Software LLC as a premium digital transformation partner that combines strategic thinking with exceptional execution, targeting growing businesses that need more than just development services – they need a true technology partner.

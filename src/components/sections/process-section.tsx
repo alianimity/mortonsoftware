@@ -93,7 +93,7 @@ export function ProcessSection() {
             
             <motion.a
               href="/contact"
-              className="inline-flex items-center space-x-2 bg-maker-yellow text-maker-blue-950 px-8 py-4 rounded-lg font-semibold hover:bg-maker-yellow/90 transition-colors"
+              className="btn-primary inline-flex items-center space-x-2 px-8 py-4 text-lg"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

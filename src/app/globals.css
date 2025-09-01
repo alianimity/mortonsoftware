@@ -170,13 +170,12 @@ html {
   font-weight: 600;
   font-size: 1rem;
   transition: all var(--duration-normal) var(--ease-out-cubic);
-  box-shadow: 0 4px 14px 0 rgba(255, 208, 9, 0.3);
   cursor: pointer;
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px 0 rgba(255, 208, 9, 0.4);
+  background: linear-gradient(135deg, var(--maker-yellow-light), var(--maker-yellow));
 }
 
 .btn-secondary {
@@ -191,11 +190,10 @@ html {
 }
 
 .btn-secondary:hover {
-  background: transparent;
-  color: var(--maker-yellow);
+  background: var(--maker-yellow);
+  color: var(--maker-blue);
   border: 2px solid var(--maker-yellow);
-  box-shadow: 0 0 20px rgba(255, 208, 9, 0.3);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 .card {

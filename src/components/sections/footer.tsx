@@ -130,7 +130,7 @@ export function Footer() {
                   />
                   <button
                     type="submit"
-                    className="w-full bg-maker-yellow text-maker-blue px-4 py-2 rounded-md font-medium hover:bg-maker-yellow-light transition-colors"
+                    className="btn-primary w-full px-4 py-2"
                   >
                     Subscribe
                   </button>

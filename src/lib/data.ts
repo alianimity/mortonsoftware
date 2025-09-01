@@ -16,21 +16,21 @@ export const services = [
     tagline: "Chart Your Digital Future",
     description: "Strategic clarity before tactical execution. We help you navigate digital transformation with comprehensive roadmaps and expert guidance.",
     icon: Lightbulb,
-    price: "Starting at $5,000",
-    priceRange: "$5,000 - $50,000",
+    price: "Starting at $100",
+    priceRange: "$100 - $5,000+",
     features: [
-      "Digital Transformation Roadmap",
-      "Technology Assessment & Planning", 
-      "Executive Technology Advisory",
-      "Enterprise Digital Strategy",
-      "Innovation Workshop Series"
+      "Strategy Report (PDF)",
+      "Strategy Consultation (30 min)", 
+      "\"Spark Session\" Consultation",
+      "\"Ignite Session\" Consultation",
+      "Custom Consultation Package"
     ],
     services: [
-      { name: "Digital Transformation Roadmap", price: "$5,000", description: "Comprehensive strategy document" },
-      { name: "Technology Assessment & Planning", price: "$8,000", description: "Current state analysis + recommendations" },
-      { name: "Executive Technology Advisory", price: "$15,000", description: "3-month strategic partnership" },
-      { name: "Enterprise Digital Strategy", price: "$25,000", description: "Complete transformation blueprint" },
-      { name: "Innovation Workshop Series", price: "$50,000", description: "Quarterly innovation sessions" }
+      { name: "Strategy Report (PDF)", price: "$100", description: "Comprehensive analysis and recommendations" },
+      { name: "Strategy Consultation (30 min)", price: "$200", description: "One-on-one strategic session" },
+      { name: "\"Spark Session\" Consultation", price: "$1,200", description: "Deep-dive strategy workshop" },
+      { name: "\"Ignite Session\" Consultation", price: "$2,500", description: "Comprehensive transformation planning" },
+      { name: "Custom Consultation Package", price: "$5,000+", description: "Tailored strategic partnership" }
     ]
   },
   {
@@ -39,21 +39,21 @@ export const services = [
     tagline: "Crafted Code, Lasting Value",
     description: "Artisan-level code quality with modern architecture. From MVPs to enterprise systems, we build software that scales with your business.",
     icon: Code,
-    price: "Starting at $15,000",
-    priceRange: "$15,000 - $250,000+",
+    price: "Starting at $1,500",
+    priceRange: "$1,500 - $15,000",
     features: [
+      "Feature Development",
+      "API Integration",
       "MVP Development",
-      "Web Application Development",
-      "Enterprise Software Solutions",
-      "API Development & Integration",
-      "Legacy System Modernization"
+      "Web Application",
+      "Mobile Apps"
     ],
     services: [
-      { name: "MVP Development", price: "$15,000", description: "Market-ready minimum viable product" },
-      { name: "Web Application Development", price: "$35,000", description: "Full-featured web applications" },
-      { name: "Enterprise Software Solutions", price: "$75,000", description: "Complex business systems" },
-      { name: "API Development & Integration", price: "$25,000", description: "Seamless system connectivity" },
-      { name: "Legacy System Modernization", price: "$150,000+", description: "Modernizing outdated systems" }
+      { name: "Feature Development", price: "$1,500", description: "2-week development sprints" },
+      { name: "API Integration", price: "$2,500", description: "Secure third-party integrations" },
+      { name: "MVP Development", price: "$8,000", description: "Market-ready minimum viable product" },
+      { name: "Web Application", price: "$12,000", description: "Full-stack custom applications" },
+      { name: "Mobile Apps", price: "$15,000", description: "Native & cross-platform development" }
     ]
   },
   {
@@ -62,21 +62,21 @@ export const services = [
     tagline: "Designed for Success",
     description: "User-centered design that drives business results. We create digital experiences that users love and businesses profit from.",
     icon: Palette,
-    price: "Starting at $8,000",
-    priceRange: "$8,000 - $40,000",
+    price: "Starting at $300",
+    priceRange: "$300 - $3,000",
     features: [
-      "UX/UI Design Sprint",
-      "Complete Product Design",
-      "Design System Creation",
-      "User Experience Optimization",
-      "Brand Digital Identity"
+      "Logo Design",
+      "Marketing Materials",
+      "UX/UI Design",
+      "Brand Identity",
+      "Design System"
     ],
     services: [
-      { name: "UX/UI Design Sprint", price: "$8,000", description: "Rapid prototyping and validation" },
-      { name: "Complete Product Design", price: "$20,000", description: "End-to-end design system" },
-      { name: "Design System Creation", price: "$15,000", description: "Scalable design framework" },
-      { name: "User Experience Optimization", price: "$12,000", description: "Existing product improvements" },
-      { name: "Brand Digital Identity", price: "$25,000", description: "Comprehensive digital brand system" }
+      { name: "Logo Design", price: "$300", description: "Professional brand identity" },
+      { name: "Marketing Materials", price: "$400", description: "Complete brand collateral" },
+      { name: "UX/UI Design", price: "$600", description: "Interface design and user experience" },
+      { name: "Brand Identity", price: "$1,200", description: "Comprehensive brand system" },
+      { name: "Design System", price: "$3,000", description: "Scalable design foundation" }
     ]
   },
   {
@@ -85,67 +85,65 @@ export const services = [
     tagline: "Built to Scale",
     description: "Scalable, secure, and cost-effective infrastructure. We help you leverage cloud technologies for maximum efficiency and growth.",
     icon: Cloud,
-    price: "Starting at $10,000",
-    priceRange: "$10,000 - $100,000+",
+    price: "Starting at $800/month",
+    priceRange: "$800/month - $6,000",
     features: [
-      "Cloud Migration Strategy",
-      "DevOps Implementation",
-      "Infrastructure as Code",
-      "Performance Optimization",
-      "Enterprise Cloud Architecture"
+      "Managed Services",
+      "Cloud Assessment",
+      "Cloud Migration",
+      "Infrastructure Setup",
+      "DevOps Implementation"
     ],
     services: [
-      { name: "Cloud Migration Strategy", price: "$10,000", description: "Migration planning and execution" },
-      { name: "DevOps Implementation", price: "$25,000", description: "CI/CD and automation setup" },
-      { name: "Infrastructure as Code", price: "$20,000", description: "Scalable infrastructure management" },
-      { name: "Performance Optimization", price: "$15,000", description: "Speed and efficiency improvements" },
-      { name: "Enterprise Cloud Architecture", price: "$75,000+", description: "Comprehensive cloud solutions" }
+      { name: "Managed Services", price: "$800/month", description: "Ongoing cloud management" },
+      { name: "Cloud Assessment", price: "$1,500", description: "Readiness evaluation and planning" },
+      { name: "Cloud Migration", price: "$3,500", description: "Seamless infrastructure migration" },
+      { name: "Infrastructure Setup", price: "$5,000", description: "Complete cloud implementation" },
+      { name: "DevOps Implementation", price: "$6,000", description: "CI/CD automation and deployment" }
     ]
   },
   {
-    id: "ecommerce",
-    title: "E-commerce & Digital Commerce",
-    tagline: "Commerce Without Limits",
-    description: "Commerce solutions that grow with your business. From custom online stores to enterprise marketplaces, we build commerce platforms that convert.",
+    id: "web-development",
+    title: "Web Development",
+    tagline: "Websites That Convert",
+    description: "Professional websites that drive results. From landing pages to complex web applications, we build sites that engage users and grow businesses.",
     icon: ShoppingCart,
-    price: "Starting at $20,000",
-    priceRange: "$20,000 - $150,000+",
+    price: "Starting at $800",
+    priceRange: "$800 - $2,500",
     features: [
-      "E-commerce Platform Development",
-      "Marketplace Integration",
-      "Payment Systems Integration",
-      "Inventory Management Systems",
-      "Enterprise Commerce Solutions"
+      "Landing Page",
+      "CMS Website",
+      "Website Redesign",
+      "E-commerce Store"
     ],
     services: [
-      { name: "E-commerce Platform Development", price: "$20,000", description: "Custom online stores" },
-      { name: "Marketplace Integration", price: "$15,000", description: "Multi-channel selling solutions" },
-      { name: "Payment Systems Integration", price: "$10,000", description: "Secure payment processing" },
-      { name: "Inventory Management Systems", price: "$30,000", description: "Automated inventory solutions" },
-      { name: "Enterprise Commerce Solutions", price: "$100,000+", description: "Large-scale commerce platforms" }
+      { name: "Landing Page", price: "$800", description: "High-converting single pages" },
+      { name: "CMS Website", price: "$1,200", description: "Content management system" },
+      { name: "Website Redesign", price: "$1,800", description: "Complete website overhaul" },
+      { name: "E-commerce Store", price: "$2,500", description: "Complete online store solution" }
     ]
   },
   {
-    id: "data-analytics",
-    title: "Data & Analytics Solutions",
-    tagline: "Data-Driven Decisions",
-    description: "Transform data into competitive advantage. We help you collect, analyze, and act on data to drive business growth and innovation.",
+    id: "security-compliance",
+    title: "Security & Compliance",
+    tagline: "Secure & Compliant",
+    description: "Comprehensive security solutions to protect your business. From audits to implementation, we ensure your systems are secure and compliant.",
     icon: BarChart3,
-    price: "Starting at $12,000",
-    priceRange: "$12,000 - $80,000+",
+    price: "Starting at $1,200/month",
+    priceRange: "$1,200/month - $4,000",
     features: [
-      "Business Intelligence Dashboards",
-      "Data Pipeline Development", 
-      "Analytics Implementation",
-      "Machine Learning Solutions",
-      "Enterprise Data Strategy"
+      "Incident Response",
+      "Security Audit", 
+      "Penetration Testing",
+      "Security Implementation",
+      "Compliance Consulting"
     ],
     services: [
-      { name: "Business Intelligence Dashboards", price: "$12,000", description: "Real-time business insights" },
-      { name: "Data Pipeline Development", price: "$25,000", description: "Automated data processing" },
-      { name: "Analytics Implementation", price: "$18,000", description: "Comprehensive analytics setup" },
-      { name: "Machine Learning Solutions", price: "$40,000", description: "Predictive analytics and AI" },
-      { name: "Enterprise Data Strategy", price: "$60,000+", description: "Comprehensive data architecture" }
+      { name: "Incident Response", price: "$1,200/month", description: "Security monitoring and response" },
+      { name: "Security Audit", price: "$1,500", description: "Comprehensive security assessment" },
+      { name: "Penetration Testing", price: "$2,000", description: "Ethical hacking and vulnerability testing" },
+      { name: "Security Implementation", price: "$3,000", description: "Complete security controls setup" },
+      { name: "Compliance Consulting", price: "$4,000", description: "Regulatory compliance guidance" }
     ]
   }
 ];

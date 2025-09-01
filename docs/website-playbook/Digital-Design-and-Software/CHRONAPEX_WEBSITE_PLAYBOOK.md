@@ -244,28 +244,130 @@ p, span {
 
 ## Service Offerings Framework
 
-### Service Categories Structure
+### Complete Chronapex Service Categories
 ```javascript
 const serviceCategories = [
   {
     id: 'strategic-advisory',
     name: 'Strategic Advisory & Consulting',
-    description: 'Transform business with data-driven strategies',
+    description: 'We guide clients through market and technology transformations, aligning solutions to business goals.',
     process: ['Discovery', 'Analysis', 'Strategy', 'Implementation', 'Optimization'],
-    technologies: ['Analytics platforms', 'Business intelligence', 'Project management'],
-    deliverables: ['Strategic roadmaps', 'Market analysis', 'Growth strategies'],
-    engagementModels: ['Hourly consultation', 'Project-based', 'Monthly retainer']
+    technologies: [
+      'Business intelligence tools',
+      'Analytics platforms (Google Analytics, Mixpanel)',
+      'Project management (Notion, Asana, Monday.com)',
+      'Data visualization (Tableau, Power BI)'
+    ],
+    deliverables: [
+      'Digital Transformation Planning',
+      'Technology Roadmaps', 
+      'Funding & Growth Advisory',
+      'Marketing Strategy & Campaigns',
+      'Ongoing coaching'
+    ],
+    engagementModels: ['Hourly consultation ($200/hour)', 'Project-based strategy', 'Monthly retainer', 'Workshop facilitation']
   },
   {
     id: 'design-ux',
-    name: 'Design & User Experience',
-    description: 'Create compelling brand identities and intuitive experiences',
+    name: 'Design & User Experience Innovation',
+    description: 'We turn ideas into engaging experiences through comprehensive design services.',
     process: ['Research', 'Wireframing', 'Design', 'Prototyping', 'Testing'],
-    technologies: ['Figma', 'Adobe Creative Suite', 'Principle', 'Hotjar'],
-    deliverables: ['Brand identity', 'UI/UX designs', 'Design systems', 'Prototypes'],
-    engagementModels: ['Design sprints', 'Full brand packages', 'Monthly retainer']
+    technologies: [
+      'Design: Figma, Adobe Creative Suite, Sketch',
+      'Prototyping: Principle, InVision, Framer',
+      'Testing: Hotjar, UserTesting, Maze',
+      'Collaboration: Miro, FigJam'
+    ],
+    deliverables: [
+      'Brand Identity & Graphic Design',
+      'UX/UI Design & Interactive Prototyping',
+      'Motion Design & Animation',
+      'Creative Direction',
+      'Pitch Deck/Illustration Services'
+    ],
+    engagementModels: ['Design sprints (1-2 weeks)', 'Full brand packages (3-4 weeks)', 'Ongoing design support', 'UX audit']
   },
-  // ... continue for all 6 service categories
+  {
+    id: 'development',
+    name: 'Software, Web & Mobile Development',
+    description: 'Chronapex engineers custom software applications, mobile apps and responsive websites.',
+    process: ['Planning', 'Architecture', 'Development', 'Testing', 'Deployment'],
+    technologies: [
+      'Frontend: React, Vue.js, Angular, Next.js',
+      'Backend: Node.js, Python, Java, .NET',
+      'Mobile: React Native, Flutter, Swift, Kotlin',
+      'Database: PostgreSQL, MongoDB, Redis',
+      'Cloud: AWS, Azure, GCP'
+    ],
+    deliverables: [
+      'Custom Application Development',
+      'Mobile (iOS/Android) Apps',
+      'Web App & SaaS Platforms',
+      'API & Integration Services',
+      'E-commerce Store Solutions'
+    ],
+    engagementModels: ['MVP development (4-8 weeks)', 'Feature sprints (1-2 weeks)', 'Full-stack development', 'Maintenance & support']
+  },
+  {
+    id: 'cloud-devops',
+    name: 'Cloud Infrastructure & DevOps',
+    description: 'We provide scalable, secure cloud architectures and DevOps pipelines.',
+    process: ['Assessment', 'Migration', 'Optimization', 'Monitoring', 'Maintenance'],
+    technologies: [
+      'Cloud: AWS, Azure, Google Cloud Platform',
+      'Infrastructure: Terraform, CloudFormation, Ansible',
+      'Containers: Docker, Kubernetes, OpenShift',
+      'CI/CD: Jenkins, GitLab CI, GitHub Actions',
+      'Monitoring: Datadog, New Relic, Prometheus'
+    ],
+    deliverables: [
+      'Cloud Migration (AWS/Azure/GCP)',
+      'Infrastructure-as-Code Deployment',
+      'CI/CD Pipelines',
+      'Containerization (Docker/Kubernetes)',
+      'Managed Hosting & 24/7 Monitoring'
+    ],
+    engagementModels: ['Cloud migration (2-6 weeks)', 'Managed services (monthly)', 'Security assessments', 'DevOps consulting']
+  },
+  {
+    id: 'industry-solutions',
+    name: 'Industry-Specific Solutions',
+    description: 'We customize offerings for key verticals, applying domain expertise where it matters most.',
+    process: ['Industry Analysis', 'Custom Development', 'Integration', 'Training'],
+    technologies: [
+      'Fintech: Stripe, Plaid, blockchain platforms',
+      'Healthcare: FHIR, HL7, HIPAA-compliant infrastructure',
+      'E-commerce: Shopify, WooCommerce, custom platforms',
+      'Education: LMS platforms, video streaming'
+    ],
+    deliverables: [
+      'Fintech & Blockchain (digital banking, crypto wallets, smart contracts)',
+      'Healthcare Technology (telemedicine, HIPAA-compliant systems)',
+      'E-commerce & Retail (online stores, inventory systems)',
+      'Gaming & AR/VR',
+      'Nonprofit/Professional Services platforms'
+    ],
+    engagementModels: ['Custom platform development', 'Compliance consulting', 'Integration projects', 'Industry support']
+  },
+  {
+    id: 'emerging-tech',
+    name: 'Emerging Tech & Innovation',
+    description: 'Keeping on the "leading edge," we offer advanced technology services that drive innovation.',
+    process: ['Research', 'Proof of Concept', 'Development', 'Implementation'],
+    technologies: [
+      'AI/ML: TensorFlow, PyTorch, OpenAI APIs',
+      'Blockchain: Ethereum, Solidity, Web3.js',
+      'AR/VR: Unity, Unreal Engine, ARKit, ARCore',
+      'IoT: Arduino, Raspberry Pi, AWS IoT'
+    ],
+    deliverables: [
+      'AI & Machine Learning (data analytics, predictive models, computer vision)',
+      'Blockchain & Decentralized Systems (smart contracts, NFT marketplaces)',
+      'AR/VR & Metaverse Experiences',
+      'IoT Solutions'
+    ],
+    engagementModels: ['Innovation workshops', 'Proof of concept development', 'Full implementation', 'Technology assessment']
+  }
 ];
 ```
 
@@ -333,32 +435,133 @@ const ServiceDetailPage = ({ serviceId }) => {
 - **Scalable**: Starting prices that grow with complexity
 - **Flexible Engagement**: Hourly, project, and retainer options
 
-### Pricing Structure Template
+### Complete Chronapex Pricing Structure
 ```javascript
-const pricingStructure = {
-  strategicAdvisory: {
-    businessStrategyReport: { price: '$500', timeline: '24-48 hours' },
-    strategyConsultation: { price: '$200/hour', timeline: '1-3 hours' },
-    digitalTransformation: { price: '$2,500', timeline: '1 week' },
-    enterpriseAdvisory: { price: '$8,000/month', timeline: 'ongoing' }
+const pricingCategories = [
+  {
+    category: 'Strategic Advisory & Consulting',
+    description: 'Transform your business with data-driven strategies and executive guidance',
+    services: [
+      { name: 'Business Strategy Report', price: '$500', description: 'Comprehensive market analysis and growth recommendations' },
+      { name: 'Strategy Consultation Call', price: '$200/hour', description: 'One-on-one strategic guidance session' },
+      { name: 'Digital Transformation Planning', price: '$2,500', description: 'Complete roadmap for digital modernization' },
+      { name: 'Technology Assessment', price: '$1,800', description: 'Current tech stack evaluation and recommendations' },
+      { name: 'Market Research & Analysis', price: '$1,200', description: 'Competitive landscape and opportunity analysis' },
+      { name: 'Enterprise Advisory Retainer', price: '$8,000/month', description: 'Dedicated strategic advisor and quarterly reviews' }
+    ]
   },
-  designUX: {
-    logoDesign: { price: '$800', timeline: '2-3 days' },
-    brandIdentity: { price: '$2,500', timeline: '1 week' },
-    uxuiDesign: { price: '$1,500', timeline: '1 week' },
-    designSystem: { price: '$4,000', timeline: '2 weeks' }
+  {
+    category: 'Design & User Experience',
+    description: 'Create compelling brand identities and intuitive user experiences',
+    services: [
+      { name: 'Logo Design', price: '$800', description: 'Multiple concepts with brand guidelines and variations' },
+      { name: 'Brand Identity Package', price: '$2,500', description: 'Complete visual identity system with style guide' },
+      { name: 'UX/UI Design', price: '$1,500', description: 'User research, wireframes, and interface design' },
+      { name: 'Website Redesign', price: '$3,200', description: 'Complete visual overhaul with UX improvements' },
+      { name: 'Design System Creation', price: '$4,500', description: 'Scalable component library and documentation' },
+      { name: 'Marketing Materials Package', price: '$1,800', description: 'Brochures, presentations, and digital assets' },
+      { name: 'Complete Brand Overhaul', price: '$8,000', description: 'Full rebrand with all marketing materials' }
+    ]
   },
-  // ... continue for all service categories
-};
+  {
+    category: 'Development & Engineering',
+    description: 'Build robust, scalable applications with modern technologies',
+    services: [
+      { name: 'Landing Page', price: '$1,500', description: 'High-converting responsive page with CMS' },
+      { name: 'Business Website', price: '$3,500', description: 'Multi-page site with forms and integrations' },
+      { name: 'E-commerce Store', price: '$5,500', description: 'Complete online store with payment processing' },
+      { name: 'Web Application', price: '$8,000', description: 'Custom functionality with database and API' },
+      { name: 'Mobile App (MVP)', price: '$12,000', description: 'Cross-platform app with core features' },
+      { name: 'Mobile App (Full)', price: '$25,000', description: 'Native iOS/Android with backend and admin' },
+      { name: 'API Development', price: '$4,000', description: 'RESTful API with documentation and testing' },
+      { name: 'Feature Development Sprint', price: '$2,500', description: 'Focused development for specific functionality' }
+    ]
+  },
+  {
+    category: 'Cloud, DevOps & Security',
+    description: 'Modernize infrastructure with secure, scalable cloud solutions',
+    services: [
+      { name: 'Cloud Assessment', price: '$1,500', description: 'Infrastructure analysis and migration planning' },
+      { name: 'Cloud Migration', price: '$5,000', description: 'Complete migration with minimal downtime' },
+      { name: 'DevOps Pipeline Setup', price: '$4,000', description: 'CI/CD automation and deployment pipelines' },
+      { name: 'Security Audit', price: '$2,200', description: 'Comprehensive security assessment and recommendations' },
+      { name: 'Infrastructure as Code', price: '$3,500', description: 'Automated infrastructure deployment and management' },
+      { name: 'Managed Cloud Services', price: '$1,500/month', description: '24/7 monitoring, support, and optimization' },
+      { name: 'Disaster Recovery Setup', price: '$2,800', description: 'Backup systems and recovery procedures' }
+    ]
+  },
+  {
+    category: 'Industry-Specific Solutions',
+    description: 'Specialized solutions for fintech, healthcare, e-commerce, and professional services',
+    services: [
+      { name: 'Fintech Platform MVP', price: '$15,000', description: 'Payment processing and compliance-ready platform' },
+      { name: 'Healthcare Portal', price: '$12,000', description: 'HIPAA-compliant patient management system' },
+      { name: 'E-commerce Platform', price: '$10,000', description: 'Multi-vendor marketplace with analytics' },
+      { name: 'Professional Services Portal', price: '$8,500', description: 'Client management and billing system' },
+      { name: 'Compliance Integration', price: '$3,500', description: 'GDPR, HIPAA, or PCI compliance implementation' },
+      { name: 'Industry API Integration', price: '$2,800', description: 'Third-party service integrations' }
+    ]
+  },
+  {
+    category: 'Emerging Tech & Innovation',
+    description: 'Cutting-edge AI/ML, blockchain, AR/VR, and IoT solutions',
+    services: [
+      { name: 'AI/ML Proof of Concept', price: '$4,500', description: 'Machine learning model development and testing' },
+      { name: 'Blockchain Smart Contract', price: '$6,000', description: 'Custom smart contract development and deployment' },
+      { name: 'AR/VR Experience', price: '$8,500', description: 'Immersive application for marketing or training' },
+      { name: 'IoT Solution', price: '$7,200', description: 'Connected device integration and dashboard' },
+      { name: 'AI Chatbot Integration', price: '$3,200', description: 'Intelligent customer service automation' },
+      { name: 'Data Analytics Platform', price: '$5,500', description: 'Custom analytics with AI insights' },
+      { name: 'Innovation Workshop', price: '$2,500', description: 'Emerging tech strategy and roadmap session' }
+    ]
+  }
+];
 ```
 
-### Pricing Page Features
-- Service comparison tables
-- Detailed deliverable breakdowns
-- Timeline estimates
-- Custom quote options
-- FAQ addressing pricing questions
-- Payment methods and terms
+### Pricing Page Features & Value Metrics
+
+#### Chronapex Value Propositions
+- **Premium Quality at Fair Rates**: High-end service quality with transparent pricing
+- **Fixed Scope-Based Pricing**: No surprises, clear deliverables for each price point
+- **24-48hr Quote Turnaround**: Fast response times for all inquiries
+- **Bundle Multi-Service Savings**: Discounts for combining multiple services
+
+#### Pricing FAQ Structure
+```javascript
+const pricingFAQs = [
+  {
+    question: "Do you offer payment plans?",
+    answer: "Yes, we offer flexible payment options including milestone-based payments for larger projects and monthly retainers for ongoing services. We can customize payment schedules based on your cash flow needs."
+  },
+  {
+    question: "What's included in the price?",
+    answer: "All prices include project management, regular updates, revisions within scope, and post-launch support. No hidden fees or surprise charges. You'll also receive comprehensive documentation and training materials."
+  },
+  {
+    question: "Can prices be customized?",
+    answer: "Absolutely. These are starting prices for standard packages. We customize pricing based on project complexity, timeline, specific requirements, and scope adjustments to fit your budget and needs."
+  },
+  {
+    question: "Do you offer discounts?",
+    answer: "We offer package discounts for multiple services, long-term contracts, and nonprofit organizations. We also provide early-bird pricing for projects booked in advance and loyalty discounts for returning clients."
+  },
+  {
+    question: "How long does a typical project take?",
+    answer: "Project timelines vary based on complexity and scope. Simple projects like logo design can be completed in 2-3 days, while complex applications may take 8-12 weeks. We provide detailed timelines during the planning phase."
+  },
+  {
+    question: "What payment methods do you accept?",
+    answer: "We accept all major credit cards, bank transfers (ACH/Wire), Apple Pay, Google Pay, and offer enterprise invoicing with net terms for qualified businesses. Payment processing is secure and PCI-compliant."
+  }
+];
+```
+
+#### Payment Methods Supported
+- All major credit cards (Visa, MasterCard, American Express, Discover)
+- Bank transfers (ACH/Wire)
+- Digital payments (Apple Pay, Google Pay)
+- Enterprise invoicing with net terms for qualified businesses
+- Secure PCI-compliant payment processing
 
 ---
 

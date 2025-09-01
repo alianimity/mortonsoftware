@@ -4,7 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Play, CheckCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
+
 import { AnimatedSection, AnimatedText } from "@/components/ui/animated-section";
 
 export function HeroSection() {
@@ -47,9 +47,9 @@ export function HeroSection() {
         <div className="text-center max-w-5xl mx-auto">
           {/* Badge */}
           <AnimatedText delay={0.2}>
-            <div className="inline-flex items-center space-x-2 bg-maker-yellow/10 text-maker-blue px-4 py-2 rounded-full text-sm font-medium mb-8">
+            <div className="inline-flex items-center space-x-2 bg-maker-yellow/10 text-maker-yellow px-4 py-2 rounded-full text-sm font-medium mb-8">
               <CheckCircle className="h-4 w-4" />
-              <span>Trusted by 100+ Growing Businesses</span>
+              <span>Trusted by 100+ Global Clients Worldwide</span>
             </div>
           </AnimatedText>
 
@@ -75,9 +75,8 @@ export function HeroSection() {
           {/* Subtitle */}
           <AnimatedText delay={0.6}>
             <p className="text-lg sm:text-xl lg:text-2xl text-maker-blue-200 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Through expert craftsmanship and innovative technology, we transform 
-              complex business challenges into elegant software solutions that drive 
-              measurable growth.
+              Serving individuals, startups, SMBs, Web3/Web2 projects, and enterprises globally. 
+              From $100 strategy reports to $15K+ custom solutions - we make digital transformation accessible to everyone.
             </p>
           </AnimatedText>
 
@@ -102,19 +101,15 @@ export function HeroSection() {
           {/* CTA Buttons */}
           <AnimatedSection delay={1.0} variant="fade-up">
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-              <Button asChild size="lg" className="w-full sm:w-auto">
-                <Link href="/contact" className="flex items-center space-x-2">
-                  <span>Start Your Project</span>
-                  <ArrowRight className="h-5 w-5" />
-                </Link>
-              </Button>
+              <Link href="/contact" className="btn-primary w-full sm:w-auto flex items-center justify-center space-x-2 px-8 py-4 text-lg">
+                <span>Start Your Project</span>
+                <ArrowRight className="h-5 w-5" />
+              </Link>
               
-              <Button asChild variant="secondary" size="lg" className="w-full sm:w-auto">
-                <Link href="/services" className="flex items-center space-x-2">
-                  <Play className="h-5 w-5" />
-                  <span>Explore Our Services</span>
-                </Link>
-              </Button>
+              <Link href="/services" className="btn-secondary w-full sm:w-auto flex items-center justify-center space-x-2 px-8 py-4 text-lg">
+                <Play className="h-5 w-5" />
+                <span>Explore Our Services</span>
+              </Link>
             </div>
           </AnimatedSection>
 
