@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
-import { services } from '@/lib/data';
 import { AnimatedSection } from '@/components/ui/animated-section';
-import { CheckCircle, Star, Zap, ArrowRight, Sparkles, Target, Rocket, Shield } from 'lucide-react';
+import { CheckCircle, Zap, ArrowRight, Sparkles, Target, Rocket, Shield } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Pricing - Maker Software',
@@ -231,7 +230,7 @@ export default function PricingPage() {
             <div className="space-y-4 mb-16">
               {/* Top Row - First 6 Categories */}
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-                {serviceCategories.slice(0, 6).map((category, index) => (
+                {serviceCategories.slice(0, 6).map((category) => (
                   <button key={category.name} 
                     className="group relative overflow-hidden bg-maker-blue-900/30 backdrop-blur-sm border border-maker-blue-700 
                                hover:border-maker-yellow/50 rounded-2xl p-4 transition-all duration-300 hover:scale-105">
@@ -247,7 +246,7 @@ export default function PricingPage() {
               
               {/* Bottom Row - Last 6 Categories */}
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-                {serviceCategories.slice(6, 12).map((category, index) => (
+                {serviceCategories.slice(6, 12).map((category) => (
                   <button key={category.name} 
                     className="group relative overflow-hidden bg-maker-blue-900/30 backdrop-blur-sm border border-maker-blue-700 
                                hover:border-maker-yellow/50 rounded-2xl p-4 transition-all duration-300 hover:scale-105">

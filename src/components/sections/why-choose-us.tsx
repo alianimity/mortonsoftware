@@ -71,8 +71,8 @@ export function WhyChooseUsSection() {
             </h2>
             
             <p className="text-lg text-maker-blue-200 leading-relaxed">
-              We don't just build software – we craft digital experiences that transform businesses 
-              and empower growth. Here's why thousands of clients worldwide trust us with their most 
+              We don&apos;t just build software – we craft digital experiences that transform businesses 
+              and empower growth. Here&apos;s why thousands of clients worldwide trust us with their most 
               important projects.
             </p>
           </AnimatedSection>
@@ -148,9 +148,9 @@ export function WhyChooseUsSection() {
               >
                 <TrendingUp className="h-8 w-8 text-maker-yellow mx-auto mb-4" />
                 <p className="text-lg text-maker-blue-100 italic leading-relaxed">
-                  "Our mission is simple: make exceptional digital solutions accessible to everyone. 
+                  &ldquo;Our mission is simple: make exceptional digital solutions accessible to everyone. 
                   From $100 strategy reports to $15K+ enterprise transformations, we believe every 
-                  business deserves the tools to succeed in the digital age."
+                  business deserves the tools to succeed in the digital age.&rdquo;
                 </p>
                 <div className="mt-4 text-maker-yellow font-semibold">
                   — The Maker Software Team
