@@ -1,0 +1,225 @@
+import { Metadata } from 'next';
+import { AnimatedSection } from '@/components/ui/animated-section';
+import { 
+  Lightbulb, 
+  ArrowRight,
+  CheckCircle,
+  TestTube,
+  Users,
+  Target,
+  Star,
+  Sparkles
+} from 'lucide-react';
+import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Prototyping & Testing - Maker Software',
+  description: 'Rapid prototyping and comprehensive testing to validate ideas. User testing, interactive prototypes, and quality assurance.',
+  keywords: 'prototyping, user testing, UX research, validation, interactive prototypes, quality assurance',
+};
+
+export default function PrototypingTestingPage() {
+  const services = [
+    {
+      name: "Wireframe Prototyping",
+      price: "$900",
+      description: "Low-fidelity concept validation",
+      features: [
+        "Wireframe creation",
+        "User flow mapping",
+        "Concept validation",
+        "Stakeholder feedback",
+        "Iteration support"
+      ]
+    },
+    {
+      name: "Interactive Prototype",
+      price: "$1,800",
+      description: "High-fidelity clickable prototypes",
+      features: [
+        "Interactive prototypes",
+        "Realistic user flows",
+        "Animation & transitions",
+        "Device-specific testing",
+        "Stakeholder demos"
+      ]
+    },
+    {
+      name: "User Testing & Research",
+      price: "$2,500",
+      description: "Comprehensive user experience validation",
+      features: [
+        "User interviews",
+        "Usability testing",
+        "A/B testing setup",
+        "Analytics analysis",
+        "Research reports"
+      ]
+    },
+    {
+      name: "Mobile App Prototype",
+      price: "$3,200",
+      description: "Native mobile prototype with interactions",
+      features: [
+        "Native prototyping",
+        "Gesture interactions",
+        "Device testing",
+        "App store preview",
+        "User feedback loops"
+      ]
+    },
+    {
+      name: "Prototype Testing & Iteration",
+      price: "$4,500",
+      description: "Multiple rounds of testing and refinement",
+      features: [
+        "Multiple iterations",
+        "Continuous testing",
+        "Performance metrics",
+        "User feedback integration",
+        "Final validation"
+      ]
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-maker-blue-950">
+      {/* Hero Section */}
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-10 w-64 h-64 bg-maker-yellow/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-maker-blue/10 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <AnimatedSection>
+            <div className="text-center max-w-4xl mx-auto">
+              <div className="inline-flex items-center space-x-2 bg-maker-yellow/10 border border-maker-yellow/30 rounded-full px-4 py-2 mb-8">
+                <Lightbulb className="h-4 w-4 text-maker-yellow" />
+                <span className="text-maker-yellow font-medium">Prototyping & Testing</span>
+              </div>
+
+              <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
+                Validate Before You
+                <span className="font-brand text-maker-yellow block">Build</span>
+              </h1>
+              
+              <p className="text-xl text-maker-blue-200 leading-relaxed mb-8">
+                Rapid prototyping and comprehensive testing to validate ideas and ensure quality. 
+                From wireframes to interactive prototypes, we help you make informed decisions.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  href="/contact"
+                  className="btn-primary inline-flex items-center space-x-2"
+                >
+                  <span>Start Prototyping</span>
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+                <Link
+                  href="/services"
+                  className="btn-secondary inline-flex items-center space-x-2"
+                >
+                  <span>All Services</span>
+                  <Lightbulb className="h-4 w-4" />
+                </Link>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-20 bg-maker-blue-900">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
+                Prototyping <span className="font-brand text-maker-yellow">Services</span>
+              </h2>
+              <p className="text-lg text-maker-blue-200 max-w-2xl mx-auto">
+                Validate your ideas with rapid prototyping and comprehensive testing
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <AnimatedSection key={service.name} delay={index * 0.1}>
+                <div className="bg-maker-blue-950 border border-maker-blue-700 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group hover:scale-[1.02] h-full">
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="text-xl font-bold text-white group-hover:text-maker-yellow transition-colors">
+                      {service.name}
+                    </h3>
+                    <div className="text-2xl font-bold text-maker-yellow">{service.price}</div>
+                  </div>
+
+                  <p className="text-maker-blue-200 mb-6 leading-relaxed">
+                    {service.description}
+                  </p>
+
+                  <div className="space-y-2 mb-6">
+                    {service.features.map((feature) => (
+                      <div key={feature} className="flex items-center space-x-2">
+                        <CheckCircle className="h-4 w-4 text-maker-yellow flex-shrink-0" />
+                        <span className="text-maker-blue-100 text-sm">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  <Link
+                    href="/contact"
+                    className="btn-primary w-full text-center"
+                  >
+                    Get Started
+                  </Link>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-maker-blue-950">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection>
+            <div className="bg-maker-blue-900 border border-maker-blue-700 rounded-2xl p-8 lg:p-12 text-center">
+              <div className="flex items-center justify-center space-x-3 mb-6">
+                <div className="p-3 bg-maker-yellow/10 border border-maker-yellow/30 rounded-xl">
+                  <Lightbulb className="h-6 w-6 text-maker-yellow" />
+                </div>
+                <h2 className="text-3xl lg:text-4xl font-bold text-white">
+                  Ready to Validate Your <span className="font-brand text-maker-yellow">Ideas</span>?
+                </h2>
+              </div>
+              
+              <p className="text-lg text-maker-blue-200 mb-8 max-w-2xl mx-auto leading-relaxed">
+                Test and validate your concepts before full development. 
+                Save time and resources with smart prototyping.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  href="/contact"
+                  className="btn-primary inline-flex items-center space-x-2"
+                >
+                  <span>Start Testing</span>
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+                <Link
+                  href="/services"
+                  className="btn-secondary inline-flex items-center space-x-2"
+                >
+                  <span>View All Services</span>
+                  <TestTube className="h-4 w-4" />
+                </Link>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+    </div>
+  );
+}
