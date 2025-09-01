@@ -84,7 +84,7 @@ export function WhyChooseUsSection() {
             const IconComponent = feature.icon;
             
             return (
-              <div key={index} className="bg-maker-blue-900 border border-maker-blue-700 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group hover:scale-105">
+              <div key={index} className="bg-maker-blue-900 border border-maker-blue-700 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group hover:scale-[1.02]">
                 {/* Icon */}
                 <div className="w-12 h-12 bg-maker-yellow/20 rounded-lg flex items-center justify-center group-hover:bg-maker-yellow/30 transition-colors mb-4">
                   <IconComponent className="h-6 w-6 text-maker-yellow" />

@@ -207,8 +207,8 @@ export default function PricingPage() {
           <div className="absolute top-20 left-10 w-72 h-72 bg-maker-yellow/5 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-maker-blue/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-maker-yellow/3 rounded-full blur-3xl animate-pulse delay-500"></div>
-        </div>
-        
+            </div>
+            
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <AnimatedSection className="text-center max-w-5xl mx-auto">
             <div className="mb-12">
@@ -218,8 +218,8 @@ export default function PricingPage() {
                 <span className="text-3xl sm:text-4xl lg:text-5xl font-normal text-maker-blue-200">
                   Starting at just <span className="font-brand text-maker-yellow">$100</span>
                 </span>
-              </h1>
-              
+            </h1>
+            
               <p className="text-xl text-maker-blue-200 mb-12 leading-relaxed max-w-3xl mx-auto">
                 No complex packages. No hidden fees. Just honest pricing that grows with you. 
                 Pick what you need, when you need it.
@@ -233,7 +233,7 @@ export default function PricingPage() {
                 {serviceCategories.slice(0, 6).map((category) => (
                   <button key={category.name} 
                     className="group relative overflow-hidden bg-maker-blue-900/30 backdrop-blur-sm border border-maker-blue-700 
-                               hover:border-maker-yellow/50 rounded-2xl p-4 transition-all duration-300 hover:scale-105">
+                               hover:border-maker-yellow/50 rounded-2xl p-4 transition-all duration-300 hover:scale-[1.02]">
                     <div className="absolute inset-0 bg-maker-yellow/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     <div className="relative text-center">
                       <category.icon className="h-8 w-8 text-maker-yellow mx-auto mb-2" />
@@ -249,13 +249,13 @@ export default function PricingPage() {
                 {serviceCategories.slice(6, 12).map((category) => (
                   <button key={category.name} 
                     className="group relative overflow-hidden bg-maker-blue-900/30 backdrop-blur-sm border border-maker-blue-700 
-                               hover:border-maker-yellow/50 rounded-2xl p-4 transition-all duration-300 hover:scale-105">
+                               hover:border-maker-yellow/50 rounded-2xl p-4 transition-all duration-300 hover:scale-[1.02]">
                     <div className="absolute inset-0 bg-maker-yellow/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     <div className="relative text-center">
                       <category.icon className="h-8 w-8 text-maker-yellow mx-auto mb-2" />
                       <div className="text-white font-bold text-sm">{category.name}</div>
                       <div className="text-maker-blue-200 text-xs">{category.priceRange}</div>
-                    </div>
+              </div>
                   </button>
                 ))}
               </div>
@@ -266,7 +266,7 @@ export default function PricingPage() {
 
       {/* Service Categories - Unique Creative Layout */}
       <section className="py-20 bg-maker-blue-900">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-16">
             {serviceCategories.map((category, index) => (
               <AnimatedSection key={category.id} delay={index * 0.1}>
@@ -290,7 +290,7 @@ export default function PricingPage() {
                           <div className="text-maker-blue-300 text-sm">Starting prices</div>
                         </div>
                       </div>
-                    </div>
+              </div>
 
                     {/* Services Grid */}
                     <div className="p-8">
@@ -302,8 +302,8 @@ export default function PricingPage() {
                               <div className="px-3 py-1 bg-maker-yellow text-maker-blue-950 text-sm font-bold rounded-full shadow-lg">
                                 {service.price}
                               </div>
-                            </div>
-                            
+                    </div>
+
                             <div className="service-card group/service rounded-2xl p-6 transition-all duration-300 hover:scale-[1.02]">
 
                             <div className="space-y-4">
@@ -314,7 +314,7 @@ export default function PricingPage() {
                                 <p className="text-maker-blue-200 text-sm leading-relaxed">
                                   {service.description}
                                 </p>
-                              </div>
+                          </div>
                               
 
 
@@ -324,25 +324,25 @@ export default function PricingPage() {
                                                text-sm font-medium flex items-center justify-center space-x-2">
                                 <span>Get Started</span>
                                 <ArrowRight className="h-4 w-4" />
-                              </button>
+                          </button>
                             </div>
                             </div>
-                          </div>
-                        ))}
+                        </div>
+                      ))}
                       </div>
                     </div>
+                    </div>
                   </div>
-                </div>
-              </AnimatedSection>
+                </AnimatedSection>
             ))}
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
 
       {/* Unique Value Propositions */}
       <section className="py-20 bg-maker-blue-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedSection>
+            <AnimatedSection>
             <div className="text-center mb-16">
               <h2 className="text-4xl font-black text-white mb-6">
                 Why Choose <span className="font-brand text-maker-yellow">Maker</span> Pricing?
@@ -350,8 +350,8 @@ export default function PricingPage() {
               <p className="text-xl text-maker-blue-200 max-w-3xl mx-auto">
                 We believe great software should be accessible to everyone, from solo creators to global enterprises.
               </p>
-            </div>
-          </AnimatedSection>
+              </div>
+            </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
@@ -377,14 +377,14 @@ export default function PricingPage() {
               }
             ].map((feature, index) => (
               <AnimatedSection key={index} delay={index * 0.1}>
-                <div className="bg-maker-blue-900 border border-maker-blue-700 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group hover:scale-105">
+                <div className="bg-maker-blue-900 border border-maker-blue-700 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group hover:scale-[1.02]">
                   <div className="w-12 h-12 bg-maker-yellow/20 rounded-lg flex items-center justify-center group-hover:bg-maker-yellow/30 transition-colors mb-4">
                     <feature.icon className="h-6 w-6 text-maker-yellow" />
-                  </div>
+                </div>
                   <h3 className="text-xl font-bold text-white mb-3 group-hover:text-maker-yellow transition-colors">{feature.title}</h3>
                   <p className="text-maker-blue-200 leading-relaxed">{feature.description}</p>
-                </div>
-              </AnimatedSection>
+              </div>
+            </AnimatedSection>
             ))}
           </div>
         </div>
@@ -399,7 +399,7 @@ export default function PricingPage() {
               <div className="bg-maker-blue-900 border border-maker-blue-700 rounded-2xl p-8 lg:p-12 text-center shadow-lg hover:shadow-xl transition-all duration-300">
                 <h2 className="text-3xl lg:text-4xl font-black text-white mb-4">
                   Ready to Transform Your Business?
-                </h2>
+            </h2>
                 <p className="text-xl text-maker-blue-200 mb-8 max-w-3xl mx-auto leading-relaxed">
                   Whether you need a simple $100 strategy report or a complete $15K+ transformation, 
                   we&apos;re here to make your vision tangible.
@@ -408,10 +408,10 @@ export default function PricingPage() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
                   <button className="btn-primary px-8 py-4 text-lg">
                     Get Started Today
-                  </button>
+              </button>
                   <button className="btn-secondary px-8 py-4 text-lg">
                     Schedule Free Consultation
-                  </button>
+              </button>
                 </div>
 
                 {/* Contact Methods */}
