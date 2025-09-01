@@ -402,7 +402,7 @@ export default function AboutPage() {
                   <AnimatedSection key={step.phase} delay={index * 0.15}>
                     <div className={`flex items-center gap-12 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
                       {/* Content Card */}
-                      <div className="flex-1 bg-maker-blue-900 border border-maker-blue-700 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group hover:scale-[1.02]">
+                      <div className="flex-1 bg-maker-blue-950 border border-maker-blue-700 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group hover:scale-[1.02]">
                         <div className="flex items-start gap-6">
                           <div className="p-4 bg-maker-yellow/10 border border-maker-yellow/30 rounded-xl flex-shrink-0 group-hover:bg-maker-yellow/20 transition-colors">
                             <step.icon className="h-8 w-8 text-maker-yellow" />
