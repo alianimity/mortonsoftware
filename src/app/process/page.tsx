@@ -406,7 +406,7 @@ export default function ProcessPage() {
               
               <p className="text-lg text-morton-purple-200 mb-8 max-w-2xl mx-auto">
                 Let&apos;s begin with a discovery session to understand your goals and chart the path forward.
-                Our proven methodology ensures your project's success from day one.
+                Our proven methodology ensures your project&apos;s success from day one.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

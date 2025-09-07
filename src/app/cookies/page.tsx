@@ -101,7 +101,7 @@ export default function CookiePolicy() {
                   They help us provide you with a better browsing experience by remembering your preferences and understanding how you use our site.
                 </p>
                 <p>
-                  Cookies contain information that is transferred to your device's hard drive. They help us improve our services and 
+                  Cookies contain information that is transferred to your device&apos;s hard drive. They help us improve our services and 
                   deliver a more personalized and convenient experience.
                 </p>
               </div>
@@ -298,7 +298,7 @@ export default function CookiePolicy() {
               <div className="prose prose-lg max-w-none text-gray-700">
                 <p>
                   We respect your privacy choices and comply with applicable data protection laws, including GDPR and CCPA. 
-                  When you first visit our website, you'll see a cookie consent banner that allows you to:
+                  When you first visit our website, you&apos;ll see a cookie consent banner that allows you to:
                 </p>
                 
                 <div className="grid md:grid-cols-2 gap-6 my-6">

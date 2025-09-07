@@ -120,7 +120,7 @@ export default function InnovationEmergingTechPage() {
     {
       icon: Target,
       title: "Future-Ready Solutions",
-      description: "Cutting-edge blockchain, IoT, and emerging tech implementations that position your business for tomorrow's opportunities."
+      description: "Cutting-edge blockchain, IoT, and emerging tech implementations that position your business for tomorrow&apos;s opportunities."
     },
     {
       icon: Users,
@@ -467,7 +467,7 @@ export default function InnovationEmergingTechPage() {
               
               <p className="text-lg text-morton-purple-200 mb-8 max-w-2xl mx-auto leading-relaxed">
                 Transform your business with cutting-edge AI, blockchain, and IoT solutions. 
-                Let's build the future of your industry together with proven emerging technologies.
+                Let&apos;s build the future of your industry together with proven emerging technologies.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
