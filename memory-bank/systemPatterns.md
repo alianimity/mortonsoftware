@@ -178,6 +178,68 @@ Layout (MainLayout)
 - **Unified Animation Timing**: Consistent delay patterns and hover effects
 - **Scalable Typography**: Responsive text sizing across all hero variations
 
+## Favicon Configuration Pattern
+**Comprehensive Favicon System**: Properly configured favicon hierarchy for Morton Software Insights branding.
+
+### Layout Configuration (`src/app/layout.tsx`)
+```tsx
+<head>
+  <link rel="icon" href="/favicons/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+  <link rel="icon" href="/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="/favicons/site.webmanifest" />
+</head>
+```
+
+### Web App Manifest (`public/favicons/site.webmanifest`)
+```json
+{
+  "name": "Morton Software Insights LLC",
+  "short_name": "Morton Software",
+  "theme_color": "#EB7513",
+  "background_color": "#32142D",
+  "display": "standalone"
+}
+```
+
+## Legal Pages Design Pattern
+**Consistent Legal Documentation**: All legal pages follow unified Morton branding pattern.
+
+### Legal Page Structure
+```tsx
+// Hero Section with Morton branding
+<section className="relative py-20 overflow-hidden bg-morton-purple-950">
+  <div className="absolute inset-0">
+    <div className="absolute top-20 left-10 w-64 h-64 bg-morton-orange/5 rounded-full blur-3xl"></div>
+    <div className="absolute bottom-20 right-10 w-96 h-96 bg-morton-purple/10 rounded-full blur-3xl"></div>
+  </div>
+  // Badge + Title + Description + Compliance badges
+</section>
+
+// Table of Contents with Morton styling
+<section className="py-16 bg-morton-purple">
+  // Interactive TOC with morton-purple-950 cards and morton-orange accents
+</section>
+
+// Main Content with Morton purple sections
+<section className="py-20 bg-morton-purple-950">
+  // Content sections with bg-morton-purple borders and morton-orange headings
+</section>
+```
+
+### Legal Page Contact Information Pattern
+```tsx
+// Consistent contact information across all legal pages
+{
+  company: "Morton Software Insights LLC",
+  address: "Westminister Pl, Atlanta, GA 30350",
+  phone: "(404) 826-2654",
+  email: "hello@mortonsoftware.io",
+  legal: "legal@mortonsoftware.io"
+}
+```
+
 ## Critical Implementation Paths
 1. **Performance**: Image optimization, lazy loading, code splitting
 2. **SEO**: Structured data, meta tags, semantic HTML
@@ -186,3 +248,5 @@ Layout (MainLayout)
 5. **Analytics**: User behavior tracking, conversion optimization
 6. **Design Consistency**: Morton purple system enforcement across all new components
 7. **Visual Variety**: Unique layouts that prevent user fatigue while maintaining brand recognition
+8. **Favicon Management**: Proper favicon configuration with Morton branding and PWA support
+9. **Legal Compliance**: Consistent legal page design patterns with Morton branding
