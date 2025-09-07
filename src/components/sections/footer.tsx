@@ -3,12 +3,12 @@ import Link from "next/link";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const serviceLinks = [
-  { name: "Digital Strategy & Consulting", href: "/services/digital-strategy" },
-  { name: "Custom Software Development", href: "/services/software-development" },
-  { name: "Digital Product Design & UX", href: "/services/product-design" },
-  { name: "Cloud & Infrastructure Solutions", href: "/services/cloud-solutions" },
-  { name: "E-commerce & Digital Commerce", href: "/services/ecommerce" },
-  { name: "Data & Analytics Solutions", href: "/services/data-analytics" },
+  { name: "Strategy & Transformation", href: "/services/strategy-transformation" },
+  { name: "Design & Experience", href: "/services/design-experience" },
+  { name: "Web & Digital Solutions", href: "/services/web-digital-solutions" },
+  { name: "Software & Application Development", href: "/services/software-application-development" },
+  { name: "Cloud, DevOps & Infrastructure", href: "/services/cloud-solutions" },
+  { name: "Security & Compliance", href: "/services/security-compliance" },
 ];
 
 const companyLinks = [

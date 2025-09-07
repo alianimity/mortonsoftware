@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Croissant_One } from "next/font/google";
+import { Inter, Proza_Libre } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/sections/navigation";
 import { Footer } from "@/components/sections/footer";
@@ -10,8 +10,8 @@ const inter = Inter({
   variable: "--font-sans",
 });
 
-const croissantOne = Croissant_One({
-  weight: "400",
+const prozaLibre = Proza_Libre({
+  weight: "700",
   subsets: ["latin"],
   display: "swap",
   variable: "--font-brand",
@@ -90,7 +90,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${croissantOne.variable}`}>
+    <html lang="en" className={`${inter.variable} ${prozaLibre.variable}`}>
       <head />
       <body className="min-h-screen bg-background font-sans antialiased">
         <Navigation />
