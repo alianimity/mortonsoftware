@@ -192,7 +192,7 @@ export default function InnovationEmergingTechPage() {
                 </div>
 
                 <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-                  Tomorrow's Tech
+                  Tomorrow&apos;s Tech
                   <span className="font-brand text-morton-orange block">Today</span>
                 </h1>
                 

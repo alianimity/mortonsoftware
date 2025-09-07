@@ -140,7 +140,7 @@ export default function CookiePolicy() {
                     They help us provide you with a better browsing experience by remembering your preferences and understanding how you use our site.
                   </p>
                   <p className="text-slate-300 leading-relaxed">
-                    Cookies contain information that is transferred to your device's hard drive. They help us improve our services and 
+                    Cookies contain information that is transferred to your device&apos;s hard drive. They help us improve our services and 
                     deliver a more personalized and convenient experience.
                   </p>
                 </div>
@@ -331,7 +331,7 @@ export default function CookiePolicy() {
                 <div className="space-y-6">
                   <p className="text-slate-300 leading-relaxed">
                     We respect your privacy choices and comply with applicable data protection laws, including GDPR and CCPA. 
-                    When you first visit our website, you'll see a cookie consent banner that allows you to:
+                    When you first visit our website, you&apos;ll see a cookie consent banner that allows you to:
                   </p>
                   
                   <div className="grid md:grid-cols-2 gap-6">
@@ -383,7 +383,7 @@ export default function CookiePolicy() {
                   </p>
                   <div className="bg-morton-purple border border-morton-purple-700 rounded-xl p-6">
                     <ul className="space-y-2 text-slate-300">
-                      <li>• Update the "Last Modified" date at the top of this policy</li>
+                      <li>• Update the &quot;Last Modified&quot; date at the top of this policy</li>
                       <li>• Notify you through our website or other appropriate means</li>
                       <li>• Obtain your consent again if required by applicable law</li>
                       <li>• Provide clear information about what has changed</li>
@@ -431,8 +431,8 @@ export default function CookiePolicy() {
                   </div>
 
                   <p className="text-sm text-slate-300">
-                    For data protection inquiries specifically related to GDPR or CCPA, please contact legal@mortonsoftware.io 
-                    and include "Data Protection Request" in your email subject line to ensure prompt handling.
+                  For data protection inquiries specifically related to GDPR or CCPA, please contact legal@mortonsoftware.io 
+                  and include &quot;Data Protection Request&quot; in your email subject line to ensure prompt handling.
                   </p>
 
                   <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
