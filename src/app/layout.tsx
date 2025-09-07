@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Croissant_One } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/sections/navigation";
 import { Footer } from "@/components/sections/footer";
@@ -10,12 +10,19 @@ const inter = Inter({
   variable: "--font-sans",
 });
 
+const croissantOne = Croissant_One({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-brand",
+});
+
 export const metadata: Metadata = {
   title: {
-    default: "Maker Software LLC - Digital Transformation & Custom Software Development",
-    template: "%s | Maker Software LLC",
+    default: "Morton Software Insights LLC - Digital Transformation & Custom Software Development",
+    template: "%s | Morton Software Insights LLC",
   },
-  description: "We make digital transformation tangible. Expert craftsmanship and innovative technology solutions for growing businesses in Atlanta and nationwide.",
+  description: "We deliver insights-driven digital transformation. Expert craftsmanship and innovative technology solutions for growing businesses in Atlanta and nationwide.",
   keywords: [
     "digital transformation",
     "custom software development",
@@ -23,42 +30,43 @@ export const metadata: Metadata = {
     "web application development",
     "cloud solutions",
     "product design",
-    "technology consulting"
+    "technology consulting",
+    "software insights"
   ],
-  authors: [{ name: "Maker Software LLC" }],
-  creator: "Maker Software LLC",
-  publisher: "Maker Software LLC",
+  authors: [{ name: "Morton Software Insights LLC" }],
+  creator: "Morton Software Insights LLC",
+  publisher: "Morton Software Insights LLC",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://makersoftwares.com"),
+  metadataBase: new URL("https://mortonsoftware.io"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://makersoftwares.com",
-    siteName: "Maker Software LLC",
-    title: "Maker Software LLC - Digital Transformation & Custom Software Development",
-    description: "We make digital transformation tangible. Expert craftsmanship and innovative technology solutions for growing businesses in Atlanta and nationwide.",
+    url: "https://mortonsoftware.io",
+    siteName: "Morton Software Insights LLC",
+    title: "Morton Software Insights LLC - Digital Transformation & Custom Software Development",
+    description: "We deliver insights-driven digital transformation. Expert craftsmanship and innovative technology solutions for growing businesses in Atlanta and nationwide.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Maker Software LLC - Digital Transformation",
+        alt: "Morton Software Insights LLC - Digital Transformation",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Maker Software LLC - Digital Transformation & Custom Software Development",
-    description: "We make digital transformation tangible. Expert craftsmanship and innovative technology solutions for growing businesses in Atlanta and nationwide.",
+    title: "Morton Software Insights LLC - Digital Transformation & Custom Software Development",
+    description: "We deliver insights-driven digital transformation. Expert craftsmanship and innovative technology solutions for growing businesses in Atlanta and nationwide.",
     images: ["/og-image.jpg"],
-    creator: "@makersoftwarellc",
+    creator: "@mortonsoftwareinsights",
   },
   robots: {
     index: true,
@@ -82,15 +90,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.variable}>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link 
-          href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Inter:wght@100..900&display=swap" 
-          rel="stylesheet" 
-        />
-      </head>
+    <html lang="en" className={`${inter.variable} ${croissantOne.variable}`}>
+      <head />
       <body className="min-h-screen bg-background font-sans antialiased">
         <Navigation />
         <main className="min-h-screen pt-16">

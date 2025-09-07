@@ -20,9 +20,9 @@ import {
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Software & Application Development - Maker Software',
-  description: 'Custom software development, web applications, mobile apps, and enterprise solutions. Modern tech stack with scalable architecture.',
-  keywords: 'software development, web applications, mobile apps, custom development, enterprise software, API development',
+  title: 'Software & Application Development - Morton Software Insights LLC',
+  description: 'Professional software development, web applications, mobile apps, and enterprise solutions. Modern tech stack with scalable architecture.',
+  keywords: 'software development, web applications, mobile apps, custom development, enterprise software, API development, custom software',
 };
 
 export default function SoftwareDevelopmentPage() {
@@ -30,8 +30,7 @@ export default function SoftwareDevelopmentPage() {
     {
       name: "Feature Development Sprint",
       price: "$2,800",
-
-      description: "Focused 2-week development sprint for specific functionality or features",
+      description: "Focused 2-week development sprint for specific functionality or features with expert guidance",
       techStack: ["React", "Node.js", "TypeScript"],
       features: [
         "Specific feature development",
@@ -44,8 +43,7 @@ export default function SoftwareDevelopmentPage() {
     {
       name: "API Development",
       price: "$4,500", 
-
-      description: "RESTful API development with comprehensive documentation and testing",
+      description: "RESTful API development with comprehensive documentation, testing, and analytics integration",
       techStack: ["Node.js", "Express", "PostgreSQL", "JWT"],
       features: [
         "RESTful API design",
@@ -59,8 +57,7 @@ export default function SoftwareDevelopmentPage() {
     {
       name: "Custom Web Application",
       price: "$9,500",
- 
-      description: "Full-stack web application with custom functionality and database",
+      description: "Full-stack web application with custom functionality, database, and built-in analytics",
       techStack: ["React/Next.js", "Node.js", "PostgreSQL", "AWS"],
       features: [
         "Custom frontend interface",
@@ -76,8 +73,7 @@ export default function SoftwareDevelopmentPage() {
     {
       name: "Mobile Application",
       price: "$14,000",
-
-      description: "Cross-platform mobile app with native performance and modern UX",
+      description: "Cross-platform mobile app with native performance, modern UX, and user insights",
       techStack: ["React Native", "Expo", "Firebase", "Push Notifications"],
       features: [
         "iOS & Android compatibility",
@@ -93,8 +89,7 @@ export default function SoftwareDevelopmentPage() {
     {
       name: "Enterprise Application",
       price: "$25,000",
-
-      description: "Large-scale enterprise solution with advanced features and integrations",
+      description: "Large-scale enterprise solution with advanced features, integrations, and business intelligence",
       techStack: ["React", "Node.js", "PostgreSQL", "Redis", "AWS"],
       features: [
         "Scalable architecture",
@@ -145,25 +140,25 @@ export default function SoftwareDevelopmentPage() {
     {
       phase: "Planning",
       duration: "Week 1",
-      description: "Requirements analysis, technical planning, and architecture design",
+      description: "Requirements analysis, technical planning, and architecture design with expert guidance",
       deliverables: ["Technical Specification", "Project Timeline", "Architecture Diagram"]
     },
     {
       phase: "Development",
       duration: "Week 2-8",
-      description: "Iterative development with weekly demos and continuous feedback",
+      description: "Iterative development with weekly demos, continuous feedback, and performance monitoring",
       deliverables: ["Working Features", "Weekly Demos", "Progress Reports"]
     },
     {
       phase: "Testing",
       duration: "Week 9",
-      description: "Comprehensive testing including unit tests, integration, and user testing",
+      description: "Comprehensive testing including unit tests, integration, user testing, and performance analysis",
       deliverables: ["Test Results", "Bug Reports", "Performance Metrics"]
     },
     {
       phase: "Deployment", 
       duration: "Week 10",
-      description: "Production deployment with monitoring, documentation, and training",
+      description: "Production deployment with monitoring, documentation, training, and analytics setup",
       deliverables: ["Live Application", "Documentation", "Training Materials"]
     }
   ];
@@ -172,8 +167,8 @@ export default function SoftwareDevelopmentPage() {
     {
       title: "FinTech Dashboard",
       category: "Web Application",
-      challenge: "Complex financial data visualization with real-time updates",
-      solution: "React-based dashboard with WebSocket integration and interactive charts",
+      challenge: "Complex financial data visualization with real-time updates and predictive insights",
+      solution: "React-based dashboard with WebSocket integration, interactive charts, and ML-powered analytics",
       results: [
         "90% faster data processing",
         "50% reduction in support tickets", 
@@ -184,8 +179,8 @@ export default function SoftwareDevelopmentPage() {
     {
       title: "Healthcare Mobile App",
       category: "Mobile Application", 
-      challenge: "HIPAA-compliant patient management system with offline capabilities",
-      solution: "React Native app with encrypted local storage and secure sync",
+      challenge: "HIPAA-compliant patient management system with offline capabilities and health insights",
+      solution: "React Native app with encrypted local storage, secure sync, and health data analytics",
       results: [
         "100% HIPAA compliance",
         "40% faster patient check-ins",
@@ -196,8 +191,8 @@ export default function SoftwareDevelopmentPage() {
     {
       title: "E-learning Platform",
       category: "Enterprise Application",
-      challenge: "Scalable platform for 10,000+ concurrent users with video streaming",
-      solution: "Microservices architecture with CDN integration and adaptive streaming",
+      challenge: "Scalable platform for 10,000+ concurrent users with video streaming and learning analytics",
+      solution: "Microservices architecture with CDN integration, adaptive streaming, and AI-powered insights",
       results: [
         "Support for 15,000+ users",
         "95% faster video loading",
@@ -211,47 +206,47 @@ export default function SoftwareDevelopmentPage() {
     {
       name: "Alex Rivera",
       role: "CTO, DataFlow Inc",
-      content: "Exceptional development team. They delivered our complex web application on time and exceeded our performance expectations.",
+      content: "Morton Software Insights delivered our complex web application with exceptional features and performance. Their professional approach exceeded our expectations.",
       rating: 5,
       project: "Custom Web Application"
     },
     {
       name: "Sarah Kim",
       role: "Founder, MedTech Solutions", 
-      content: "The mobile app they built transformed our patient experience. The attention to security and compliance was outstanding.",
+      content: "The mobile app they built transformed our patient experience with powerful functionality. The attention to security and compliance was outstanding.",
       rating: 5,
       project: "Mobile Application"
     }
   ];
 
   return (
-    <div className="min-h-screen bg-maker-blue-950">
+    <div className="min-h-screen bg-morton-purple-950">
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-64 h-64 bg-maker-yellow/5 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-maker-blue/10 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-10 w-64 h-64 bg-morton-orange/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-morton-purple/10 rounded-full blur-3xl"></div>
         </div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="max-w-4xl mx-auto text-center mb-16">
             <AnimatedSection>
-              <div className="inline-flex items-center space-x-2 bg-maker-yellow/10 border border-maker-yellow/30 rounded-full px-4 py-2 mb-6">
-                <Zap className="h-4 w-4 text-maker-yellow" />
-                <span className="text-maker-yellow font-medium">Software & Application Development</span>
+              <div className="inline-flex items-center space-x-2 bg-morton-orange/10 border border-morton-orange/30 rounded-full px-4 py-2 mb-6">
+                <Zap className="h-4 w-4 text-morton-orange" />
+                <span className="text-morton-orange font-medium">Software & Application Development</span>
               </div>
 
-              <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-                Crafted Code,
-                <span className="font-brand text-maker-yellow block">Lasting Value</span>
+              <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
+                Expert Code,
+                <span className="font-brand text-morton-orange block">Powerful Results</span>
               </h1>
               
-              <p className="text-xl text-maker-blue-200 leading-relaxed mb-8">
-                Build robust, scalable applications with modern technologies. From MVPs to enterprise 
-                solutions, we create software that grows with your business and delights your users.
+              <p className="text-xl text-morton-purple-200 leading-relaxed mb-8 max-w-3xl mx-auto">
+                Build robust, scalable applications with modern technologies and expert guidance. From MVPs to enterprise 
+                solutions, we create software that grows with your business and delivers measurable results.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
                 <Link
                   href="/contact"
                   className="btn-primary inline-flex items-center space-x-2"
@@ -267,44 +262,39 @@ export default function SoftwareDevelopmentPage() {
                   <Code className="h-4 w-4" />
                 </Link>
               </div>
+            </AnimatedSection>
+          </div>
 
-              <div className="grid grid-cols-3 gap-6">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-maker-yellow">200+</div>
-                  <div className="text-sm text-maker-blue-200">Apps Built</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-maker-yellow">99.9%</div>
-                  <div className="text-sm text-maker-blue-200">Uptime</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-maker-yellow">10M+</div>
-                  <div className="text-sm text-maker-blue-200">Users Served</div>
-                </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <AnimatedSection delay={0.2}>
+              <div className="bg-morton-purple-900 border border-morton-purple-700 rounded-xl p-6 text-center hover:scale-[1.02] transition-all duration-300">
+                <div className="text-3xl font-bold text-morton-orange mb-2">200+</div>
+                <div className="text-white font-semibold mb-1">Apps Built</div>
+                <div className="text-morton-purple-200 text-sm">Across all platforms</div>
               </div>
             </AnimatedSection>
 
-            <AnimatedSection delay={0.2}>
-              <div className="bg-maker-blue-900 border border-maker-blue-700 rounded-2xl p-8 shadow-xl">
-                <h3 className="text-xl font-bold text-white mb-6">Technology Stack</h3>
-                <div className="grid grid-cols-2 gap-4">
-                  {technologies.slice(0, 4).map((tech) => (
-                    <div key={tech.category} className="text-center">
-                      <div className="p-3 bg-maker-yellow/10 border border-maker-yellow/30 rounded-xl w-fit mx-auto mb-3">
-                        <tech.icon className="h-6 w-6 text-maker-yellow" />
-                      </div>
-                      <h4 className="text-white font-semibold text-sm mb-2">{tech.category}</h4>
-                      <div className="space-y-1">
-                        {tech.techs.slice(0, 3).map((item) => (
-                          <div key={item} className="text-maker-blue-200 text-xs">{item}</div>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <Link href="#technologies" className="btn-secondary w-full text-center mt-6">
-                  View All Technologies
-                </Link>
+            <AnimatedSection delay={0.3}>
+              <div className="bg-morton-purple-900 border border-morton-purple-700 rounded-xl p-6 text-center hover:scale-[1.02] transition-all duration-300">
+                <div className="text-3xl font-bold text-morton-orange mb-2">99.9%</div>
+                <div className="text-white font-semibold mb-1">Uptime</div>
+                <div className="text-morton-purple-200 text-sm">Enterprise reliability</div>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection delay={0.4}>
+              <div className="bg-morton-purple-900 border border-morton-purple-700 rounded-xl p-6 text-center hover:scale-[1.02] transition-all duration-300">
+                <div className="text-3xl font-bold text-morton-orange mb-2">10M+</div>
+                <div className="text-white font-semibold mb-1">Users Served</div>
+                <div className="text-morton-purple-200 text-sm">Global reach</div>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection delay={0.5}>
+              <div className="bg-morton-purple-900 border border-morton-purple-700 rounded-xl p-6 text-center hover:scale-[1.02] transition-all duration-300">
+                <div className="text-3xl font-bold text-morton-orange mb-2">24/7</div>
+                <div className="text-white font-semibold mb-1">Support</div>
+                <div className="text-morton-purple-200 text-sm">Always available</div>
               </div>
             </AnimatedSection>
           </div>
@@ -312,15 +302,15 @@ export default function SoftwareDevelopmentPage() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-maker-blue-900">
+      <section className="py-20 bg-morton-purple-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-                Development <span className="font-brand text-maker-yellow">Services</span>
+                Development <span className="font-brand text-morton-orange">Services</span>
               </h2>
-              <p className="text-lg text-maker-blue-200 max-w-2xl mx-auto">
-                From rapid prototypes to enterprise applications, we build software that scales
+              <p className="text-lg text-morton-purple-200 max-w-2xl mx-auto">
+                From rapid prototypes to enterprise applications, we build software that scales with intelligent architecture
               </p>
             </div>
           </AnimatedSection>
@@ -328,10 +318,10 @@ export default function SoftwareDevelopmentPage() {
           <div className="space-y-8">
             {services.map((service, index) => (
               <AnimatedSection key={service.name} delay={index * 0.1}>
-                <div className="bg-maker-blue-950 border border-maker-blue-700 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group hover:scale-[1.02] relative">
+                <div className="bg-morton-purple-950 border border-morton-purple-700 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group hover:scale-[1.02] relative">
                   {service.popular && (
                     <div className="absolute -top-3 -right-3 z-10">
-                      <span className="px-3 py-1 bg-maker-yellow text-maker-blue-950 rounded-full text-sm font-semibold">
+                      <span className="px-3 py-1 bg-morton-orange text-morton-purple-950 rounded-full text-sm font-semibold">
                         Popular
                       </span>
                     </div>
@@ -341,15 +331,15 @@ export default function SoftwareDevelopmentPage() {
                     {/* Service Info */}
                     <div className="lg:col-span-2">
                       <div className="flex items-center justify-between mb-4">
-                        <h3 className="text-2xl font-bold text-white group-hover:text-maker-yellow transition-colors">
+                        <h3 className="text-2xl font-bold text-white group-hover:text-morton-orange transition-colors">
                           {service.name}
                         </h3>
                         <div className="text-right">
-                          <div className="text-3xl font-bold text-maker-yellow">{service.price}</div>
+                          <div className="text-3xl font-bold text-morton-orange">{service.price}</div>
                         </div>
                       </div>
 
-                      <p className="text-maker-blue-200 mb-6 leading-relaxed text-lg">
+                      <p className="text-morton-purple-200 mb-6 leading-relaxed text-lg">
                         {service.description}
                       </p>
 
@@ -359,8 +349,8 @@ export default function SoftwareDevelopmentPage() {
                           <div className="space-y-2">
                             {service.features.map((feature) => (
                               <div key={feature} className="flex items-center space-x-2">
-                                <CheckCircle className="h-4 w-4 text-maker-yellow flex-shrink-0" />
-                                <span className="text-maker-blue-100 text-sm">{feature}</span>
+                                <CheckCircle className="h-4 w-4 text-morton-orange flex-shrink-0" />
+                                <span className="text-morton-purple-100 text-sm">{feature}</span>
                               </div>
                             ))}
                           </div>
@@ -372,13 +362,13 @@ export default function SoftwareDevelopmentPage() {
                             {service.techStack.map((tech) => (
                               <span
                                 key={tech}
-                                className="px-2 py-1 bg-maker-yellow/10 border border-maker-yellow/30 rounded text-maker-yellow text-xs"
+                                className="px-2 py-1 bg-morton-orange/10 border border-morton-orange/30 rounded text-morton-orange text-xs"
                               >
                                 {tech}
                               </span>
                             ))}
                           </div>
-                          <div className="text-maker-blue-300 text-sm">
+                          <div className="text-morton-purple-300 text-sm">
                             <strong>Ideal for:</strong> {service.ideal}
                           </div>
                         </div>
@@ -409,15 +399,15 @@ export default function SoftwareDevelopmentPage() {
       </section>
 
       {/* Technologies Section */}
-      <section id="technologies" className="py-20 bg-maker-blue-950">
+      <section id="technologies" className="py-20 bg-morton-purple-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-                Modern <span className="font-brand text-maker-yellow">Technology</span> Stack
+                Modern <span className="font-brand text-morton-orange">Technology</span> Stack
               </h2>
-              <p className="text-lg text-maker-blue-200 max-w-2xl mx-auto">
-                We use cutting-edge technologies to build fast, secure, and scalable applications
+              <p className="text-lg text-morton-purple-200 max-w-2xl mx-auto">
+                We use cutting-edge technologies to build fast, secure, and scalable applications with modern features
               </p>
             </div>
           </AnimatedSection>
@@ -425,14 +415,14 @@ export default function SoftwareDevelopmentPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {technologies.map((tech, index) => (
               <AnimatedSection key={tech.category} delay={index * 0.1}>
-                <div className="bg-maker-blue-900 border border-maker-blue-700 rounded-xl p-6 text-center hover:scale-[1.02] transition-all duration-300">
-                  <div className="p-4 bg-maker-yellow/10 border border-maker-yellow/30 rounded-xl w-fit mx-auto mb-4">
-                    <tech.icon className="h-8 w-8 text-maker-yellow" />
+                <div className="bg-morton-purple-900 border border-morton-purple-700 rounded-xl p-6 text-center hover:scale-[1.02] transition-all duration-300">
+                  <div className="p-4 bg-morton-orange/10 border border-morton-orange/30 rounded-xl w-fit mx-auto mb-4">
+                    <tech.icon className="h-8 w-8 text-morton-orange" />
                   </div>
                   <h3 className="text-lg font-bold text-white mb-4">{tech.category}</h3>
                   <div className="space-y-2">
                     {tech.techs.map((item) => (
-                      <div key={item} className="text-maker-blue-200 text-sm">{item}</div>
+                      <div key={item} className="text-morton-purple-200 text-sm">{item}</div>
                     ))}
                   </div>
                 </div>
@@ -443,15 +433,15 @@ export default function SoftwareDevelopmentPage() {
       </section>
 
       {/* Development Process */}
-      <section className="py-20 bg-maker-blue-900">
+      <section className="py-20 bg-morton-purple-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-                Development <span className="font-brand text-maker-yellow">Process</span>
+                Development <span className="font-brand text-morton-orange">Process</span>
               </h2>
-              <p className="text-lg text-maker-blue-200 max-w-2xl mx-auto">
-                Agile development with continuous feedback and transparent communication
+              <p className="text-lg text-morton-purple-200 max-w-2xl mx-auto">
+                Agile development with continuous feedback, transparent communication, and quality results
               </p>
             </div>
           </AnimatedSection>
@@ -459,15 +449,15 @@ export default function SoftwareDevelopmentPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {developmentProcess.map((phase, index) => (
               <AnimatedSection key={phase.phase} delay={index * 0.1}>
-                <div className="bg-maker-blue-950 border border-maker-blue-700 rounded-xl p-6 text-center hover:scale-[1.02] transition-all duration-300">
-                  <div className="text-3xl font-bold text-maker-yellow mb-4">{phase.phase}</div>
+                <div className="bg-morton-purple-950 border border-morton-purple-700 rounded-xl p-6 text-center hover:scale-[1.02] transition-all duration-300">
+                  <div className="text-3xl font-bold text-morton-orange mb-4">{phase.phase}</div>
                   <h3 className="text-lg font-bold text-white mb-2">{phase.phase}</h3>
-                  <p className="text-maker-blue-200 text-sm leading-relaxed mb-4">
+                  <p className="text-morton-purple-200 text-sm leading-relaxed mb-4">
                     {phase.description}
                   </p>
                   <div className="space-y-1">
                     {phase.deliverables.map((deliverable) => (
-                      <div key={deliverable} className="text-maker-blue-100 text-xs">
+                      <div key={deliverable} className="text-morton-purple-100 text-xs">
                         • {deliverable}
                       </div>
                     ))}
@@ -480,15 +470,15 @@ export default function SoftwareDevelopmentPage() {
       </section>
 
       {/* Case Studies */}
-      <section id="case-studies" className="py-20 bg-maker-blue-950">
+      <section id="case-studies" className="py-20 bg-morton-purple-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-                Success <span className="font-brand text-maker-yellow">Stories</span>
+                Success <span className="font-brand text-morton-orange">Stories</span>
               </h2>
-              <p className="text-lg text-maker-blue-200 max-w-2xl mx-auto">
-                Real applications, real results. See how our development drives business success.
+              <p className="text-lg text-morton-purple-200 max-w-2xl mx-auto">
+                Real applications, real results. See how our strategic development drives business success.
               </p>
             </div>
           </AnimatedSection>
@@ -496,24 +486,24 @@ export default function SoftwareDevelopmentPage() {
           <div className="space-y-12">
             {caseStudies.map((study, index) => (
               <AnimatedSection key={study.title} delay={index * 0.1}>
-                <div className="bg-maker-blue-900 border border-maker-blue-700 rounded-2xl p-8 hover:scale-[1.02] transition-all duration-300">
+                <div className="bg-morton-purple-900 border border-morton-purple-700 rounded-2xl p-8 hover:scale-[1.02] transition-all duration-300">
                   <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     <div className="lg:col-span-2">
                       <div className="flex items-start justify-between mb-4">
                         <div>
                           <h3 className="text-2xl font-bold text-white">{study.title}</h3>
-                          <span className="text-maker-yellow">{study.category}</span>
+                          <span className="text-morton-orange">{study.category}</span>
                         </div>
                       </div>
 
                       <div className="space-y-4 mb-6">
                         <div>
                           <h4 className="text-white font-semibold mb-2">Challenge:</h4>
-                          <p className="text-maker-blue-200">{study.challenge}</p>
+                          <p className="text-morton-purple-200">{study.challenge}</p>
                         </div>
                         <div>
                           <h4 className="text-white font-semibold mb-2">Solution:</h4>
-                          <p className="text-maker-blue-200">{study.solution}</p>
+                          <p className="text-morton-purple-200">{study.solution}</p>
                         </div>
                       </div>
 
@@ -521,7 +511,7 @@ export default function SoftwareDevelopmentPage() {
                         {study.techStack.map((tech) => (
                           <span
                             key={tech}
-                            className="px-2 py-1 bg-maker-yellow/10 border border-maker-yellow/30 rounded text-maker-yellow text-xs"
+                            className="px-2 py-1 bg-morton-orange/10 border border-morton-orange/30 rounded text-morton-orange text-xs"
                           >
                             {tech}
                           </span>
@@ -534,8 +524,8 @@ export default function SoftwareDevelopmentPage() {
                       <div className="space-y-3">
                         {study.results.map((result) => (
                           <div key={result} className="flex items-center space-x-2">
-                            <TrendingUp className="h-4 w-4 text-maker-yellow flex-shrink-0" />
-                            <span className="text-maker-blue-100 text-sm">{result}</span>
+                            <TrendingUp className="h-4 w-4 text-morton-orange flex-shrink-0" />
+                            <span className="text-morton-purple-100 text-sm">{result}</span>
                           </div>
                         ))}
                       </div>
@@ -549,14 +539,14 @@ export default function SoftwareDevelopmentPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 bg-maker-blue-900">
+      <section className="py-20 bg-morton-purple-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-                What Clients <span className="font-brand text-maker-yellow">Say</span>
+                What Clients <span className="font-brand text-morton-orange">Say</span>
               </h2>
-              <p className="text-lg text-maker-blue-200 max-w-2xl mx-auto">
+              <p className="text-lg text-morton-purple-200 max-w-2xl mx-auto">
                 Trusted by businesses worldwide for quality development and exceptional service
               </p>
             </div>
@@ -565,23 +555,23 @@ export default function SoftwareDevelopmentPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {testimonials.map((testimonial, index) => (
               <AnimatedSection key={testimonial.name} delay={index * 0.2}>
-                <div className="bg-maker-blue-950 border border-maker-blue-700 rounded-xl p-6">
+                <div className="bg-morton-purple-950 border border-morton-purple-700 rounded-xl p-6">
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center space-x-1">
                       {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="h-4 w-4 text-maker-yellow fill-current" />
+                        <Star key={i} className="h-4 w-4 text-morton-orange fill-current" />
                       ))}
                     </div>
-                    <span className="px-2 py-1 bg-maker-yellow/10 text-maker-yellow text-xs rounded">
+                    <span className="px-2 py-1 bg-morton-orange/10 text-morton-orange text-xs rounded">
                       {testimonial.project}
                     </span>
                   </div>
-                  <p className="text-maker-blue-200 leading-relaxed mb-4 italic">
+                  <p className="text-morton-purple-200 leading-relaxed mb-4 italic">
                     &ldquo;{testimonial.content}&rdquo;
                   </p>
                   <div>
                     <div className="font-semibold text-white">{testimonial.name}</div>
-                    <div className="text-maker-yellow text-sm">{testimonial.role}</div>
+                    <div className="text-morton-orange text-sm">{testimonial.role}</div>
                   </div>
                 </div>
               </AnimatedSection>
@@ -591,22 +581,22 @@ export default function SoftwareDevelopmentPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-maker-blue-950">
+      <section className="py-16 bg-morton-purple-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <div className="bg-maker-blue-900 border border-maker-blue-700 rounded-2xl p-8 lg:p-12 text-center">
+            <div className="bg-morton-purple-900 border border-morton-purple-700 rounded-2xl p-8 lg:p-12 text-center">
               <div className="flex items-center justify-center space-x-3 mb-6">
-                <div className="p-3 bg-maker-yellow/10 border border-maker-yellow/30 rounded-xl">
-                  <Zap className="h-6 w-6 text-maker-yellow" />
+                <div className="p-3 bg-morton-orange/10 border border-morton-orange/30 rounded-xl">
+                  <Zap className="h-6 w-6 text-morton-orange" />
                 </div>
                 <h2 className="text-3xl lg:text-4xl font-bold text-white">
-                  Ready to Build Your <span className="font-brand text-maker-yellow">Application</span>?
+                  Ready to Build Your <span className="font-brand text-morton-orange">Application</span>?
                 </h2>
               </div>
               
-              <p className="text-lg text-maker-blue-200 mb-8 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-lg text-morton-purple-200 mb-8 max-w-2xl mx-auto leading-relaxed">
                 Let&apos;s discuss your project requirements and create a custom software solution 
-                that drives your business forward.
+                that drives your business forward with intelligent design.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

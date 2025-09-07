@@ -1,24 +1,24 @@
-# Maker Software LLC - Project Brief
+# Morton Software Insights LLC - Project Brief
 
 ## Project Overview
-Building a world-class website for Maker Software LLC, a digital transformation and software development company based in Atlanta, Georgia. The website will showcase our unique approach to creating innovative software solutions that "make" digital transformation possible.
+Building a world-class website for Morton Software Insights LLC, a digital transformation and software development company based in Atlanta, Georgia. The website will showcase our unique approach to creating innovative software solutions through insights-driven digital transformation.
 
 ## Core Requirements
-- **Company**: Maker Software LLC
+- **Company**: Morton Software Insights LLC
 - **Location**: 6065 Roswell Rd, #450, Atlanta, GA 30328
 - **Contact**: 
-  - Email: hello@makersoftwares.com, support@makersoftwares.com, legal@makersoftwares.com
-  - Phone: +1 (678) 918-5109
+  - Email: hello@mortonsoftware.io, support@mortonsoftware.io, legal@mortonsoftware.io
+  - Phone: (270) 802-8222
 - **Brand Colors**: 
-  - Primary: #FFD009 (Vibrant Yellow)
-  - Secondary: #002C73 (Deep Blue)
+  - Primary: #EB7513 (Orange)
+  - Secondary: #32142D (Deep Purple)
 - **Font**: CroissantOne-Regular for logo/brand elements
 
 ## Project Goals
 1. **Ultra-Clean UI/UX**: Perfectly structured, consistent, and unique design
 2. **Perfect Animations**: Smooth, purposeful animations that enhance UX
 3. **Unique Positioning**: Stand out from competitors while maintaining professionalism
-4. **Business Authority**: Establish Maker Software as a premium digital transformation partner
+4. **Business Authority**: Establish Morton Software Insights as a premium digital transformation partner
 5. **Lead Generation**: Convert visitors into qualified prospects
 
 ## Success Metrics
@@ -35,4 +35,4 @@ Building a world-class website for Maker Software LLC, a digital transformation 
 - **Deployment**: Vercel with optimized performance
 
 ## Unique Positioning
-Unlike our references (Chronapex, Calphix, Technology Consulting), Maker Software will focus on being the "makers" of digital transformation - emphasizing craftsmanship, innovation, and turning ideas into reality.
+Unlike our references (Chronapex, Calphix, Technology Consulting), Morton Software Insights will focus on being the "insights-driven" leaders of digital transformation - emphasizing data-driven decisions, strategic analysis, and turning insights into innovative solutions that deliver measurable results.

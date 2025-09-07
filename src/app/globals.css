@@ -4,52 +4,55 @@
 @tailwind utilities;
 
 :root {
-  /* Maker Software Brand Colors */
-  --maker-yellow: #FFD009;
-  --maker-yellow-light: #FFE14D;
-  --maker-yellow-dark: #E6BB08;
-  --maker-yellow-hover: #FFDC33;
+  /* Morton Software Brand Colors */
+  --morton-orange: #EB7513;
+  --morton-orange-light: #FF8A2B;
+  --morton-orange-dark: #D6650F;
+  --morton-orange-hover: #F07F1F;
   
-  --maker-blue: #002C73;
-  --maker-blue-light: #1E4A8C;
-  --maker-blue-dark: #001B4D;
-  --maker-blue-hover: #003D99;
+  --morton-purple: #32142D;
+  --morton-purple-light: #4A1F42;
+  --morton-purple-dark: #1F0D1B;
+  --morton-purple-hover: #3D1836;
+  --morton-purple-800: #2A1226;
+  --morton-purple-900: #1F0D1B;
+  --morton-purple-950: #0F0609;
 
-  /* Blue-based Design System */
-  --maker-blue-50: #f0f4ff;
-  --maker-blue-100: #e0e9ff;
-  --maker-blue-200: #c7d6ff;
-  --maker-blue-300: #a5bbff;
-  --maker-blue-400: #8197ff;
-  --maker-blue-500: #5a73ff;
-  --maker-blue-600: #4355d9;
-  --maker-blue-700: #3544b3;
-  --maker-blue-800: #2d378c;
-  --maker-blue-850: #1e2866;
-  --maker-blue-900: var(--maker-blue);
-  --maker-blue-950: var(--maker-blue-dark);
+  /* Slate-based Design System */
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+  --slate-400: #94a3b8;
+  --slate-500: #64748b;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-800: #1e293b;
+  --slate-850: #0f172a;
+  --slate-900: #0f172a;
+  --slate-950: #020617;
 
   /* Design System Tokens */
-  --background: var(--maker-blue-950);
+  --background: var(--slate-950);
   --foreground: #ffffff;
-  --card: var(--maker-blue-900);
+  --card: var(--slate-900);
   --card-foreground: #ffffff;
-  --card-secondary: var(--maker-blue-850);
-  --popover: var(--maker-blue-800);
+  --card-secondary: var(--morton-purple);
+  --popover: var(--slate-800);
   --popover-foreground: #ffffff;
-  --primary: var(--maker-yellow);
-  --primary-foreground: var(--maker-blue);
-  --secondary: var(--maker-blue-800);
+  --primary: var(--morton-orange);
+  --primary-foreground: var(--slate-950);
+  --secondary: var(--morton-purple);
   --secondary-foreground: #ffffff;
-  --muted: var(--maker-blue-800);
-  --muted-foreground: var(--maker-blue-300);
-  --accent: var(--maker-yellow);
-  --accent-foreground: var(--maker-blue);
+  --muted: var(--slate-800);
+  --muted-foreground: var(--slate-300);
+  --accent: var(--morton-orange);
+  --accent-foreground: var(--slate-950);
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
-  --border: var(--maker-blue-700);
-  --input: var(--maker-blue-800);
-  --ring: var(--maker-yellow);
+  --border: var(--slate-700);
+  --input: var(--slate-800);
+  --ring: var(--morton-orange);
   --radius: 0.75rem;
 
   /* Typography */
@@ -78,11 +81,11 @@
 
 /* Light mode override for specific sections if needed */
 .light-section {
-  --background: var(--maker-blue-50);
-  --foreground: var(--maker-blue-900);
+  --background: var(--slate-50);
+  --foreground: var(--slate-900);
   --card: #ffffff;
-  --card-foreground: var(--maker-blue-900);
-  --border: var(--maker-blue-200);
+  --card-foreground: var(--slate-900);
+  --border: var(--slate-200);
 }
 
 * {
@@ -162,8 +165,8 @@ html {
 
 /* Component Base Classes */
 .btn-primary {
-  background: linear-gradient(135deg, var(--maker-yellow), var(--maker-yellow-light));
-  color: var(--maker-blue);
+  background: linear-gradient(135deg, var(--morton-orange), var(--morton-orange-light));
+  color: var(--slate-950);
   border: none;
   padding: 0.75rem 2rem;
   border-radius: var(--radius);
@@ -175,13 +178,13 @@ html {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  background: linear-gradient(135deg, var(--maker-yellow-light), var(--maker-yellow));
+  background: linear-gradient(135deg, var(--morton-orange-light), var(--morton-orange));
 }
 
 .btn-secondary {
   background: transparent;
-  color: var(--maker-yellow);
-  border: 2px solid var(--maker-yellow);
+  color: var(--morton-orange);
+  border: 2px solid var(--morton-orange);
   padding: 0.75rem 2rem;
   border-radius: var(--radius);
   font-weight: 600;
@@ -190,9 +193,9 @@ html {
 }
 
 .btn-secondary:hover {
-  background: var(--maker-yellow);
-  color: var(--maker-blue);
-  border: 2px solid var(--maker-yellow);
+  background: var(--morton-orange);
+  color: var(--slate-950);
+  border: 2px solid var(--morton-orange);
   transform: translateY(-2px);
 }
 
@@ -201,21 +204,21 @@ html {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 2rem;
-  box-shadow: 0 4px 20px rgba(0, 44, 115, 0.15);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.15);
   transition: all var(--duration-normal) var(--ease-out-cubic);
 }
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 40px rgba(255, 208, 9, 0.2), 0 8px 32px rgba(0, 44, 115, 0.3);
-  border-color: var(--maker-yellow);
+  box-shadow: 0 8px 40px rgba(235, 117, 19, 0.2), 0 8px 32px rgba(15, 23, 42, 0.3);
+  border-color: var(--morton-orange);
 }
 
 .service-card {
   position: relative;
   overflow: hidden;
-  background: var(--maker-blue-950);
-  border: 1px solid var(--maker-blue-700);
+  background: var(--morton-purple-800);
+  border: 1px solid var(--morton-purple-700);
 }
 
 .service-card::before {
@@ -225,22 +228,22 @@ html {
   left: 0;
   right: 0;
   height: 4px;
-  background: var(--maker-yellow);
+  background: var(--morton-orange);
 }
 
 .service-card:hover::before {
   height: 6px;
-  background: linear-gradient(90deg, var(--maker-yellow), var(--maker-yellow-light));
+  background: linear-gradient(90deg, var(--morton-orange), var(--morton-orange-light));
 }
 
 /* Focus states for accessibility */
 .focus-ring:focus {
-  outline: 2px solid var(--maker-yellow);
+  outline: 2px solid var(--morton-orange);
   outline-offset: 2px;
 }
 
 .focus-visible:focus-visible {
-  outline: 2px solid var(--maker-yellow);
+  outline: 2px solid var(--morton-orange);
   outline-offset: 2px;
 }
 

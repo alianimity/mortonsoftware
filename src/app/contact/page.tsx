@@ -69,14 +69,14 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: "Email Us",
-      primary: "hello@makersoftwares.com",
-      secondary: "support@makersoftwares.com",
+      primary: "hello@mortonsoftware.io",
+      secondary: "support@mortonsoftware.io",
       description: "For general inquiries and support"
     },
     {
       icon: Phone,
       title: "Call Us",
-      primary: "+1 (678) 918-5109",
+      primary: "(270) 802-8222",
       secondary: "Business Hours Only",
       description: "Direct line to our team"
     },
@@ -150,29 +150,29 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-maker-blue-950">
+    <div className="min-h-screen bg-morton-purple-950">
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative py-20 overflow-hidden bg-morton-purple-950">
         {/* Background Effects */}
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-64 h-64 bg-maker-yellow/5 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-maker-blue/10 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-10 w-64 h-64 bg-morton-orange/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-morton-purple/10 rounded-full blur-3xl"></div>
         </div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <AnimatedSection>
             <div className="text-center max-w-4xl mx-auto">
               {/* Badge */}
-              <div className="inline-flex items-center space-x-2 bg-maker-yellow/10 border border-maker-yellow/30 rounded-full px-4 py-2 mb-8">
-                <MessageSquare className="h-4 w-4 text-maker-yellow" />
-                <span className="text-maker-yellow font-medium">Let&apos;s Start Building Together</span>
+              <div className="inline-flex items-center space-x-2 bg-morton-orange/10 border border-morton-orange/30 rounded-full px-4 py-2 mb-8">
+                <MessageSquare className="h-4 w-4 text-morton-orange" />
+                <span className="text-morton-orange font-medium">Let&apos;s Start Building Together</span>
               </div>
 
               <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
-                Ready to <span className="font-brand text-maker-yellow">Make</span> Something Great?
+                Ready to <span className="font-brand text-morton-orange">Create</span> Something Great?
               </h1>
               
-              <p className="text-xl text-maker-blue-200 leading-relaxed mb-8">
+              <p className="text-xl text-slate-300 leading-relaxed mb-8">
                 Whether you&apos;re an individual with a vision, a startup ready to scale, or an enterprise 
                 seeking transformation – we&apos;re here to turn your ideas into reality. Let&apos;s discuss 
                 your project and find the perfect solution.
@@ -181,11 +181,11 @@ export default function ContactPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-12">
                 {features.map((feature, index) => (
                   <div key={feature.title} className="text-center">
-                    <div className="p-3 bg-maker-yellow/10 border border-maker-yellow/30 rounded-xl w-fit mx-auto mb-3">
-                      <feature.icon className="h-5 w-5 text-maker-yellow" />
+                    <div className="p-3 bg-morton-orange/10 border border-morton-orange/30 rounded-xl w-fit mx-auto mb-3">
+                      <feature.icon className="h-5 w-5 text-morton-orange" />
                     </div>
                     <h3 className="text-white font-semibold text-sm mb-1">{feature.title}</h3>
-                    <p className="text-maker-blue-300 text-xs">{feature.description}</p>
+                    <p className="text-slate-400 text-xs">{feature.description}</p>
                   </div>
                 ))}
               </div>
@@ -195,24 +195,24 @@ export default function ContactPage() {
       </section>
 
       {/* Main Contact Section */}
-      <section className="py-16 bg-maker-blue-900">
+      <section className="py-16 bg-morton-purple-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <AnimatedSection>
-              <div className="bg-maker-blue-950 border border-maker-blue-700 rounded-2xl p-8">
+              <div className="bg-morton-purple-950 border border-morton-purple-700 rounded-2xl p-8">
                 <div className="flex items-center space-x-3 mb-8">
-                  <div className="p-3 bg-maker-yellow/10 border border-maker-yellow/30 rounded-xl">
-                    <Send className="h-6 w-6 text-maker-yellow" />
+                  <div className="p-3 bg-morton-orange/10 border border-morton-orange/30 rounded-xl">
+                    <Send className="h-6 w-6 text-morton-orange" />
                   </div>
                   <h2 className="text-2xl font-bold text-white">Start Your Project</h2>
                 </div>
 
                 {isSubmitted ? (
                   <div className="text-center py-12">
-                    <CheckCircle className="h-16 w-16 text-maker-yellow mx-auto mb-4" />
+                    <CheckCircle className="h-16 w-16 text-morton-orange mx-auto mb-4" />
                     <h3 className="text-xl font-bold text-white mb-2">Message Sent Successfully!</h3>
-                    <p className="text-maker-blue-200">
+                    <p className="text-slate-300">
                       Thank you for reaching out. We&apos;ll get back to you within 2 hours during business hours.
                     </p>
                   </div>
@@ -229,7 +229,7 @@ export default function ContactPage() {
                           value={formData.name}
                           onChange={handleChange}
                           required
-                          className="w-full px-4 py-3 bg-maker-blue-900 border border-maker-blue-700 rounded-lg text-white placeholder-maker-blue-300 focus:outline-none focus:border-maker-yellow transition-colors"
+                          className="w-full px-4 py-3 bg-morton-purple-900 border border-morton-purple-700 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-morton-orange transition-colors"
                           placeholder="John Doe"
                         />
                       </div>
@@ -243,7 +243,7 @@ export default function ContactPage() {
                           value={formData.email}
                           onChange={handleChange}
                           required
-                          className="w-full px-4 py-3 bg-maker-blue-900 border border-maker-blue-700 rounded-lg text-white placeholder-maker-blue-300 focus:outline-none focus:border-maker-yellow transition-colors"
+                          className="w-full px-4 py-3 bg-morton-purple-900 border border-morton-purple-700 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-morton-orange transition-colors"
                           placeholder="john@company.com"
                         />
                       </div>
@@ -258,7 +258,7 @@ export default function ContactPage() {
                         name="company"
                         value={formData.company}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 bg-maker-blue-900 border border-maker-blue-700 rounded-lg text-white placeholder-maker-blue-300 focus:outline-none focus:border-maker-yellow transition-colors"
+                        className="w-full px-4 py-3 bg-morton-purple-900 border border-morton-purple-700 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-morton-orange transition-colors"
                         placeholder="Your Company Name"
                       />
                     </div>
@@ -273,7 +273,7 @@ export default function ContactPage() {
                           value={formData.projectType}
                           onChange={handleChange}
                           required
-                          className="w-full px-4 py-3 bg-maker-blue-900 border border-maker-blue-700 rounded-lg text-white focus:outline-none focus:border-maker-yellow transition-colors"
+                          className="w-full px-4 py-3 bg-morton-purple-900 border border-morton-purple-700 rounded-lg text-white focus:outline-none focus:border-morton-orange transition-colors"
                         >
                           <option value="">Select Type</option>
                           {projectTypes.map(type => (
@@ -289,7 +289,7 @@ export default function ContactPage() {
                           name="budget"
                           value={formData.budget}
                           onChange={handleChange}
-                          className="w-full px-4 py-3 bg-maker-blue-900 border border-maker-blue-700 rounded-lg text-white focus:outline-none focus:border-maker-yellow transition-colors"
+                          className="w-full px-4 py-3 bg-morton-purple-900 border border-morton-purple-700 rounded-lg text-white focus:outline-none focus:border-morton-orange transition-colors"
                         >
                           <option value="">Select Budget</option>
                           {budgetRanges.map(range => (
@@ -305,7 +305,7 @@ export default function ContactPage() {
                           name="timeline"
                           value={formData.timeline}
                           onChange={handleChange}
-                          className="w-full px-4 py-3 bg-maker-blue-900 border border-maker-blue-700 rounded-lg text-white focus:outline-none focus:border-maker-yellow transition-colors"
+                          className="w-full px-4 py-3 bg-morton-purple-900 border border-morton-purple-700 rounded-lg text-white focus:outline-none focus:border-morton-orange transition-colors"
                         >
                           <option value="">Select Timeline</option>
                           {timelineOptions.map(timeline => (
@@ -325,7 +325,7 @@ export default function ContactPage() {
                         onChange={handleChange}
                         required
                         rows={5}
-                        className="w-full px-4 py-3 bg-maker-blue-900 border border-maker-blue-700 rounded-lg text-white placeholder-maker-blue-300 focus:outline-none focus:border-maker-yellow transition-colors resize-none"
+                        className="w-full px-4 py-3 bg-morton-purple-900 border border-morton-purple-700 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-morton-orange transition-colors resize-none"
                         placeholder="Tell us about your project, goals, and any specific requirements..."
                       />
                     </div>
@@ -348,7 +348,7 @@ export default function ContactPage() {
                       )}
                     </button>
 
-                    <p className="text-maker-blue-300 text-sm text-center">
+                    <p className="text-slate-400 text-sm text-center">
                       By submitting this form, you agree to our privacy policy and terms of service.
                     </p>
                   </form>
@@ -361,39 +361,39 @@ export default function ContactPage() {
               <div className="space-y-8">
                 <div>
                   <h2 className="text-2xl font-bold text-white mb-4">
-                    Get In <span className="font-brand text-maker-yellow">Touch</span>
+                    Get In <span className="font-brand text-morton-orange">Touch</span>
                   </h2>
-                  <p className="text-maker-blue-200 leading-relaxed">
+                  <p className="text-slate-300 leading-relaxed">
                     Ready to start your digital transformation journey? We&apos;re here to help at every step. 
                     Choose the contact method that works best for you.
                   </p>
                 </div>
 
                 <div className="space-y-6">
-                  {contactMethods.map((method, index) => (
-                    <div key={method.title} className="flex items-start space-x-4 bg-maker-blue-950 border border-maker-blue-700 rounded-xl p-6">
-                      <div className="p-3 bg-maker-yellow/10 border border-maker-yellow/30 rounded-xl flex-shrink-0">
-                        <method.icon className="h-5 w-5 text-maker-yellow" />
+                {contactMethods.map((method) => (
+                    <div key={method.title} className="flex items-start space-x-4 bg-morton-purple-950 border border-morton-purple-700 rounded-xl p-6">
+                      <div className="p-3 bg-morton-orange/10 border border-morton-orange/30 rounded-xl flex-shrink-0">
+                        <method.icon className="h-5 w-5 text-morton-orange" />
                       </div>
                       <div>
                         <h3 className="text-white font-semibold mb-1">{method.title}</h3>
-                        <p className="text-maker-yellow font-medium">{method.primary}</p>
-                        <p className="text-maker-blue-200 text-sm">{method.secondary}</p>
-                        <p className="text-maker-blue-300 text-xs mt-1">{method.description}</p>
+                        <p className="text-morton-orange font-medium">{method.primary}</p>
+                        <p className="text-slate-300 text-sm">{method.secondary}</p>
+                        <p className="text-slate-400 text-xs mt-1">{method.description}</p>
                       </div>
                     </div>
                   ))}
                 </div>
 
                 {/* Quick Response Promise */}
-                <div className="bg-gradient-to-r from-maker-yellow/10 to-maker-blue/10 border border-maker-yellow/30 rounded-xl p-6">
+                <div className="bg-gradient-to-r from-morton-orange/10 to-morton-purple/10 border border-morton-orange/30 rounded-xl p-6">
                   <div className="flex items-center space-x-3 mb-3">
-                    <Sparkles className="h-5 w-5 text-maker-yellow" />
+                    <Sparkles className="h-5 w-5 text-morton-orange" />
                     <h3 className="text-white font-semibold">Quick Response Guarantee</h3>
                   </div>
-                  <p className="text-maker-blue-200 text-sm">
+                  <p className="text-slate-300 text-sm">
                     We respond to all inquiries within 2 hours during business hours. 
-                    For urgent matters, call us directly at +1 (678) 918-5109.
+                    For urgent matters, call us directly at (270) 802-8222.
                   </p>
                 </div>
               </div>
@@ -403,50 +403,50 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-maker-blue-950">
+      <section className="py-16 bg-morton-purple-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-                Frequently Asked <span className="font-brand text-maker-yellow">Questions</span>
+                Frequently Asked <span className="font-brand text-morton-orange">Questions</span>
               </h2>
-              <p className="text-lg text-maker-blue-200 max-w-2xl mx-auto">
-                Quick answers to common questions about working with Maker Software
+              <p className="text-lg text-slate-300 max-w-2xl mx-auto">
+                Quick answers to common questions about working with Morton Software Insights
               </p>
             </div>
           </AnimatedSection>
 
           <div className="max-w-4xl mx-auto space-y-6">
-            {[
-              {
-                question: "How quickly can you start my project?",
-                answer: "We can typically begin new projects within 1-2 weeks. For urgent projects, we offer expedited onboarding within 48 hours."
-              },
-              {
-                question: "Do you work with international clients?", 
-                answer: "Absolutely! We serve clients worldwide and have experience working across different time zones and cultures. We provide support in multiple languages."
-              },
-              {
-                question: "What&apos;s included in your project pricing?",
-                answer: "Our pricing includes development, testing, deployment, documentation, and 30-day warranty. We provide transparent fixed-price quotes with no hidden fees."
-              },
-              {
-                question: "Do you provide ongoing support after launch?",
-                answer: "Yes, we offer comprehensive maintenance and support packages starting at $100/month. We also provide 24/7 emergency support for critical issues."
-              },
-              {
-                question: "Can you work with our existing team?",
-                answer: "Definitely! We excel at collaborating with in-house teams and can integrate seamlessly into your existing development workflow and tools."
-              },
-              {
-                question: "What technologies do you specialize in?",
-                answer: "We specialize in modern web technologies (React, Next.js, Node.js), cloud platforms (AWS, Azure), mobile development, AI/ML, and blockchain solutions."
-              }
-            ].map((faq, index) => (
-              <AnimatedSection key={faq.question} delay={index * 0.1}>
-                <div className="bg-maker-blue-900 border border-maker-blue-700 rounded-xl p-6">
+                {[
+                  {
+                    question: "How quickly can you start my project?",
+                    answer: "We can typically begin new projects within 1-2 weeks. For urgent projects, we offer expedited onboarding within 48 hours."
+                  },
+                  {
+                    question: "Do you work with international clients?", 
+                    answer: "Absolutely! We serve clients worldwide and have experience working across different time zones and cultures. We provide support in multiple languages."
+                  },
+                  {
+                    question: "What&apos;s included in your project pricing?",
+                    answer: "Our pricing includes development, testing, deployment, documentation, and 30-day warranty. We provide transparent fixed-price quotes with no hidden fees."
+                  },
+                  {
+                    question: "Do you provide ongoing support after launch?",
+                    answer: "Yes, we offer comprehensive maintenance and support packages starting at $100/month. We also provide 24/7 emergency support for critical issues."
+                  },
+                  {
+                    question: "Can you work with our existing team?",
+                    answer: "Definitely! We excel at collaborating with in-house teams and can integrate seamlessly into your existing development workflow and tools."
+                  },
+                  {
+                    question: "What technologies do you specialize in?",
+                    answer: "We specialize in modern web technologies (React, Next.js, Node.js), cloud platforms (AWS, Azure), mobile development, AI/ML, and blockchain solutions."
+                  }
+                ].map((faq) => (
+                  <AnimatedSection key={faq.question}>
+                <div className="bg-morton-purple-900 border border-morton-purple-700 rounded-xl p-6">
                   <h3 className="text-lg font-semibold text-white mb-3">{faq.question}</h3>
-                  <p className="text-maker-blue-200 leading-relaxed">{faq.answer}</p>
+                  <p className="text-slate-300 leading-relaxed">{faq.answer}</p>
                 </div>
               </AnimatedSection>
             ))}
@@ -455,14 +455,14 @@ export default function ContactPage() {
       </section>
 
       {/* Alternative Contact Methods */}
-      <section className="py-16 bg-maker-blue-900">
+      <section className="py-16 bg-morton-purple-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-                Other Ways to <span className="font-brand text-maker-yellow">Connect</span>
+                Other Ways to <span className="font-brand text-morton-orange">Connect</span>
               </h2>
-              <p className="text-lg text-maker-blue-200 max-w-2xl mx-auto">
+              <p className="text-lg text-slate-300 max-w-2xl mx-auto">
                 Choose the communication method that works best for you
               </p>
             </div>
@@ -470,12 +470,12 @@ export default function ContactPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <AnimatedSection>
-              <div className="text-center bg-maker-blue-950 border border-maker-blue-700 rounded-2xl p-8">
-                <div className="p-4 bg-maker-yellow/10 border border-maker-yellow/30 rounded-xl w-fit mx-auto mb-6">
-                  <Calendar className="h-8 w-8 text-maker-yellow" />
+              <div className="text-center bg-morton-purple-950 border border-morton-purple-700 rounded-2xl p-8">
+                <div className="p-4 bg-morton-orange/10 border border-morton-orange/30 rounded-xl w-fit mx-auto mb-6">
+                  <Calendar className="h-8 w-8 text-morton-orange" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">Schedule a Call</h3>
-                <p className="text-maker-blue-200 mb-6">
+                <p className="text-slate-300 mb-6">
                   Book a free 30-minute consultation to discuss your project
                 </p>
                 <button className="btn-primary w-full">
@@ -485,12 +485,12 @@ export default function ContactPage() {
             </AnimatedSection>
 
             <AnimatedSection delay={0.1}>
-              <div className="text-center bg-maker-blue-950 border border-maker-blue-700 rounded-2xl p-8">
-                <div className="p-4 bg-maker-yellow/10 border border-maker-yellow/30 rounded-xl w-fit mx-auto mb-6">
-                  <MessageSquare className="h-8 w-8 text-maker-yellow" />
+              <div className="text-center bg-morton-purple-950 border border-morton-purple-700 rounded-2xl p-8">
+                <div className="p-4 bg-morton-orange/10 border border-morton-orange/30 rounded-xl w-fit mx-auto mb-6">
+                  <MessageSquare className="h-8 w-8 text-morton-orange" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">Live Chat</h3>
-                <p className="text-maker-blue-200 mb-6">
+                <p className="text-slate-300 mb-6">
                   Chat with our team in real-time during business hours
                 </p>
                 <button className="btn-secondary w-full">
@@ -500,15 +500,15 @@ export default function ContactPage() {
             </AnimatedSection>
 
             <AnimatedSection delay={0.2}>
-              <div className="text-center bg-maker-blue-950 border border-maker-blue-700 rounded-2xl p-8">
-                <div className="p-4 bg-maker-yellow/10 border border-maker-yellow/30 rounded-xl w-fit mx-auto mb-6">
-                  <Mail className="h-8 w-8 text-maker-yellow" />
+              <div className="text-center bg-morton-purple-950 border border-morton-purple-700 rounded-2xl p-8">
+                <div className="p-4 bg-morton-orange/10 border border-morton-orange/30 rounded-xl w-fit mx-auto mb-6">
+                  <Mail className="h-8 w-8 text-morton-orange" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">Email Support</h3>
-                <p className="text-maker-blue-200 mb-6">
+                <p className="text-slate-300 mb-6">
                   Send us a detailed message and get a response within 2 hours
                 </p>
-                <a href="mailto:hello@makersoftwares.com" className="btn-secondary w-full inline-block">
+                <a href="mailto:hello@mortonsoftware.io" className="btn-secondary w-full inline-block">
                   Send Email
                 </a>
               </div>

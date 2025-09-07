@@ -108,7 +108,7 @@ const ServiceCard = React.forwardRef<
   <div className="relative">
     {badgeType && (
       <div className="absolute -top-3 -right-3 z-20">
-        <span className="px-3 py-1 bg-maker-yellow text-maker-blue-950 rounded-full text-sm font-semibold shadow-lg">
+        <span className="px-3 py-1 bg-morton-orange text-slate-950 rounded-full text-sm font-semibold shadow-lg">
           {badgeType}
         </span>
       </div>
@@ -117,15 +117,15 @@ const ServiceCard = React.forwardRef<
     <CardHeader>
       <div className="flex items-center space-x-3 mb-3">
         {icon && (
-          <div className="p-2 rounded-lg bg-maker-yellow/20 text-maker-yellow">
+          <div className="p-2 rounded-lg bg-morton-orange/20 text-morton-orange">
             {icon}
           </div>
         )}
-        <CardTitle className="text-white group-hover:text-maker-yellow transition-colors">
+        <CardTitle className="text-white group-hover:text-morton-orange transition-colors">
           {title}
         </CardTitle>
       </div>
-      <CardDescription className="text-base text-maker-blue-200">
+      <CardDescription className="text-base text-slate-300">
         {description}
       </CardDescription>
     </CardHeader>
@@ -134,9 +134,9 @@ const ServiceCard = React.forwardRef<
       {features && (
         <ul className="space-y-2 mb-6">
           {features.map((feature, index) => (
-            <li key={index} className="flex items-center text-sm text-maker-blue-100">
+            <li key={index} className="flex items-center text-sm text-slate-200">
               <svg
-                className="mr-2 h-4 w-4 text-maker-yellow flex-shrink-0"
+                className="mr-2 h-4 w-4 text-morton-orange flex-shrink-0"
                 fill="currentColor"
                 viewBox="0 0 20 20"
               >
@@ -156,8 +156,8 @@ const ServiceCard = React.forwardRef<
     <CardFooter className="flex justify-between items-center gap-4">
       {price && (
         <div className="text-left">
-          <div className="text-xs text-maker-blue-300 mb-1">Starting at</div>
-          <div className="text-base font-semibold text-maker-yellow">
+          <div className="text-xs text-slate-400 mb-1">Starting at</div>
+          <div className="text-base font-semibold text-morton-orange">
             {price.replace('Starting at ', '').replace('/month', '')}
           </div>
         </div>

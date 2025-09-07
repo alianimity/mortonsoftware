@@ -1,6 +1,6 @@
 import * as React from "react";
 import Link from "next/link";
-import { Mail, Phone, MapPin, Linkedin, Twitter, Github } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const serviceLinks = [
   { name: "Digital Strategy & Consulting", href: "/services/digital-strategy" },
@@ -27,7 +27,7 @@ const legalLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-maker-blue-950 text-white">
+    <footer className="bg-morton-purple-950 text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
         <div className="py-16 lg:py-20">
@@ -37,44 +37,51 @@ export function Footer() {
               <Link href="/" className="flex items-center space-x-3 mb-6">
                 <img 
                   src="/logos/icon-white.svg" 
-                  alt="Maker Software" 
+                  alt="Morton Software Insights" 
                   className="h-10 w-10"
                 />
                 <div className="flex flex-col">
                   <span className="font-brand text-xl text-white">
-                    Maker Software
+                    Morton Software Insights
                   </span>
-                  <span className="text-sm text-blue-200 -mt-1">
-                    Digital Transformation
+                  <span className="text-sm text-morton-purple-200 -mt-1">
+                    Strategic Software Solutions
                   </span>
                 </div>
               </Link>
               
-              <p className="text-blue-100 text-sm leading-relaxed mb-6">
-                We make digital transformation tangible. Through expert craftsmanship and 
+              <p className="text-morton-purple-200 text-sm leading-relaxed mb-6">
+                Strategic software solutions that drive results. Through expert craftsmanship and 
                 innovative technology, we transform complex business challenges into elegant 
                 software solutions.
               </p>
 
               {/* Contact Info */}
               <div className="space-y-3">
-                <div className="flex items-center space-x-3 text-sm text-blue-100">
+                <div className="flex items-center space-x-3 text-sm text-morton-purple-200">
                   <MapPin className="h-4 w-4 flex-shrink-0" />
                   <span>6065 Roswell Rd, #450<br />Atlanta, GA 30328</span>
                 </div>
                 <a 
-                  href="tel:+16789185109" 
-                  className="flex items-center space-x-3 text-sm text-blue-100 hover:text-maker-yellow transition-colors"
+                  href="tel:+12708028222" 
+                  className="flex items-center space-x-3 text-sm text-morton-purple-200 hover:text-morton-orange transition-colors"
                 >
                   <Phone className="h-4 w-4 flex-shrink-0" />
-                  <span>(678) 918-5109</span>
+                  <span>(270) 802-8222</span>
                 </a>
                 <a 
-                  href="mailto:hello@makersoftwares.com" 
-                  className="flex items-center space-x-3 text-sm text-blue-100 hover:text-maker-yellow transition-colors"
+                  href="mailto:hello@mortonsoftware.io" 
+                  className="flex items-center space-x-3 text-sm text-morton-purple-200 hover:text-morton-orange transition-colors"
                 >
                   <Mail className="h-4 w-4 flex-shrink-0" />
-                  <span>hello@makersoftwares.com</span>
+                  <span>hello@mortonsoftware.io</span>
+                </a>
+                <a 
+                  href="mailto:support@mortonsoftware.io" 
+                  className="flex items-center space-x-3 text-sm text-morton-purple-200 hover:text-morton-orange transition-colors"
+                >
+                  <Mail className="h-4 w-4 flex-shrink-0" />
+                  <span>support@mortonsoftware.io</span>
                 </a>
               </div>
             </div>
@@ -87,7 +94,7 @@ export function Footer() {
                   <li key={link.name}>
                     <Link
                       href={link.href}
-                      className="text-sm text-blue-100 hover:text-maker-yellow transition-colors"
+                      className="text-sm text-morton-purple-200 hover:text-morton-orange transition-colors"
                     >
                       {link.name}
                     </Link>
@@ -104,7 +111,7 @@ export function Footer() {
                   <li key={link.name}>
                     <Link
                       href={link.href}
-                      className="text-sm text-blue-100 hover:text-maker-yellow transition-colors"
+                      className="text-sm text-morton-purple-200 hover:text-morton-orange transition-colors"
                     >
                       {link.name}
                     </Link>
@@ -119,14 +126,14 @@ export function Footer() {
               
               {/* Newsletter Signup */}
               <div className="mb-6">
-                <p className="text-sm text-blue-100 mb-3">
+                <p className="text-sm text-morton-purple-200 mb-3">
                   Get insights on digital transformation and technology trends.
                 </p>
                 <form className="space-y-3">
                   <input
                     type="email"
                     placeholder="Enter your email"
-                    className="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-md text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-maker-yellow focus:border-transparent"
+                    className="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-md text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-morton-orange focus:border-transparent"
                   />
                   <button
                     type="submit"
@@ -137,30 +144,6 @@ export function Footer() {
                 </form>
               </div>
 
-              {/* Social Links */}
-              <div>
-                <h4 className="text-sm font-medium text-white mb-3">Follow Us</h4>
-                <div className="flex space-x-3">
-                  <a
-                    href="#"
-                    className="p-2 bg-white/10 rounded-md text-blue-100 hover:text-maker-yellow hover:bg-white/20 transition-all"
-                  >
-                    <Linkedin className="h-4 w-4" />
-                  </a>
-                  <a
-                    href="#"
-                    className="p-2 bg-white/10 rounded-md text-blue-100 hover:text-maker-yellow hover:bg-white/20 transition-all"
-                  >
-                    <Twitter className="h-4 w-4" />
-                  </a>
-                  <a
-                    href="#"
-                    className="p-2 bg-white/10 rounded-md text-blue-100 hover:text-maker-yellow hover:bg-white/20 transition-all"
-                  >
-                    <Github className="h-4 w-4" />
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -168,8 +151,8 @@ export function Footer() {
         {/* Bottom Footer */}
         <div className="border-t border-white/20 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-sm text-blue-100">
-              © {new Date().getFullYear()} Maker Software LLC. All rights reserved.
+            <div className="text-sm text-morton-purple-200">
+              © {new Date().getFullYear()} Morton Software Insights LLC. All rights reserved.
             </div>
             
             <div className="flex space-x-6">
@@ -177,7 +160,7 @@ export function Footer() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="text-sm text-blue-100 hover:text-maker-yellow transition-colors"
+                  className="text-sm text-morton-purple-200 hover:text-morton-orange transition-colors"
                 >
                   {link.name}
                 </Link>

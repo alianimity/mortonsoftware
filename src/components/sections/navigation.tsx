@@ -14,14 +14,14 @@ const navigationItems = [
     name: "Services", 
     href: "/services",
     children: [
-      { name: "Strategy & Transformation", href: "/services/digital-strategy" },
-      { name: "Design & Experience", href: "/services/product-design" },
-      { name: "Web & Digital Solutions", href: "/services/web-development" },
-      { name: "Software & Application Development", href: "/services/software-development" },
+      { name: "Strategy & Transformation", href: "/services/strategy-transformation" },
+      { name: "Design & Experience", href: "/services/design-experience" },
+      { name: "Web & Digital Solutions", href: "/services/web-digital-solutions" },
+      { name: "Software & Application Development", href: "/services/software-application-development" },
       { name: "Cloud, DevOps & Infrastructure", href: "/services/cloud-solutions" },
       { name: "Security & Compliance", href: "/services/security-compliance" },
-      { name: "Prototyping & Validation", href: "/services/prototyping-testing" },
-      { name: "Innovation & Emerging Tech", href: "/services/emerging-tech" },
+      { name: "Prototyping & Validation", href: "/services/prototyping-validation" },
+      { name: "Innovation & Emerging Tech", href: "/services/innovation-emerging-tech" },
       { name: "Content & Marketing", href: "/services/content-marketing" },
       { name: "E-commerce Solutions", href: "/services/ecommerce-services" },
       { name: "Maintenance & Support", href: "/services/maintenance-support" },
@@ -59,8 +59,8 @@ export function Navigation() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-200",
         scrolled 
-          ? "bg-maker-blue-950/95 backdrop-blur-sm shadow-lg" 
-          : "bg-maker-blue-950/90"
+          ? "bg-morton-purple-950/95 backdrop-blur-sm shadow-lg" 
+          : "bg-morton-purple-950/90"
       )}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -75,11 +75,11 @@ export function Navigation() {
           >
             <img 
               src="/logos/icon-primary.svg" 
-              alt="Maker Software" 
+              alt="Morton Software Insights" 
               className="h-8 w-8 transition-transform duration-200 group-hover:scale-105"
             />
-            <span className="font-brand text-lg text-white group-hover:text-maker-yellow transition-colors duration-200">
-              Maker Software
+            <span className="font-brand text-lg text-white group-hover:text-morton-orange transition-colors duration-200">
+              Morton Software Insights
             </span>
           </Link>
 
@@ -97,8 +97,8 @@ export function Navigation() {
                   className={cn(
                     "flex items-center space-x-1 px-3 py-2 text-sm font-medium transition-colors duration-200 relative",
                     pathname === item.href || pathname.startsWith(item.href + "/")
-                      ? "text-maker-yellow"
-                      : "text-white hover:text-maker-yellow"
+                      ? "text-morton-orange"
+                      : "text-white hover:text-morton-orange"
                   )}
                 >
                   <span>{item.name}</span>
@@ -116,13 +116,13 @@ export function Navigation() {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 8 }}
                       transition={{ duration: 0.15 }}
-                      className="absolute top-full left-0 w-56 bg-maker-blue-900 border border-maker-blue-700 shadow-xl rounded-lg py-1 mt-1"
+                      className="absolute top-full left-0 w-56 bg-morton-purple-900 border border-morton-purple-700 shadow-xl rounded-lg py-1 mt-1"
                     >
                       {item.children.map((child) => (
                         <Link
                           key={child.name}
                           href={child.href}
-                          className="block px-4 py-2 text-sm text-maker-blue-100 hover:bg-maker-blue-800 hover:text-maker-yellow transition-colors duration-150"
+                          className="block px-4 py-2 text-sm text-morton-purple-100 hover:bg-morton-purple-800 hover:text-morton-orange transition-colors duration-150"
                         >
                           {child.name}
                         </Link>
@@ -137,11 +137,11 @@ export function Navigation() {
           {/* Contact Info & CTA */}
           <div className="hidden lg:flex items-center space-x-6">
             <a 
-              href="tel:+16789185109" 
-              className="flex items-center space-x-2 text-sm text-maker-blue-200 hover:text-maker-yellow transition-colors duration-200 font-medium"
+              href="tel:+12708028222" 
+              className="flex items-center space-x-2 text-sm text-morton-purple-200 hover:text-morton-orange transition-colors duration-200 font-medium"
             >
               <Phone className="h-4 w-4" />
-              <span>(678) 918-5109</span>
+              <span>(270) 802-8222</span>
             </a>
             <Link href="/contact" className="btn-primary px-6 py-2 text-sm">
               Get Started
@@ -150,7 +150,7 @@ export function Navigation() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2 rounded-md text-white hover:text-maker-yellow transition-colors duration-200"
+            className="lg:hidden p-2 rounded-md text-white hover:text-morton-orange transition-colors duration-200"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -165,7 +165,7 @@ export function Navigation() {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.2 }}
-              className="lg:hidden bg-maker-blue-950"
+              className="lg:hidden bg-morton-purple-950"
             >
               <div className="px-4 py-6 space-y-4">
                 {navigationItems.map((item) => (
@@ -175,8 +175,8 @@ export function Navigation() {
                       className={cn(
                         "block px-3 py-2 text-base font-medium transition-colors duration-200",
                         pathname === item.href || pathname.startsWith(item.href + "/")
-                          ? "text-maker-yellow bg-maker-yellow/10 rounded-md"
-                          : "text-white hover:text-maker-yellow"
+                          ? "text-morton-orange bg-morton-orange/10 rounded-md"
+                          : "text-white hover:text-morton-orange"
                       )}
                     >
                       {item.name}
@@ -187,7 +187,7 @@ export function Navigation() {
                           <Link
                             key={child.name}
                             href={child.href}
-                            className="block px-3 py-2 text-sm text-maker-blue-200 hover:text-maker-yellow transition-colors duration-200"
+                            className="block px-3 py-2 text-sm text-morton-purple-200 hover:text-morton-orange transition-colors duration-200"
                           >
                             {child.name}
                           </Link>
@@ -197,14 +197,14 @@ export function Navigation() {
                   </div>
                 ))}
                 
-                <div className="pt-4 border-t border-maker-blue-700">
+                  <div className="pt-4 border-t border-morton-purple-700">
                   <div className="space-y-3 mb-4">
                     <a 
-                      href="tel:+16789185109" 
-                      className="flex items-center space-x-2 text-sm text-maker-blue-200 hover:text-maker-yellow transition-colors duration-200 font-medium"
+                      href="tel:+12708028222" 
+                      className="flex items-center space-x-2 text-sm text-morton-purple-200 hover:text-morton-orange transition-colors duration-200 font-medium"
                     >
                       <Phone className="h-4 w-4" />
-                      <span>(678) 918-5109</span>
+                      <span>(270) 802-8222</span>
                     </a>
                   </div>
                   <Link href="/contact" className="btn-primary w-full px-6 py-3 text-center">

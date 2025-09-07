@@ -3,7 +3,7 @@ import { AnimatedSection } from '@/components/ui/animated-section';
 import { CheckCircle, Zap, ArrowRight, Sparkles, Target, Rocket, Shield } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Pricing - Maker Software',
+  title: 'Pricing - Morton Software Insights',
   description: 'Transparent pricing for all our services. From $100 strategy reports to $25K+ enterprise solutions. Find the perfect package for your project.',
   keywords: 'pricing, software development costs, web design pricing, digital transformation rates, AI development, blockchain services',
 };
@@ -199,28 +199,28 @@ export default function PricingPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-maker-blue-950">
+    <div className="min-h-screen bg-morton-purple-950">
       {/* Hero Section - Unique Animated Pricing Focus */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative py-20 overflow-hidden bg-morton-purple-950">
         {/* Animated background elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-maker-yellow/5 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-maker-blue/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-maker-yellow/3 rounded-full blur-3xl animate-pulse delay-500"></div>
-            </div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-morton-orange/5 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-morton-purple/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-morton-orange/3 rounded-full blur-3xl animate-pulse delay-500"></div>
+        </div>
             
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <AnimatedSection className="text-center max-w-5xl mx-auto">
             <div className="mb-12">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-8 leading-tight">
-                <span className="font-brand text-maker-yellow">Make</span> It Happen
+                <span className="font-brand text-morton-orange">Morton</span> It Happen
                 <br />
-                <span className="text-3xl sm:text-4xl lg:text-5xl font-normal text-maker-blue-200">
-                  Starting at just <span className="font-brand text-maker-yellow">$100</span>
+                <span className="text-3xl sm:text-4xl lg:text-5xl font-normal text-morton-purple-200">
+                  Starting at just <span className="font-brand text-morton-orange">$100</span>
                 </span>
             </h1>
             
-              <p className="text-xl text-maker-blue-200 mb-12 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-xl text-slate-300 mb-12 leading-relaxed max-w-3xl mx-auto">
                 No complex packages. No hidden fees. Just honest pricing that grows with you. 
                 Pick what you need, when you need it.
               </p>
@@ -232,13 +232,13 @@ export default function PricingPage() {
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
                 {serviceCategories.slice(0, 6).map((category) => (
                   <button key={category.name} 
-                    className="group relative overflow-hidden bg-maker-blue-900/30 backdrop-blur-sm border border-maker-blue-700 
-                               hover:border-maker-yellow/50 rounded-2xl p-4 transition-all duration-300 hover:scale-[1.02]">
-                    <div className="absolute inset-0 bg-maker-yellow/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    className="group relative overflow-hidden bg-morton-purple/20 backdrop-blur-sm border border-slate-700 
+                               hover:border-morton-orange/50 rounded-2xl p-4 transition-all duration-300 hover:scale-[1.02]">
+                    <div className="absolute inset-0 bg-morton-orange/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     <div className="relative text-center">
-                      <category.icon className="h-8 w-8 text-maker-yellow mx-auto mb-2" />
+                      <category.icon className="h-8 w-8 text-morton-orange mx-auto mb-2" />
                       <div className="text-white font-bold text-sm">{category.name}</div>
-                      <div className="text-maker-blue-200 text-xs">{category.priceRange}</div>
+                      <div className="text-slate-300 text-xs">{category.priceRange}</div>
                     </div>
                   </button>
                 ))}
@@ -248,14 +248,14 @@ export default function PricingPage() {
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
                 {serviceCategories.slice(6, 12).map((category) => (
                   <button key={category.name} 
-                    className="group relative overflow-hidden bg-maker-blue-900/30 backdrop-blur-sm border border-maker-blue-700 
-                               hover:border-maker-yellow/50 rounded-2xl p-4 transition-all duration-300 hover:scale-[1.02]">
-                    <div className="absolute inset-0 bg-maker-yellow/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    className="group relative overflow-hidden bg-morton-purple/20 backdrop-blur-sm border border-slate-700 
+                               hover:border-morton-orange/50 rounded-2xl p-4 transition-all duration-300 hover:scale-[1.02]">
+                    <div className="absolute inset-0 bg-morton-orange/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     <div className="relative text-center">
-                      <category.icon className="h-8 w-8 text-maker-yellow mx-auto mb-2" />
+                      <category.icon className="h-8 w-8 text-morton-orange mx-auto mb-2" />
                       <div className="text-white font-bold text-sm">{category.name}</div>
-                      <div className="text-maker-blue-200 text-xs">{category.priceRange}</div>
-              </div>
+                      <div className="text-slate-300 text-xs">{category.priceRange}</div>
+                    </div>
                   </button>
                 ))}
               </div>
@@ -265,29 +265,29 @@ export default function PricingPage() {
       </section>
 
       {/* Service Categories - Unique Creative Layout */}
-      <section className="py-20 bg-maker-blue-900">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-morton-purple-900">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-16">
             {serviceCategories.map((category, index) => (
               <AnimatedSection key={category.id} delay={index * 0.1}>
                 <div className="group relative">
-                  <div className="service-card rounded-3xl hover:border-maker-yellow/30 transition-all duration-300">
+                  <div className="bg-morton-purple-950 border border-morton-purple-700 rounded-3xl hover:border-morton-orange/30 transition-all duration-300">
                     {/* Category Header */}
-                    <div className="p-8 border-b border-maker-blue-700">
+                    <div className="p-8 border-b border-morton-purple-700">
                       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
                         <div className="flex items-center space-x-6">
-                          <div className="p-4 rounded-2xl bg-maker-yellow/10 border border-maker-yellow/30">
-                            <category.icon className="h-10 w-10 text-maker-yellow" />
+                          <div className="p-4 rounded-2xl bg-morton-orange/10 border border-morton-orange/30">
+                            <category.icon className="h-10 w-10 text-morton-orange" />
                           </div>
                           <div>
                             <h3 className="text-3xl font-black text-white mb-2">{category.name}</h3>
-                            <p className="text-maker-blue-200 text-lg">{category.tagline}</p>
-                            <p className="text-maker-blue-300 text-sm mt-1">{category.description}</p>
+                            <p className="text-slate-300 text-lg">{category.tagline}</p>
+                            <p className="text-slate-400 text-sm mt-1">{category.description}</p>
                           </div>
                         </div>
                         <div className="text-right">
-                          <div className="text-3xl font-bold text-maker-yellow">{category.priceRange}</div>
-                          <div className="text-maker-blue-300 text-sm">Starting prices</div>
+                          <div className="text-3xl font-bold text-morton-orange">{category.priceRange}</div>
+                          <div className="text-slate-400 text-sm">Starting prices</div>
                         </div>
                       </div>
               </div>
@@ -299,32 +299,32 @@ export default function PricingPage() {
                           <div key={serviceIndex} className="relative">
                             {/* Service price badge */}
                             <div className="absolute -top-2 -right-2 z-20">
-                              <div className="px-3 py-1 bg-maker-yellow text-maker-blue-950 text-sm font-bold rounded-full shadow-lg">
+                              <div className="px-3 py-1 bg-morton-orange text-slate-950 text-sm font-bold rounded-full shadow-lg">
                                 {service.price}
                               </div>
-                    </div>
+                            </div>
 
-                            <div className="service-card group/service rounded-2xl p-6 transition-all duration-300 hover:scale-[1.02]">
+                            <div className="bg-morton-purple-900 border border-morton-purple-700 group/service rounded-2xl p-6 transition-all duration-300 hover:scale-[1.02] hover:border-morton-orange/30">
 
                             <div className="space-y-4">
                               <div>
-                                <h4 className="text-lg font-bold text-white group-hover/service:text-maker-yellow transition-colors mb-2">
+                                <h4 className="text-lg font-bold text-white group-hover/service:text-morton-orange transition-colors mb-2">
                                   {service.name}
                                 </h4>
-                                <p className="text-maker-blue-200 text-sm leading-relaxed">
+                                <p className="text-slate-300 text-sm leading-relaxed">
                                   {service.description}
                                 </p>
-                          </div>
+                              </div>
                               
 
 
-                              <button className="w-full mt-4 py-2 px-4 bg-maker-blue-800 hover:bg-maker-yellow/10 
-                                               text-maker-blue-200 hover:text-maker-yellow border border-maker-blue-600 
-                                               hover:border-maker-yellow/30 rounded-xl transition-all duration-300 
+                              <button className="w-full mt-4 py-2 px-4 bg-morton-orange hover:bg-morton-orange/90 
+                                               text-slate-950 font-bold border border-morton-orange 
+                                               hover:border-morton-orange/90 rounded-xl transition-all duration-300 
                                                text-sm font-medium flex items-center justify-center space-x-2">
                                 <span>Get Started</span>
                                 <ArrowRight className="h-4 w-4" />
-                          </button>
+                              </button>
                             </div>
                             </div>
                         </div>
@@ -336,18 +336,18 @@ export default function PricingPage() {
                 </AnimatedSection>
             ))}
           </div>
-          </div>
-        </section>
+        </div>
+      </section>
 
       {/* Unique Value Propositions */}
-      <section className="py-20 bg-maker-blue-950">
+      <section className="py-20 bg-morton-purple-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <AnimatedSection>
             <div className="text-center mb-16">
               <h2 className="text-4xl font-black text-white mb-6">
-                Why Choose <span className="font-brand text-maker-yellow">Maker</span> Pricing?
+                Why Choose <span className="font-brand text-morton-orange">Morton</span> Pricing?
               </h2>
-              <p className="text-xl text-maker-blue-200 max-w-3xl mx-auto">
+              <p className="text-xl text-slate-300 max-w-3xl mx-auto">
                 We believe great software should be accessible to everyone, from solo creators to global enterprises.
               </p>
               </div>
@@ -377,12 +377,12 @@ export default function PricingPage() {
               }
             ].map((feature, index) => (
               <AnimatedSection key={index} delay={index * 0.1}>
-                <div className="bg-maker-blue-900 border border-maker-blue-700 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group hover:scale-[1.02]">
-                  <div className="w-12 h-12 bg-maker-yellow/20 rounded-lg flex items-center justify-center group-hover:bg-maker-yellow/30 transition-colors mb-4">
-                    <feature.icon className="h-6 w-6 text-maker-yellow" />
-                </div>
-                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-maker-yellow transition-colors">{feature.title}</h3>
-                  <p className="text-maker-blue-200 leading-relaxed">{feature.description}</p>
+                <div className="bg-morton-purple border border-slate-700 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group hover:scale-[1.02]">
+                  <div className="w-12 h-12 bg-morton-orange/20 rounded-lg flex items-center justify-center group-hover:bg-morton-orange/30 transition-colors mb-4">
+                    <feature.icon className="h-6 w-6 text-morton-orange" />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-morton-orange transition-colors">{feature.title}</h3>
+                  <p className="text-slate-300 leading-relaxed">{feature.description}</p>
               </div>
             </AnimatedSection>
             ))}
@@ -390,43 +390,43 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* Custom Quote Section - Matching Home Page Style */}
-      <section className="py-20 bg-maker-blue-950">
+      {/* Custom Quote Section - Matching Why Choose Morton Pricing Style */}
+      <section className="py-20 bg-morton-purple-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="max-w-6xl mx-auto">
-              {/* CTA Card matching home page style */}
-              <div className="bg-maker-blue-900 border border-maker-blue-700 rounded-2xl p-8 lg:p-12 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+              {/* CTA Card matching Why Choose Morton Pricing style */}
+              <div className="bg-morton-purple border border-slate-700 rounded-2xl p-8 lg:p-12 text-center shadow-lg hover:shadow-xl transition-all duration-300">
                 <h2 className="text-3xl lg:text-4xl font-black text-white mb-4">
                   Ready to Transform Your Business?
             </h2>
-                <p className="text-xl text-maker-blue-200 mb-8 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-xl text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
                   Whether you need a simple $100 strategy report or a complete $15K+ transformation, 
                   we&apos;re here to make your vision tangible.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-                  <button className="btn-primary px-8 py-4 text-lg">
+                  <button className="bg-morton-orange hover:bg-morton-orange/90 text-slate-950 font-bold px-8 py-4 text-lg rounded-xl transition-all duration-300">
                     Get Started Today
-              </button>
-                  <button className="btn-secondary px-8 py-4 text-lg">
+                  </button>
+                  <button className="bg-transparent hover:bg-morton-orange/10 text-morton-orange border border-morton-orange hover:border-morton-orange/50 font-bold px-8 py-4 text-lg rounded-xl transition-all duration-300">
                     Schedule Free Consultation
-              </button>
+                  </button>
                 </div>
 
                 {/* Contact Methods */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 pt-8 border-t border-maker-blue-700">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 pt-8 border-t border-slate-700">
                   <div className="text-center">
-                    <div className="text-maker-yellow font-bold text-lg mb-2">Quick Response</div>
-                    <div className="text-maker-blue-200">Fast response guaranteed</div>
+                    <div className="text-morton-orange font-bold text-lg mb-2">Quick Response</div>
+                    <div className="text-slate-300">Fast response guaranteed</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-maker-yellow font-bold text-lg mb-2">Global Service</div>
-                    <div className="text-maker-blue-200">Available worldwide</div>
+                    <div className="text-morton-orange font-bold text-lg mb-2">Global Service</div>
+                    <div className="text-slate-300">Available worldwide</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-maker-yellow font-bold text-lg mb-2">No Obligation</div>
-                    <div className="text-maker-blue-200">Free consultation</div>
+                    <div className="text-morton-orange font-bold text-lg mb-2">No Obligation</div>
+                    <div className="text-slate-300">Free consultation</div>
                   </div>
                 </div>
               </div>

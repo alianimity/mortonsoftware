@@ -1,7 +1,7 @@
-# Maker Software LLC - System Patterns
+# Morton Software Insights LLC - System Patterns
 
 ## Architecture Overview
-Modern, performance-first website built with Next.js App Router, emphasizing component reusability and consistent design patterns.
+Modern, performance-first website built with Next.js App Router, emphasizing component reusability, consistent design patterns, and insights-driven user experiences that showcase analytical expertise.
 
 ## Key Technical Decisions
 1. **Next.js 14 App Router**: Latest routing patterns for optimal performance
@@ -14,10 +14,15 @@ Modern, performance-first website built with Next.js App Router, emphasizing com
 ### Color System
 ```css
 /* Brand Colors */
---maker-yellow: #FFD009;     /* Primary brand color */
---maker-blue: #002C73;       /* Secondary brand color */
---maker-yellow-light: #FFDC33; /* Hover states */
---maker-blue-light: #1e4a8c;   /* Hover states */
+--morton-orange: #EB7513;     /* Primary brand color */
+--morton-purple: #32142D;     /* Secondary brand color */
+--morton-orange-light: #F08A2E; /* Hover states */
+--morton-purple-light: #4a1f3d;   /* Hover states */
+
+/* Morton Purple System (Added for Color Consistency) */
+--morton-purple-800: #2A1226;  /* Lighter purple for cards */
+--morton-purple-900: #1F0D1B;  /* Medium purple for sections */
+--morton-purple-950: #0F0609;  /* Darkest purple for backgrounds */
 
 /* Neutral System */
 --neutral-50: #fafafa;
@@ -55,18 +60,123 @@ Modern, performance-first website built with Next.js App Router, emphasizing com
 4. **Staggered Reveals**: Content appears in logical sequence
 5. **Reduced Motion**: Respect user preferences for accessibility
 
+## Service Page Design Patterns (Revolutionary Implementation)
+
+### Hero Section Variations
+**Pattern Philosophy**: Each service page has a unique hero layout while maintaining Morton purple branding and core functionality.
+
+1. **Centered Layout with Feature Cards** (Web & Digital Solutions)
+   - Full-width centered content with three horizontal feature cards
+   - Integrated statistics within feature cards
+   - Additional background blur elements
+
+2. **Centered Layout with Statistics Grid** (Software & Application Development)
+   - Centered content with four enhanced statistics cards
+   - Descriptive elements for each statistic
+   - Horizontal grid layout below main content
+
+3. **Split Layout with Service Icons** (Cloud Solutions)
+   - 2/3 + 1/3 grid with vertical service icons on right
+   - Two-column statistics on left
+   - Vertical service feature cards
+
+4. **Vertical Layout with Security Badges** (Security & Compliance)
+   - Centered content with three security badges
+   - Centered assessment card below
+   - Multiple background blur elements
+
+5. **Asymmetric Layout with Process Flow** (Prototyping & Validation)
+   - 3/5 + 2/5 grid with process flow on right
+   - Numbered process steps visualization
+   - Compact statistics grid
+
+6. **Diagonal Split with Tech Icons** (Innovation & Emerging Tech)
+   - 7/12 + 5/12 grid with technology icons
+   - 2x2 technology grid on right
+   - Diagonal layout emphasis
+
+7. **Stacked Layout with Enhanced Metrics** (Content & Marketing)
+   - Centered content with three large metrics cards
+   - Icons integrated within metrics cards
+   - Centered assessment card below
+
+8. **Offset Layout with Horizontal Metrics** (E-commerce Services)
+   - 4/6 + 2/6 grid with side-aligned metrics
+   - Horizontal metrics with icons and descriptions
+   - Offset positioning for visual interest
+
+9. **Compact Layout with Support Tiers** (Maintenance & Support)
+   - Centered content with three support tier badges
+   - Icon and label combinations
+   - Compact, efficient layout
+
+10. **Wide Layout with Data Flow** (Database & Integration)
+    - Full-width centered content
+    - Five data flow visualization cards
+    - Wide horizontal grid layout
+
+### Pricing Card Variations
+**Pattern Philosophy**: Diverse pricing presentations that suit each service type while maintaining Morton branding.
+
+1. **Gradient Headers with Timeline** (Cloud Solutions)
+   - Gradient header backgrounds
+   - Timeline and savings information
+   - Enhanced visual hierarchy
+
+2. **Standard with Deliverables Focus** (Security, Prototyping, Innovation, Content)
+   - Traditional layout with enhanced deliverables section
+   - Consistent Morton purple styling
+   - Focus on service outcomes
+
+3. **Tiered Pricing with Price Headers** (E-commerce Services)
+   - Prominent price headers
+   - Hover border effects
+   - Centered pricing emphasis
+
+4. **Monthly Pricing with Service Badges** (Maintenance & Support)
+   - Service type badges (Monthly/One-Time)
+   - Separated header sections
+   - Monthly service emphasis
+
+5. **Complexity-Based Pricing** (Database & Integration)
+   - Complexity indicators (Simple/Advanced/Enterprise)
+   - Gradient headers with service level
+   - Progressive complexity visualization
+
+### Morton Purple Color System Implementation
+**Consistent Alternating Pattern**: 950 → 900 → 950 → 900 → 950 → 900
+
+```css
+/* Section Background Pattern */
+.hero-section: bg-morton-purple-950
+.services-section: bg-morton-purple-900
+.benefits-section: bg-morton-purple-950
+.process-section: bg-morton-purple-900
+.testimonials-section: bg-morton-purple-950
+.cta-section: bg-morton-purple-900
+```
+
 ## Component Relationships
 ```
 Layout (MainLayout)
 ├── Header (Navigation + Theme)
 ├── Main Content (Page-specific)
-│   ├── Hero Section
-│   ├── Services Section
-│   ├── Process Section
-│   ├── Testimonials Section
-│   └── Contact Section
+│   ├── Hero Section (Unique Layouts)
+│   ├── Services Section (Varied Pricing)
+│   ├── Benefits Section (Consistent)
+│   ├── Process Section (Consistent)
+│   ├── Testimonials Section (Consistent)
+│   └── CTA Section (Consistent)
 └── Footer (Links + Contact Info)
 ```
+
+## Design System Flexibility
+**Core Principle**: Maintain brand consistency while allowing creative expression through:
+- **Flexible Grid Systems**: Various column configurations (1/2, 2/3+1/3, 3/5+2/5, 7/12+5/12, etc.)
+- **Modular Statistics Cards**: Reusable with different layouts and icon integrations
+- **Consistent Color Application**: Morton purple system applied consistently across all variations
+- **Unified Animation Timing**: Consistent delay patterns and hover effects
+- **Scalable Typography**: Responsive text sizing across all hero variations
 
 ## Critical Implementation Paths
 1. **Performance**: Image optimization, lazy loading, code splitting
@@ -74,3 +184,5 @@ Layout (MainLayout)
 3. **Accessibility**: WCAG 2.1 AA compliance, keyboard navigation
 4. **Mobile**: Touch-friendly interactions, responsive breakpoints
 5. **Analytics**: User behavior tracking, conversion optimization
+6. **Design Consistency**: Morton purple system enforcement across all new components
+7. **Visual Variety**: Unique layouts that prevent user fatigue while maintaining brand recognition

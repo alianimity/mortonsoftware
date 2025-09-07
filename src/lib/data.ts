@@ -192,7 +192,7 @@ export const testimonials = [
     name: "Sarah Johnson",
     role: "CTO",
     company: "TechStart Inc.",
-    content: "Maker Software transformed our entire digital infrastructure. Their strategic approach and technical expertise helped us scale from 10 to 100 employees seamlessly.",
+    content: "Morton Software Insights transformed our entire digital infrastructure. Their strategic approach and technical expertise helped us scale from 10 to 100 employees seamlessly.",
     rating: 5,
     avatar: "/testimonials/sarah-johnson.jpg"
   },
@@ -201,7 +201,7 @@ export const testimonials = [
     name: "Michael Chen",
     role: "Founder & CEO",
     company: "GrowthCorp",
-    content: "The team at Maker Software doesn't just code - they craft solutions. Our customer portal has increased engagement by 300% since launch.",
+    content: "The team at Morton Software Insights doesn't just code - they deliver insights-driven solutions. Our customer portal has increased engagement by 300% since launch.",
     rating: 5,
     avatar: "/testimonials/michael-chen.jpg"
   },
@@ -210,7 +210,7 @@ export const testimonials = [
     name: "Emily Rodriguez",
     role: "VP of Technology",
     company: "InnovateCo",
-    content: "Working with Maker Software felt like having an extended team of senior developers. They understood our vision and brought it to life beautifully.",
+    content: "Working with Morton Software Insights felt like having an extended team of senior developers. They understood our vision and brought it to life beautifully.",
     rating: 5,
     avatar: "/testimonials/emily-rodriguez.jpg"
   }
@@ -218,8 +218,8 @@ export const testimonials = [
 
 export const faqs = [
   {
-    question: "What makes Maker Software different from other development companies?",
-    answer: "We combine strategic thinking with artisan-level craftsmanship. Unlike agencies that just execute, we partner with you to understand your business goals and create solutions that drive measurable results. Our 'maker' approach means every line of code is crafted with care and purpose."
+    question: "What makes Morton Software Insights different from other development companies?",
+    answer: "We combine strategic thinking with artisan-level craftsmanship. Unlike agencies that just execute, we partner with you to understand your business goals and create solutions that drive measurable results. Our insights-driven approach means every line of code is crafted with strategic purpose and business intelligence."
   },
   {
     question: "How long does a typical project take?",
@@ -235,7 +235,7 @@ export const faqs = [
   },
   {
     question: "How do you ensure project success?",
-    answer: "Our 5-phase 'Maker Method' ensures clear communication, regular checkpoints, and measurable outcomes. We use agile development with weekly demos, maintain comprehensive documentation, and track business metrics - not just technical deliverables."
+    answer: "Our 5-phase 'Morton Insights Method' ensures clear communication, regular checkpoints, and measurable outcomes. We use agile development with weekly demos, maintain comprehensive documentation, and track business metrics - not just technical deliverables."
   },
   {
     question: "Can you help with digital strategy, not just development?",
@@ -251,10 +251,10 @@ export const companyStats = {
 };
 
 export const contactInfo = {
-  phone: "+1 (678) 918-5109",
-  email: "hello@makersoftwares.com",
-  supportEmail: "support@makersoftwares.com",
-  legalEmail: "legal@makersoftwares.com",
+  phone: "(270) 802-8222",
+  email: "hello@mortonsoftware.io",
+  supportEmail: "support@mortonsoftware.io",
+  legalEmail: "legal@mortonsoftware.io",
   address: {
     street: "6065 Roswell Rd, #450",
     city: "Atlanta",
