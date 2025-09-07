@@ -120,10 +120,10 @@ export default function PrivacyPolicyPage() {
                     <h3 className="text-xl font-semibold text-morton-orange mb-3">Contact Information</h3>
                     <div className="space-y-2 text-slate-300">
                       <p><strong>Company:</strong> Morton Software Insights LLC</p>
-                      <p><strong>Address:</strong> 6065 Roswell Rd, #450, Atlanta, GA 30328</p>
+                      <p><strong>Address:</strong> Westminister Pl, Atlanta, GA 30350</p>
                       <p><strong>General Email:</strong> hello@mortonsoftware.io</p>
                       <p><strong>Privacy Email:</strong> legal@mortonsoftware.io</p>
-                      <p><strong>Phone:</strong> (270) 802-8222</p>
+                      <p><strong>Phone:</strong> (404) 826-2654</p>
                     </div>
                   </div>
                 </div>
@@ -369,7 +369,7 @@ export default function PrivacyPolicyPage() {
                       <ul className="space-y-2 text-slate-300">
                         <li>• Privacy Email: legal@mortonsoftware.io</li>
                         <li>• General Email: hello@mortonsoftware.io</li>
-                        <li>• Phone: (270) 802-8222</li>
+                        <li>• Phone: (404) 826-2654</li>
                         <li>• Response time: 30 days maximum</li>
                       </ul>
                     </div>
@@ -458,7 +458,7 @@ export default function PrivacyPolicyPage() {
                     <span>Email Us</span>
                   </a>
                   <a
-                    href="tel:+12708028222"
+                    href="tel:+14048262654"
                     className="btn-secondary inline-flex items-center space-x-2"
                   >
                     <span>Call Us</span>

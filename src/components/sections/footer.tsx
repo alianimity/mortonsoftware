@@ -60,14 +60,14 @@ export function Footer() {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3 text-sm text-morton-purple-200">
                   <MapPin className="h-4 w-4 flex-shrink-0" />
-                  <span>6065 Roswell Rd, #450<br />Atlanta, GA 30328</span>
+                  <span>Westminister Pl<br />Atlanta, GA 30350</span>
                 </div>
                 <a 
-                  href="tel:+12708028222" 
+                  href="tel:+14048262654" 
                   className="flex items-center space-x-3 text-sm text-morton-purple-200 hover:text-morton-orange transition-colors"
                 >
                   <Phone className="h-4 w-4 flex-shrink-0" />
-                  <span>(270) 802-8222</span>
+                  <span>(404) 826-2654</span>
                 </a>
                 <a 
                   href="mailto:hello@mortonsoftware.io" 

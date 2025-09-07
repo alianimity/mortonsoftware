@@ -251,15 +251,15 @@ export const companyStats = {
 };
 
 export const contactInfo = {
-  phone: "(270) 802-8222",
+  phone: "(404) 826-2654",
   email: "hello@mortonsoftware.io",
   supportEmail: "support@mortonsoftware.io",
   legalEmail: "legal@mortonsoftware.io",
   address: {
-    street: "6065 Roswell Rd, #450",
+    street: "Westminister Pl",
     city: "Atlanta",
     state: "GA", 
-    zip: "30328",
-    full: "6065 Roswell Rd, #450, Atlanta, GA 30328"
+    zip: "30350",
+    full: "Westminister Pl, Atlanta, GA 30350"
   }
 };

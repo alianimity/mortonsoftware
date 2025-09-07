@@ -84,10 +84,10 @@ export function ServicesOverview() {
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm">
                 <a 
-                  href="tel:+12708028222" 
+                  href="tel:+14048262654" 
                   className="flex items-center space-x-2 text-morton-orange hover:text-morton-orange/80 transition-colors"
                 >
-                  <span>(270) 802-8222</span>
+                  <span>(404) 826-2654</span>
                 </a>
                 <span className="hidden sm:block text-slate-400">•</span>
                 <a 

@@ -3,21 +3,21 @@ import { AnimatedSection } from '@/components/ui/animated-section'
 import { Cookie, Shield, Settings, Eye, Clock, Globe } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Cookie Policy | Maker Software',
-  description: 'Learn about how Maker Software uses cookies and similar technologies to enhance your browsing experience and provide personalized services.',
+  title: 'Cookie Policy | Morton Software Insights',
+  description: 'Learn about how Morton Software Insights uses cookies and similar technologies to enhance your browsing experience and provide personalized services.',
   keywords: 'cookie policy, cookies, tracking, privacy, data collection, GDPR, CCPA, web analytics',
   openGraph: {
-    title: 'Cookie Policy | Maker Software',
-    description: 'Learn about how Maker Software uses cookies and similar technologies to enhance your browsing experience.',
+    title: 'Cookie Policy | Morton Software Insights',
+    description: 'Learn about how Morton Software Insights uses cookies and similar technologies to enhance your browsing experience.',
     type: 'website',
   },
 }
 
 export default function CookiePolicy() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-morton-purple-950">
       {/* Header */}
-      <AnimatedSection className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
+      <AnimatedSection className="bg-gradient-to-r from-morton-orange to-morton-purple text-white py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Cookie className="w-16 h-16 mx-auto mb-6 text-blue-200" />
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Cookie Policy</h1>
@@ -381,19 +381,19 @@ export default function CookiePolicy() {
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 my-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <h4 className="font-semibold text-white mb-3">Maker Software LLC</h4>
+                      <h4 className="font-semibold text-white mb-3">Morton Software Insights LLC</h4>
                       <p className="text-sm">
-                        6065 Roswell Rd, #450<br />
-                        Atlanta, GA 30328<br />
+                        Westminister Pl<br />
+                        Atlanta, GA 30350<br />
                         United States
                       </p>
                     </div>
                     <div>
                       <h4 className="font-semibold text-white mb-3">Contact Details</h4>
                       <p className="text-sm">
-                        General Email: hello@makersoftwares.com<br />
-                        Legal Email: legal@makersoftwares.com<br />
-                        Phone: (678) 918-5109<br />
+                        General Email: hello@mortonsoftware.io<br />
+                        Legal Email: legal@mortonsoftware.io<br />
+                        Phone: (404) 826-2654<br />
                         Business Hours: Mon-Fri, 9 AM - 6 PM EST
                       </p>
                     </div>
@@ -401,7 +401,7 @@ export default function CookiePolicy() {
                 </div>
 
                 <p className="text-sm">
-                  For data protection inquiries specifically related to GDPR or CCPA, please contact legal@makersoftwares.com 
+                  For data protection inquiries specifically related to GDPR or CCPA, please contact legal@mortonsoftware.io 
                   and include &quot;Data Protection Request&quot; in your email subject line to ensure prompt handling.
                 </p>
               </div>

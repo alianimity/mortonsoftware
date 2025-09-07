@@ -76,15 +76,15 @@ export default function ContactPage() {
     {
       icon: Phone,
       title: "Call Us",
-      primary: "(270) 802-8222",
+      primary: "(404) 826-2654",
       secondary: "Business Hours Only",
       description: "Direct line to our team"
     },
     {
       icon: MapPin,
       title: "Visit Us",
-      primary: "6065 Roswell Rd, #450",
-      secondary: "Atlanta, GA 30328",
+      primary: "Westminister Pl",
+      secondary: "Atlanta, GA 30350",
       description: "Our headquarters location"
     },
     {
@@ -393,7 +393,7 @@ export default function ContactPage() {
                   </div>
                   <p className="text-slate-300 text-sm">
                     We respond to all inquiries within 2 hours during business hours. 
-                    For urgent matters, call us directly at (270) 802-8222.
+                    For urgent matters, call us directly at (404) 826-2654.
                   </p>
                 </div>
               </div>
